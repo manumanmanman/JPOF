@@ -2,4 +2,10 @@ img {
   height: 20px;
   width: auto;
 }
+
+#sarah {
+  height: 30px;
+  width: 50vw;
+  background-color: orange;
+}
 /*# sourceMappingURL=main.css.map */
