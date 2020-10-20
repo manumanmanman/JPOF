@@ -1,0 +1,15 @@
+@media (max-width: 1199.98px) { 
+
+
+
+   #screensize {
+       
+        background-color: magenta;
+       
+      
+
+        &:after {
+            content:"LG < 1200px";
+        }
+    }
+ }

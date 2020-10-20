@@ -27,4 +27,48 @@ nav img {
 .carre .far, .carre .fas {
   color: white;
 }
+
+#screensize {
+  width: 25%;
+  height: 30px;
+  z-index: 1000;
+  position: fixed;
+  background-color: blue;
+  top: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+#screensize:after {
+  content: "XL > 1200px";
+}
+
+@media (max-width: 1199.98px) {
+  #screensize {
+    background-color: magenta;
+  }
+  #screensize:after {
+    content: "LG < 1200px";
+  }
+}
+
+@media (max-width: 767.98px) {
+  #screensize {
+    background-color: orange;
+  }
+  #screensize:after {
+    content: "SM < 768px";
+  }
+}
+
+@media (max-width: 575.98px) {
+  #screensize {
+    background-color: red;
+  }
+  #screensize:after {
+    content: "XS < 576px";
+  }
+}
 /*# sourceMappingURL=main.css.map */
