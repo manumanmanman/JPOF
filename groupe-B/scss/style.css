@@ -11,7 +11,7 @@
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
   #resolution {
-    background-color: mediumseagreen;
+    background-color: #7bb33c;
   }
   #resolution::after {
     content: "Small devices (landscape phones, 576px and up)";
@@ -41,7 +41,7 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   #resolution {
-    background-color: #b8e049;
+    background-color: #e049e0;
   }
   #resolution::after {
     content: "Extra large devices (large desktops, 1200px and up)";
@@ -49,11 +49,13 @@
 }
 
 body {
-  background-color: red;
+  background-color: green;
 }
 
 .bg-white {
   height: 400px;
+  display: block;
+  color: white;
 }
 
 a.navbar-brand {
