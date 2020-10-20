@@ -16,17 +16,17 @@
   width: 30%;
 }
 
-.card-entier .cartes .carte .card-left {
+.card-entier .cartes .card-left {
   position: relative;
   padding-right: 0;
 }
 
-.card-entier .cartes .carte .card-left img {
+.card-entier .cartes .card-left img {
   width: 100%;
   height: auto;
 }
 
-.card-entier .cartes .carte .card-left h2 {
+.card-entier .cartes .card-left h2 {
   position: absolute;
   top: 0;
   left: 15px;
@@ -39,49 +39,49 @@
   padding-right: 7px;
 }
 
-.card-entier .cartes .carte .card-right {
+.card-entier .cartes .card-right {
   padding: 10px;
   position: relative;
   background-color: #f7f7f7;
   border-right: 3px solid white;
 }
 
-.card-entier .cartes .carte .card-right h1 {
+.card-entier .cartes .card-right h1 {
   font-size: 22px;
 }
 
-.card-entier .cartes .carte .card-right h4 {
+.card-entier .cartes .card-right h4 {
   font-size: 17px;
   font-weight: 400;
 }
 
-.card-entier .cartes .carte .card-right .coeur {
+.card-entier .cartes .card-right .coeur {
   position: absolute;
   right: 10px;
   top: 15px;
 }
 
-.card-entier .cartes .carte .card-right .coeur img {
+.card-entier .cartes .card-right .coeur img {
   width: 35px;
   height: auto;
 }
 
-.card-entier .cartes .carte .card-right p {
+.card-entier .cartes .card-right p {
   font-size: 15px;
 }
 
-.card-entier .cartes .carte .card-right span {
+.card-entier .cartes .card-right span {
   margin-top: 40px;
   font-size: 14px;
 }
 
-.card-entier .cartes .carte .card-right h5 {
+.card-entier .cartes .card-right h5 {
   font-size: 14px;
   padding-top: 10px;
   font-weight: 400;
 }
 
-.card-entier .cartes .carte .card-right .inscription {
+.card-entier .cartes .card-right .inscription {
   font-size: 14px;
   position: absolute;
   right: 15px;
@@ -91,7 +91,7 @@
   border-radius: 0%;
 }
 
-.card-entier .cartes .carte .card-right .inscription:hover {
+.card-entier .cartes .card-right .inscription:hover {
   background-color: #28a745 !important;
   color: white;
   border: 1px solid #28a745;
