@@ -16,8 +16,31 @@
   width: 30%;
 }
 
+.card-entier.pedagogique .cartes .card-left h2 {
+  background-color: #1393CC;
+  color: white;
+}
+
+.card-entier.technique .cartes .card-left h2 {
+  background-color: #956187;
+}
+
+.card-entier.paramedical .cartes .card-left h2 {
+  background-color: #DB1B0E;
+}
+
+.card-entier.artsappliques .cartes .card-left h2 {
+  background-color: #74B626;
+}
+
+.card-entier.economiquesocial .cartes .card-left h2 {
+  background-color: #F59500;
+}
+
 .card-entier .cartes {
   margin-bottom: 15px;
+  min-height: 275px;
+  margin-right: 0px;
 }
 
 .card-entier .cartes .card-left {
@@ -29,7 +52,7 @@
 
 .card-entier .cartes .card-left img {
   width: 100%;
-  height: 250px;
+  height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -38,13 +61,15 @@
   position: absolute;
   top: 0;
   left: 0px;
-  background-color: #3cb8ff;
+  background-color: #956187;
   color: white;
   font-size: 15px;
   height: 30px;
   padding-top: 5px;
   padding-left: 7px;
   padding-right: 7px;
+  text-align: center;
+  min-width: 170px;
 }
 
 .card-entier .cartes .card-right {
