@@ -1,0 +1,13 @@
+#screensize{
+    width: 200px;
+    height: 27px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    &:after {
+        content: "XL (> 1200px)";
+    }
+}

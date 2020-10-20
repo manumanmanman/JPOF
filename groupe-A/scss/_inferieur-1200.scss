@@ -1,0 +1,12 @@
+@media (max-width: 1199.98px) { 
+
+    #screensize{
+        background-color: rgb(0, 211, 0);
+
+        &:after {
+            content:"L (< 1200px) ";
+        }
+
+    }
+
+ };

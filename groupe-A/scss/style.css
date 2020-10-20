@@ -16,20 +16,28 @@
   width: 30%;
 }
 
+.card-entier .cartes {
+  margin-bottom: 15px;
+}
+
 .card-entier .cartes .card-left {
   position: relative;
   padding-right: 0;
+  padding-left: 0;
+  min-height: 250px;
 }
 
 .card-entier .cartes .card-left img {
   width: 100%;
-  height: auto;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card-entier .cartes .card-left h2 {
   position: absolute;
   top: 0;
-  left: 15px;
+  left: 0px;
   background-color: #3cb8ff;
   color: white;
   font-size: 15px;
@@ -40,10 +48,9 @@
 }
 
 .card-entier .cartes .card-right {
-  padding: 10px;
   position: relative;
   background-color: #f7f7f7;
-  border-right: 3px solid white;
+  padding: 10px;
 }
 
 .card-entier .cartes .card-right h1 {
@@ -95,5 +102,56 @@
   background-color: #28a745 !important;
   color: white;
   border: 1px solid #28a745;
+}
+
+#screensize {
+  width: 200px;
+  height: 27px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+
+#screensize:after {
+  content: "XL (> 1200px)";
+}
+
+@media (max-width: 1199.98px) {
+  #screensize {
+    background-color: #00d300;
+  }
+  #screensize:after {
+    content: "L (< 1200px) ";
+  }
+}
+
+@media (max-width: 991.98px) {
+  #screensize {
+    background-color: orange;
+  }
+  #screensize:after {
+    content: "M (< 992px) ";
+  }
+}
+
+@media (max-width: 767.98px) {
+  #screensize {
+    background-color: green;
+  }
+  #screensize:after {
+    content: "S (< 768px) ";
+  }
+}
+
+@media (max-width: 575.98px) {
+  #screensize {
+    background-color: cyan;
+  }
+  #screensize:after {
+    content: "XS (< 576px) ";
+  }
 }
 /*# sourceMappingURL=style.css.map */

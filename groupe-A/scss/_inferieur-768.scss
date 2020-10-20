@@ -1,0 +1,12 @@
+@media (max-width: 767.98px) { 
+
+    #screensize{
+        background-color: green;
+
+        &:after {
+            content:"S (< 768px) ";
+        }
+
+    }
+
+ };

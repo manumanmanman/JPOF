@@ -1,0 +1,12 @@
+@media (max-width: 991.98px) { 
+
+    #screensize{
+        background-color: orange;
+
+        &:after {
+            content:"M (< 992px) ";
+        }
+
+    }
+
+ };
