@@ -10,7 +10,10 @@
 </head>
 
 <body>
-    
+  
+<?php require("inc/connexion.inc.php"); ?>
+
+
 <div id="screensize">
 
 
