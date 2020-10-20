@@ -2,8 +2,43 @@
 /*********************************************************    HOMEPAGE    *******************************************/
 .card-entier{
 
+    &.technique {
+      h2 {
+        background-color: $technique;
+        color: black;
+      }
+    }
+    &.arts-appliques{
+        h2 {
+          background-color: $artsappliques;
+          color: white;
+        }
+      }
+    &.economiquesocial {
+      h2 {
+        background-color: $economiquesocial;
+        color: black;
+      }
+    }
+
+    &.pedagogique {
+        h2 {
+          background-color: $pedagogique;
+          color: white;
+
+        }
+      }
+      &.paramedical {
+        h2 {
+          background-color: $red;
+          color: black;
+
+        }
+      }
+
     // border: solid 2px red;
     margin-bottom: 15px;
+    min-height: 275px;
     .cartes{
   
            .card-left{
@@ -14,7 +49,7 @@
             // border: solid 2px green;
             img{
                 width: 100%;
-                height: 250px;
+                // height: 250px;
                 object-fit: cover;
 
             }
@@ -22,8 +57,10 @@
                 position: absolute;
                 top: 0;
                 left:0px;
-                background-color: rgb(60, 184, 255);
-                color: white;
+                min-width: 50%;
+                text-align: center;
+                
+           
                 font-size: 15px;
                 height: 30px; 
                 padding-top: 5px;
