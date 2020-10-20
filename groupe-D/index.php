@@ -116,6 +116,39 @@
 </div>
     <!-- row -->
 
+    <?php 
+
+
+$sql = "SELECT * FROM activities";
+$activities = $conn->query($sql);
+
+foreach($activities as $activity) {
+
+echo utf8_encode ($activity["activity_id"])."<br>";
+echo "<h2>".utf8_encode ($activity["activity_name"])."</h2><br>";
+echo utf8_encode ($activity["activity_description"])."<br>";
+echo utf8_encode ($activity["room_id"])."<br>";
+echo utf8_encode ($activity["building_id"])."<br>";
+echo utf8_encode ($activity["activity_date"])."<br>";
+echo utf8_encode ($activity["activity_start"])."<br>";
+echo utf8_encode ($activity["activity_end"])."<hr>";
+
+} 
+// foreach
+
+
+
+
+?>
+
 
     </div>
+    //container
+
+
+
+
+
+
+
 <?php include("footer.php");?>
