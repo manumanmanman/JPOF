@@ -2,6 +2,9 @@
 <?php include("header.php");?>
 
 
+<div id="bienvenue">
+<h1>Bienvenue</h1>
+
 
 
 </div>
