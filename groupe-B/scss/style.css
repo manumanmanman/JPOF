@@ -48,6 +48,28 @@
   }
 }
 
+#navbar-footer {
+  background-color: purple;
+  padding: 2rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.heff-footer {
+  color: white;
+  margin-left: 80%;
+}
+
+.nav-link-footer {
+  color: white;
+}
+
+a:hover {
+  color: #807e7e;
+  text-decoration: underline;
+}
+
 body {
   background-color: green;
 }
