@@ -1,4 +1,41 @@
-p {
-  color: blue;
+.container {
+  margin-top: 40px;
+}
+
+.activites {
+  width: 100%;
+  padding: 0;
+  border: 10px solid white;
+}
+
+img {
+  width: 100%;
+  padding: 0;
+  -webkit-box-shadow: 3px 4px 5px lightgray;
+          box-shadow: 3px 4px 5px lightgray;
+}
+
+.couleur {
+  background-color: pink;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+}
+
+#rond {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: white;
+  color: white;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+#rond:hover {
+  background-color: lightgrey;
+  color: lightgrey;
+  border: 1px solid white;
 }
 /*# sourceMappingURL=style.css.map */
