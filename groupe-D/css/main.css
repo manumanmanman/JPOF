@@ -1,19 +1,30 @@
-img {
+nav img {
   height: 20px;
   width: auto;
 }
 
-<<<<<<< HEAD
-#sarah {
-  height: 30px;
-  width: 50vw;
-  background-color: orange;
-=======
-#ayoub {
-  height: 30px;
-  width: 50vh;
-  background-color: darkorange;
+#bienvenue {
+  height: 200px;
+  width: 100%;
+  background-image: url("https://via.placeholder.com/1536x200");
+}
+
+#bienvenue h1 {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
+}
+
+.carre {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  margin: auto;
+  margin-top: -75px;
+  padding: 10px;
+}
+
+.carre .far, .carre .fas {
   color: white;
->>>>>>> 9ca75dd90aa898dd713db4638c3325b1fbc1d99b
 }
 /*# sourceMappingURL=main.css.map */
