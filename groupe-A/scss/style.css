@@ -1,1 +1,18 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.imgevent {
+  background-color: bisque;
+  height: 50vh;
+  padding-left: 0;
+}
+
+.txtevent {
+  background-color: #f7c588;
+  height: 50vh;
+}
+
+.catevent {
+  background-color: red;
+  color: white;
+  padding: 10px 30px;
+  width: 30%;
+}
+/*# sourceMappingURL=style.css.map */
