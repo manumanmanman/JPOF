@@ -1,0 +1,9 @@
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+
+    #resolution{
+        background-color: rgb(120, 122, 247);}
+
+    #resolution::after{
+        content:"Medium devices (tablets, 768px and up)";}
+    }
