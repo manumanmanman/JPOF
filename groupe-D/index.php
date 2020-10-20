@@ -20,7 +20,7 @@
         <a class="nav-link black" href="#"> Toutes les activités</a>
       </li>
     <li class="nav-item active">
-        <a class="nav-link mauve" href="#"> Techniques</a>
+        <a class="nav-link mauve" href="#"> Technique</a>
       </li>
     <li class="nav-item active">
         <a class="nav-link orange" href="#"> Economique et Social</a>
