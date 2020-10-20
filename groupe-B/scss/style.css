@@ -1,5 +1,11 @@
 body {
-  background-color: antiquewhite;
+  background-color: red;
+}
+
+.bg-white {
+  height: 400px;
+  display: block;
+  color: white;
 }
 
 a.navbar-brand {
@@ -9,5 +15,9 @@ a.navbar-brand {
 a.navbar-brand img {
   height: 50px;
   width: auto;
+}
+
+h1 {
+  background-color: royalblue;
 }
 /*# sourceMappingURL=style.css.map */
