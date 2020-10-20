@@ -25,6 +25,8 @@ foreach ($activities as $activity) {    // Début de la boucle
     $heurefin = strtotime( $activity['activity_end'] );
     $heurefin = strftime("%Hh%M", $heurefin);
 
+    $activityid = $activity["activity_id"];
+$userid = $_SESSION["userid"];
     ?>
             <div id="id_<?php echo $activity["activity_id"]; ?>" class="col-lg-6 card-entier <?php echo $activity["category_slug"]; ?>">
               
@@ -37,11 +39,54 @@ foreach ($activities as $activity) {    // Début de la boucle
                         <h1><?php echo utf8_encode($activity["activity_name"]); ?></h1>
                         <h4>De 11h à 13h</h4>
 
-                        <!-- si l'utilisateur est logué, on fait une query ajax pour engregistrer cette activité dans ses favoris -->
-                        <?php if($_SESSION["user"] !="") { ?>
-                            <!-- <a class= "coeur" href="query-ajax.php"><img src="img/image-coeur-png-blanc.png" alt="coeur"></a> -->
+                        <!-- on check si l'utilisateur est logué, 
+                        SI oui -->
+                        <?php if(isset($_SESSION["user"])) { 
+
+// echo $activityid." - ".$userid;
+
                             
-                        <!-- s'il n'est pas logué, on lui propose de se loguer/enregister -->
+                        //  on check si l'activité est déjà dans ses favoris 
+                        $sql2 = "SELECT * FROM favorites WHERE activity_id = '$activityid'";
+                        $results = $conn->query($sql2); 
+                        $rowcount=mysqli_num_rows($results); 
+
+                          
+
+                       
+
+                            //   echo $result["actvity_id"];
+                            // echo "ok";
+
+                            if ($rowcount == 1){
+
+                                echo ' <a class= "coeur" href="inc/remove-from-favorites.php?activity_id='.$activity["activity_id"].'"><img src="img/image-coeur-png-1.png" alt="coeur"></a>';
+
+
+                        } else {
+
+                                echo '<a class= "coeur" href="inc/add-to-favorites.php?activity_id='.$activity["activity_id"].'"><img src="img/image-coeur-png-blanc.png" alt="coeur"></a>';
+                        }
+                            
+
+                         
+                           
+                            
+                        //        
+                            ?>
+
+                            
+
+                                    
+
+
+
+                                <!-- si oui, on lui permet de le retirer des favoris (et on met le coeur rouge = est déjà dans favoris) -->
+                                <?php ?>
+                                   
+                        
+                            
+                        <!-- SI NON, il n'est pas logué, on lui propose de se loguer/enregister -->
                         <?php } else { ?>
                             <a class= "coeur" href="register.php"  data-toggle="modal" data-target="#exampleModal"><img src="img/image-coeur-png-blanc.png" alt="coeur"></a>
 

@@ -29,6 +29,23 @@
         <a class="nav-link" href="#">Contact</a>
       </li>
     </ul>
-    <a class="nav-link ml-5" href="#">Inscription - Connexion</a>
+  <?php 
+  
+  session_start();  
+  if (isset($_SESSION["user"])) {
+
+    echo $_SESSION["user"];
+    echo "--".$_SESSION["userid"];
+    echo ' - <a href="inc/logout.inc.php">logout</a>';
+
+  } else {
+
+    echo '<a class="nav-link ml-5" href="href="register.php"  data-toggle="modal" data-target="#exampleModal"">Inscription - Connexion</a>';
+
+  }
+  
+  
+   ?>
+    
   </div>
 </nav>

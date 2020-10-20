@@ -10,8 +10,8 @@
         </button>
       </div> -->
       <div class="modal-body">
-      <form action="connexion.php" method="post">
-        <input type="text" name="email" placeholder="votre email">
+      <form action="inc/login.inc.php" method="post">
+        <input type="text" name="login" placeholder="votre login">
         <input type="password" name="mdp" placeholder="mot de passe">
         <input type="submit" value="login" class="btn btn-success">
         </form> 
