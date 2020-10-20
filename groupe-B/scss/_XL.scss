@@ -1,0 +1,9 @@
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+    #resolution{
+        background-color: rgb(224, 73, 224);}
+
+    #resolution::after{
+        content:"Extra large devices (large desktops, 1200px and up)";}
+    }
