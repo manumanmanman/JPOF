@@ -1,0 +1,23 @@
+@media (max-width: 575.98px) { 
+    
+
+    #screensize {
+
+        background-color: $pink;
+
+        &:after {
+            content: "XS < 576px";
+          }
+    }
+
+
+
+
+
+
+
+
+
+
+    
+ } // mediaquery

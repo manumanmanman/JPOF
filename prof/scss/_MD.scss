@@ -1,0 +1,40 @@
+@media (max-width: 991.98px) { 
+    
+
+    #screensize {
+
+        background-color: $indigo;
+
+        &:after {
+            content: "MD (< 992px)";
+          }
+    }
+
+
+
+    .card-entier{
+        .cartes{
+    
+            
+            .card-left{
+               
+                h2{
+                   
+                    font-size: 12px;
+                    padding-top: 8px;
+                       
+                }
+
+            } // card-left
+ 
+        } // cartes
+
+    } // card entier
+
+
+
+
+
+
+    
+ } // mediaquery
