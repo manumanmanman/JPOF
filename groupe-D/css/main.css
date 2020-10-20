@@ -6,26 +6,86 @@ nav img {
 #bienvenue {
   height: 200px;
   width: 100%;
-  background-image: url("https://via.placeholder.com/1536x200");
+  background-image: url("../img/banniere-home.jpg");
+  background-size: cover;
 }
 
 #bienvenue h1 {
   text-align: center;
   vertical-align: middle;
   line-height: 200px;
+  color: white;
 }
 
 .carre {
   width: 150px;
   height: 150px;
-  background-color: red;
   margin: auto;
   margin-top: -75px;
   padding: 10px;
 }
 
+.carre.arts-appliques {
+  background-color: #74B626;
+}
+
+.carre.paramedical {
+  background-color: #DB1B0E;
+}
+
+.carre.economiquesocial {
+  background-color: #F59500;
+}
+
+.carre.technique {
+  background-color: #956187;
+}
+
+.carre.pedagogique {
+  background-color: #1393CC;
+}
+
 .carre .far, .carre .fas {
   color: white;
+}
+
+.full-card {
+  margin-bottom: 15px;
+  min-height: 200px;
+}
+
+.nav-cat {
+  font-size: 20px;
+  margin: 15px 0px;
+}
+
+.nav-cat li {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav-cat li .mauve {
+  color: #956187;
+}
+
+.nav-cat li .orange {
+  color: #F59500;
+}
+
+.nav-cat li .rouge {
+  color: #DB1B0E;
+}
+
+.nav-cat li .bleu {
+  color: #1393CC;
+}
+
+.nav-cat li .vert {
+  color: #74B626;
+}
+
+.nav-cat li:hover {
+  border-bottom: solid 2px black;
 }
 
 #screensize {

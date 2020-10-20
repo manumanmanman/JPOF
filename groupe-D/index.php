@@ -9,7 +9,7 @@
 
 
 </div>
-<nav class="navbar navbar-expand-lg justify-content-center">
+<nav class="navbar navbar-expand-lg justify-content-center nav-cat">
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -20,7 +20,7 @@
         <a class="nav-link black" href="#"> Toutes les activités</a>
       </li>
     <li class="nav-item active">
-        <a class="nav-link mauve" href="#"> Techniques</a>
+        <a class="nav-link mauve" href="#"> Technique</a>
       </li>
     <li class="nav-item active">
         <a class="nav-link orange" href="#"> Economique et Social</a>
@@ -41,81 +41,94 @@
 
 <div class="container">
  <div class="row">
-        <div class="col-12 col-md-4">
+
+<!-- COMMENCER MA BOUCLE  -->
+<?php 
+
+
+$sql = "SELECT * FROM activities
+        LEFT JOIN rooms ON activities.room_id = rooms.room_id
+        LEFT JOIN buildings ON activities.building_id = buildings.building_id
+        LEFT JOIN categories ON activities.category_id = categories.category_id
+        LEFT JOIN speakers ON activities.activity_speaker = speakers.speaker_id
+
+
+
+";
+
+
+
+$activities = $conn->query($sql);
+
+foreach($activities as $activity) { // DEBUT DE LE BOUCLE
+
+ 
+?>
+ 
+        <div class="col-12 col-md-4 full-card">
         <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="https://via.placeholder.com/300x180/0000FF/808080 " alt="Card image cap">
+        <img class="card-img-top" src="img/activites.jpg " alt="Card image cap">
 
-    <div class="carre">
-    <i class="far fa-bookmark">   Paramédical</i>
-    <i class="far fa-calendar-alt">    Date et Heure</i>
-    <i class="fas fa-map-marker-alt">  Site du Palais du Midi</i>
-    <i class="fas fa-microphone">   Mr. John Doe</i>
+    <div class="carre <?php echo $activity["category_slug"]?>">
+    <i class="far fa-bookmark">  <?php echo utf8_encode ($activity["category_name"])?></i>
+    <i class="far fa-calendar-alt">   <?php echo utf8_encode ($activity["activity_date"])?></i>
+    <i class="fas fa-map-marker-alt"> <?php echo utf8_encode ($activity["building_name"])?></i>
+    <i class="fas fa-microphone">  <?php echo utf8_encode ($activity["speaker_name"])?></i>
 
-    </div>
+    </div>  <!-- FIN DU CARE -->
 
   <div class="card-body">
-    <h5 class="card-title">Titre</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title"><?php echo utf8_encode ($activity["activity_name"])?></h5>
+    <p class="card-text"><?php echo utf8_encode ($activity["activity_description"])?></p>
     <a href="#" class="favori"><i class="far fa-heart"></i></a>
   </div>
 
-</div>
+</div> <!-- FIN DU CARD-BODY -->
 
 
     
-</div>
+</div> <!-- FIN DU FULL-CARD -->
   
-<div class="col-12 col-md-4">
-        <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="https://via.placeholder.com/300x180/0000FF/808080 " alt="Card image cap">
+<?php
 
-    <div class="carre">
-    <i class="far fa-bookmark">   Paramédical</i>
-    <i class="far fa-calendar-alt">    Date et Heure</i>
-    <i class="fas fa-map-marker-alt">  Site du Palais du Midi</i>
-    <i class="fas fa-microphone">   Mr. John Doe</i>
-
-    </div>
-
-  <div class="card-body">
-    <h5 class="card-title">Titre</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="favori"><i class="far fa-heart"></i></a>
-  </div>
-
-</div>
+} 
+//  FIN DE FOREACH
 
 
-    
-</div>
-
-<div class="col-12 col-md-4">
-        <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="https://via.placeholder.com/300x180/0000FF/808080 " alt="Card image cap">
-
-    <div class="carre">
-    <i class="far fa-bookmark">   Paramédical</i>
-    <i class="far fa-calendar-alt">    Date et Heure</i>
-    <i class="fas fa-map-marker-alt">  Site du Palais du Midi</i>
-    <i class="fas fa-microphone">   Mr. John Doe</i>
-
-    </div>
-
-  <div class="card-body">
-    <h5 class="card-title">Titre</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="favori"><i class="far fa-heart"></i></a>
-  </div>
-
-</div>
 
 
-    
-</div>
+?>
+
     
 </div>
     <!-- row -->
 
+   
+
+<!-- <?php
+
+echo utf8_encode ($activity["activity_id"])."<br>";
+echo "<h2>".utf8_encode ($activity["activity_name"])."</h2><br>";
+echo utf8_encode ($activity["activity_description"])."<br>";
+echo utf8_encode ($activity["room_name"])."<br>";
+echo utf8_encode ($activity["building_name"])."<br>";
+echo utf8_encode ($activity["category_name"])."<br>";
+echo utf8_encode ($activity["activity_date"])."<br>";
+echo utf8_encode ($activity["activity_start"])."<br>";
+echo utf8_encode ($activity["activity_end"])."<br>";
+echo utf8_encode ($activity["speaker_name"])."<hr>";
+
+?> -->
+
+
 
     </div>
+    <!-- container -->
+
+
+
+
+
+
+
 <?php include("footer.php");?>
