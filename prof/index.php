@@ -99,17 +99,35 @@
             </div>  <!-- card entier -->
 
         </div>
-    </div>
+
+        <?php
 
 
-<?php
+$sql = " SELECT * FROM activities";
+$activities = $conn->query($sql);
+foreach ($activities as $activity) {
 
+echo utf8_encode($activity["activity_id"])."<br>";
+echo "<strong>".utf8_encode($activity["activity_name"])."</strong><br>";
+echo utf8_encode($activity["activity_description"])."<br>";
+echo utf8_encode($activity["room_id"])."<br>";
+echo utf8_encode($activity["building_id"])."<br>";
+echo utf8_encode($activity["activity_date"])."<br>";
+echo utf8_encode($activity["activity_start"])."<br>";
+echo utf8_encode($activity["activity_end"])."<hr>";
+
+
+} // foreach
 
 ?>
 
- <!-- LEFT JOIN locaux ON activities.room_id = rooms.room_id
-                  LEFT JOIN buildings ON activities.building_id = buildings.building_id
-                   LEFT JOIN speakers ON activities.activity_speaker = speakers.speakers_id -->
+
+
+</div>  <!-- / container  -->
+
+
+
+
 
 
 <?php require "footer.php" ?>
