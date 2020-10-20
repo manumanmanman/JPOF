@@ -1,13 +1,23 @@
 .imgevent {
     background-color: bisque;
     height: 50vh;
-    padding-left: 0;
+    padding: 0;
+    img {
+        width: 100%;
+        height: auto;
+    }
 
 }
 
 .txtevent {
     background-color: rgb(247, 197, 136);
     height: 50vh;
+    img {
+        
+            width: 35px;
+            height: auto;
+          
+    }
 
 }
 
@@ -16,6 +26,7 @@
     color : white;
     padding: 10px 30px ;
     width: 30%;
+  
     
 }
 .card-entier{

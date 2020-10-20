@@ -1,12 +1,22 @@
 .imgevent {
   background-color: bisque;
   height: 50vh;
-  padding-left: 0;
+  padding: 0;
+}
+
+.imgevent img {
+  width: 100%;
+  height: auto;
 }
 
 .txtevent {
   background-color: #f7c588;
   height: 50vh;
+}
+
+.txtevent img {
+  width: 35px;
+  height: auto;
 }
 
 .catevent {
