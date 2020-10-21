@@ -1,5 +1,6 @@
 @import "variables-prof";  
 
+@import "navbar";  
 @import "homepage";  
 
 
@@ -11,6 +12,12 @@
 @import "XS";  
 
 
-.modal-backdrop.in {
-	opacity: 0.9;
+
+// .modal-backdrop {
+
+//     background-color: red;
+// }
+
+.modal-backdrop.show {
+    opacity: 0.75;
 }

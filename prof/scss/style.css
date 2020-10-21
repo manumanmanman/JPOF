@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Ranchers&display=swap");
+.navbar {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
 /*********************************************************    HOMEPAGE    *******************************************/
 .card-entier {
   margin-bottom: 15px;
@@ -64,21 +69,23 @@
 
 .card-entier .cartes .card-right h1 {
   font-size: 22px;
+  padding-right: 25px;
 }
 
 .card-entier .cartes .card-right h4 {
   font-size: 17px;
   font-weight: 400;
+  line-height: 25px;
 }
 
 .card-entier .cartes .card-right .coeur {
   position: absolute;
   right: 10px;
-  top: 15px;
+  top: 10px;
 }
 
 .card-entier .cartes .card-right .coeur img {
-  width: 35px;
+  width: 20px;
   height: auto;
 }
 
@@ -172,6 +179,6 @@
 }
 
 .modal-backdrop.show {
-  opacity: .75;
+  opacity: 0.75;
 }
 /*# sourceMappingURL=style.css.map */

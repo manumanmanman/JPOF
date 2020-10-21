@@ -1,6 +1,5 @@
 <?php 
 
-
 include("connexion.inc.php"); 
 
 $login = $_POST["login"];
@@ -26,13 +25,11 @@ $passdb =  $result["user_pwd"];
             $_SESSION["userid"] = $result["user_id"];
             
         echo "Bienvenue <strong>" . $_SESSION["user"]. "</strong> vous êtes maintenant connecté ! votre id est ".$_SESSION["userid"];
-        header("location: ../index.php");
+         header("location: ../index.php");
 
         } else {
 
         echo 'veuillez recommencer';
         } // fin if else  passwords ok
-
-
 
 ?>

@@ -29,23 +29,31 @@
         <a class="nav-link" href="#">Contact</a>
       </li>
     </ul>
-  <?php 
+    <?php 
   
   session_start();  
+
+  // si l'utilisateur est logué (la session existe, çàd dire que $_SESSION["user"] existe, il est ISSET) alors on affiche son nom, son id et un lien LOGOUT
   if (isset($_SESSION["user"])) {
 
-    echo $_SESSION["user"];
-    echo "--".$_SESSION["userid"];
-    echo ' - <a href="inc/logout.inc.php">logout</a>';
+    echo "<p>username:  <b> ".$_SESSION["user"]."</b>";
+    echo " user id:  <b> ".$_SESSION["userid"]."</b>";
+    echo ' - <a href="inc/logout.inc.php">logout</a></P>';
 
+    // s'il n'est pas logué, on affiche le lien pour se loguer
   } else {
 
-    echo '<a class="nav-link ml-5" href="href="register.php"  data-toggle="modal" data-target="#exampleModal"">Inscription - Connexion</a>';
+    echo '<a class="nav-link ml-5" href="href="register.php"  data-toggle="modal" data-target="#exampleModal">Inscription - Connexion</a>';
 
   }
   
   
    ?>
+
+
+    
+
+
     
   </div>
 </nav>

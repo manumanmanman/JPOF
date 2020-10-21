@@ -37,7 +37,8 @@ $userid = $_SESSION["userid"];
                     </div>
                     <div class="col-6 carte card-right">
                         <h1><?php echo utf8_encode($activity["activity_name"]); ?></h1>
-                        <h4>De 11h à 13h</h4>
+                        <h4>Le <?php echo $datevent; ?> <br>
+                        de <?php echo $heuredebut; ?> à <?php echo $heurefin; ?></h4>
 
                         <!-- on check si l'utilisateur est logué, 
                         SI oui -->
@@ -60,12 +61,12 @@ $userid = $_SESSION["userid"];
 
                             if ($rowcount == 1){
 
-                                echo ' <a class= "coeur" href="inc/remove-from-favorites.php?activity_id='.$activity["activity_id"].'"><img src="img/image-coeur-png-1.png" alt="coeur"></a>';
+                                echo ' <a class= "coeur" href="inc/remove-from-favorites.php?activity_id='.$activity["activity_id"].'"><img src="img/image-coeur-png-1.png" title="Retirer des favoris"></a>';
 
 
                         } else {
 
-                                echo '<a class= "coeur" href="inc/add-to-favorites.php?activity_id='.$activity["activity_id"].'"><img src="img/image-coeur-png-blanc.png" alt="coeur"></a>';
+                                echo '<a class= "coeur" href="inc/add-to-favorites.php?activity_id='.$activity["activity_id"].'"><img src="img/image-coeur-png-blanc.png" title="Ajouter aux favoris"></a>';
                         }
                             
 
@@ -88,7 +89,7 @@ $userid = $_SESSION["userid"];
                             
                         <!-- SI NON, il n'est pas logué, on lui propose de se loguer/enregister -->
                         <?php } else { ?>
-                            <a class= "coeur" href="register.php"  data-toggle="modal" data-target="#exampleModal"><img src="img/image-coeur-png-blanc.png" alt="coeur"></a>
+                            <a class= "coeur" href="#"  data-toggle="modal" data-target="#exampleModal"><img src="img/image-coeur-png-blanc.png" alt="coeur"></a>
 
                         <?php } ?>
 
