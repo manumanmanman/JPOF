@@ -6,35 +6,45 @@
   <div class="row">
     <div class="col-md-4">
       <div class="card">
-    <img src="https://placeimg.com/640/480/arch" />
+    <img src="img/img1.jpg" />
     <div class="card-body">
-      <h3>Nature writing</h3>
-    <p class="text-justify">Nature writing often draws heavily on scientific information and facts about the natural world; at the same time, it is frequently written in the first person and incorporates personal observations of and philosophical reflections upon nature.</p>
-    <button type="button" class="btn btn-primary w-25">View</button>
+      <h3>Jeu, 7 mai, 08:00</h3>
+    <p class="text-justify">Circuit rentable</p>
+    <button type="button" class="btn btn-outline-dark w-50">Je m'inscris</button>
     </div>
   </div>
     </div>
     <div class="col-md-4">
       <div class="card">
-    <img src="https://placeimg.com/640/480/arch" />
+    <img src="img/img2.jpg" />
     <div class="card-body">
-      <h3>Nature writing</h3>
-    <p class="text-justify">Nature writing often draws heavily on scientific information and facts about the natural world; at the same time, it is frequently written in the first person and incorporates personal observations of and philosophical reflections upon nature.</p>
-    <button type="button" class="btn btn-primary w-50">View</button>
+      <h3>Mer, 24 avril, 16:45</h3>
+    <p class="text-justify">Créer ton circuit!</p>
+    <button type="button" class="btn btn-outline-dark w-50">Je m'inscris</button>
     </div>
   </div>
     </div>
     <div class="col-md-4">
       <div class="card">
-    <img src="https://placeimg.com/640/480/arch" />
+    <img src="img/img3.jpg" />
     <div class="card-body">
-      <h3>Nature writing</h3>
-    <p class="text-justify">Nature writing often draws heavily on scientific information and facts about the natural world; at the same time, it is frequently written in the first person and incorporates personal observations of and philosophical reflections upon nature.</p>
-    <button type="button" class="btn btn-primary w-25">View</button>
+      <h3>Jeu, 24 mai, 14:00</h3>
+    <p class="text-justify">Art du dessin: L'abstrait</p>
+    <button type="button" class="btn btn-outline-dark w-50">Je m'inscris</button>
     </div>
   </div>
     </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
 
 <?php include('footer.php');?>
