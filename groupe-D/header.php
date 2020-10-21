@@ -19,6 +19,9 @@
 
 </div>
 
+<a href="">Inscription</a> 
+
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,3 +47,26 @@
     </ul>
   </div>
 </nav>
+
+
+<?php 
+
+session_start();
+if(isset($_SESSION["user"])) {
+
+
+  echo "<p>username: <b> ".$_SESSION["user"]."</b>";
+  echo " user id: <b> ".$_SESSION["userid"]."</b>";
+  echo ' - <a href="inc/logout.inc.php">log out</a></p>';
+
+
+} else {
+
+
+echo '<a href="register.php" data-toggle="modal" data-target="#exampleModal">Connexion</a>';
+
+
+} 
+
+
+?>

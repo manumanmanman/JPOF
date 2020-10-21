@@ -140,4 +140,16 @@ nav img {
     content: "XS < 576px";
   }
 }
+
+.modal-backdrop.show {
+  opacity: 0.75;
+}
+
+.redheart {
+  color: red;
+}
+
+.grayheart {
+  color: lightgray;
+}
 /*# sourceMappingURL=main.css.map */

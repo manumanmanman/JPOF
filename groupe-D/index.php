@@ -62,7 +62,10 @@ $activities = $conn->query($sql);
 
 foreach($activities as $activity) { // DEBUT DE LE BOUCLE
 
+  $activityid = $activity["activity_id"];
  
+
+
 ?>
  
         <div class="col-12 col-md-4 full-card">
@@ -80,7 +83,63 @@ foreach($activities as $activity) { // DEBUT DE LE BOUCLE
   <div class="card-body">
     <h5 class="card-title"><?php echo utf8_encode ($activity["activity_name"])?></h5>
     <p class="card-text"><?php echo utf8_encode ($activity["activity_description"])?></p>
-    <a href="#" class="favori"><i class="far fa-heart"></i></a>
+    
+    
+ 
+
+    <?php 
+
+
+
+// si le user est logué, je vais checker si l'activité dans laquelle je me trouve est dans ses favoris
+
+    if(isset($_SESSION["user"])) { // s'il est logué, je vais faire une query dans la table favorites
+
+      $userid = $_SESSION["userid"];
+
+
+      $sql2 = "SELECT * FROM favorites WHERE activity_id = '$activityid' AND user_token = '$userid'";
+      $results = $conn->query($sql2);
+      $rowcount=mysqli_num_rows($results);
+
+      if ($rowcount > 0) { //si le resultat = 1, ca veut dire que cette activité est dans les favoris du user, on lui met un lien pour supprimer de ses favoris
+
+
+        echo ' <a href="inc/remove-from-favorites.php?activity_id='.$activity["activity_id"].'" class="favori"><i class="fas fa-heart redheart" title="Retirer des favoris"></i></a>';
+
+      } else  { // sinon, ca veut dire que ce n'est pas dans ses favoris, on lui met un lien ajouter dans favoris
+
+        echo ' <a href="inc/add-to-favorites.php?activity_id='.$activity["activity_id"].'" class="favori"><i class="fas fa-heart grayheart" title="Ajouter aux favoris"></i></a>';
+
+      }
+
+
+
+
+    } else { // s'il n'est pas logué, on lui affiche lien pour se connecter
+
+    echo ' <a href="#" data-toggle="modal" data-target="#exampleModal" class="favori"><i class="fas fa-heart grayheart" title="Vous devez être connecté"></i></a>';
+
+    } // affiche lien pour se connecter
+
+
+?>
+
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <button type="button" class="btn btn-light">Je m'inscris</button>
   </div>
 
 </div> <!-- FIN DU CARD-BODY -->
