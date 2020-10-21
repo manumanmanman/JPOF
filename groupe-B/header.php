@@ -36,4 +36,9 @@
     </ul>
     
   </div>
+
+<button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal" href="connexion.php">Connexion</button>
+<button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal" href="#">Inscription</button>
+
 </nav>
+
