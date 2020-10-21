@@ -21,6 +21,12 @@
 </ul>
 
 <div class="heff-footer">Haute Ecole Francisco Ferrer</div>
+
+
+
+
+
+
 </footer>
 
 
