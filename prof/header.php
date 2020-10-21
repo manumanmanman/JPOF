@@ -45,7 +45,7 @@
 
     echo '<a class="nav-link ml-5" href="href="register.php"  data-toggle="modal" data-target="#exampleModal">Inscription - Connexion</a>';
 
-  }
+  } // si n'est pas logué
   
   
    ?>

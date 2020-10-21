@@ -17,7 +17,8 @@ $activities = $conn->query($sql);
 foreach ($activities as $activity) {    // Début de la boucle
 
     $datevent = strtotime( $activity['activity_date'] );
-    $datevent = strftime("%A %d %B %G ", $datevent );
+    // $datevent = utf8_encode(strftime("%A %d %B %G ", $datevent ));
+    $datevent = (strftime("%A %d %B %G ", $datevent ));
 
     $heuredebut = strtotime( $activity['activity_start'] );
     $heuredebut = strftime("%Hh%M", $heuredebut);
@@ -26,9 +27,10 @@ foreach ($activities as $activity) {    // Début de la boucle
     $heurefin = strftime("%Hh%M", $heurefin);
 
     $activityid = $activity["activity_id"];
-$userid = $_SESSION["userid"];
+    $userid = $_SESSION["userid"];
+
     ?>
-            <div id="id_<?php echo $activity["activity_id"]; ?>" class="col-lg-6 card-entier <?php echo $activity["category_slug"]; ?>">
+            <div id="id_<?php echo $activityid ; ?>" class="col-lg-6 card-entier <?php echo $activity["category_slug"]; ?>">
               
                     <div class="cartes row">
                     <div class="carte card-left col-6">
@@ -36,62 +38,60 @@ $userid = $_SESSION["userid"];
                         <h2><?php echo utf8_encode($activity["category_name"]); ?></h2>
                     </div>
                     <div class="col-6 carte card-right">
-                        <h1><?php echo utf8_encode($activity["activity_name"]); ?></h1>
+                        <h1><?php echo utf8_encode($activity["activity_name"]); ?> - avec id: <?php echo $activity["activity_id"]; ?></h1>
                         <h4>Le <?php echo $datevent; ?> <br>
                         de <?php echo $heuredebut; ?> à <?php echo $heurefin; ?></h4>
-
-                        <!-- on check si l'utilisateur est logué, 
-                        SI oui -->
-                        <?php if(isset($_SESSION["user"])) { 
-
-// echo $activityid." - ".$userid;
-
-                            
-                        //  on check si l'activité est déjà dans ses favoris 
-                        $sql2 = "SELECT * FROM favorites WHERE activity_id = '$activityid'";
-                        $results = $conn->query($sql2); 
-                        $rowcount=mysqli_num_rows($results); 
-
-                          
-
                        
-
-                            //   echo $result["actvity_id"];
-                            // echo "ok";
-
-                            if ($rowcount == 1){
-
-                                echo ' <a class= "coeur" href="inc/remove-from-favorites.php?activity_id='.$activity["activity_id"].'"><img src="img/image-coeur-png-1.png" title="Retirer des favoris"></a>';
-
-
-                        } else {
-
-                                echo '<a class= "coeur" href="inc/add-to-favorites.php?activity_id='.$activity["activity_id"].'"><img src="img/image-coeur-png-blanc.png" title="Ajouter aux favoris"></a>';
-                        }
+                       
+                            <?php 
                             
+                            // si le user est logué, je vais checker si l'activité dans laquelle je me trouve est dans ses favoris
 
-                         
-                           
+                            if(isset($_SESSION["user"])){
+                                                 // s'il est logué, je vais faire une query dans la table favorites
+                                                $sql2 = "SELECT * FROM favorites WHERE activity_id = '$activityid' AND user_token = '$userid '";
+                                                $results = $conn->query($sql2); 
+                                                $rowcount=mysqli_num_rows($results); 
+                                                echo ' <div class="coeur">';
+                                                if ($rowcount > 0) { // si le résultat = 1, ça veut dire que cette activité est dans les favors du user, et donc on lui met un lien pour le SUPPRIMER de ses favoris
+
+                                                    // echo ' <a class= "coeur remove" href="inc/remove-from-favorites.php?activity_id='.$activity["activity_id"].'"><img src="img/image-coeur-png-1.png" title="Retirer des favoris"></a>';
+                                                    echo ' <a class="remove" href="#" data-activity="'.$activity["activity_id"].'"><img src="img/image-coeur-png-1.png" title="Retirer des favoris"></a>';
+
+
+                                                } else { // sinon, ça veut dire que ce n'est pas dans ses favoris, et donc on lui met un lien pour l'AJOUTER dans ses favoris
+
+                                                    // echo '<a class= "coeur add" href="inc/add-to-favorites.php?activity_id='.$activity["activity_id"].'"><img src="img/image-coeur-png-blanc.png" title="Ajouter aux favoris"></a>';
+                                                    echo '<a class="add" href="#" data-activity="'.$activity["activity_id"].'"><img src="img/image-coeur-png-blanc.png" title="Ajouter aux favoris"></a>';
+                                                }
+                                
+                                                echo '</div>';
+
+
+                            } else { // s'il n'est pas logué, on lui affiche le lien pour se connecter
+
+                            echo '<a class= "coeur" href="#"  data-toggle="modal" data-target="#exampleModal"><img src="img/image-coeur-png-blanc.png" title="Vous devez être connecté afin d\'ajouter l\'activité à vos favoris"></a>';
+
+                            } // affichage lein pour se connecter
                             
-                        //        
+                            
+                            
                             ?>
-
                             
 
-                                    
 
 
 
-                                <!-- si oui, on lui permet de le retirer des favoris (et on met le coeur rouge = est déjà dans favoris) -->
-                                <?php ?>
-                                   
+
+
+
+
+
                         
+               
                             
-                        <!-- SI NON, il n'est pas logué, on lui propose de se loguer/enregister -->
-                        <?php } else { ?>
-                            <a class= "coeur" href="#"  data-toggle="modal" data-target="#exampleModal"><img src="img/image-coeur-png-blanc.png" alt="coeur"></a>
 
-                        <?php } ?>
+            
 
                         
 
