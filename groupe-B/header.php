@@ -3,10 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>page-web-type</title>
+	<title>JPOF</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="scss/style.css" rel="stylesheet" type="text/css">
 </head>
+
+
 <body>
  <div id="resolution"></div> <!-- barre pour les tailles écrans -->
  
@@ -34,11 +36,31 @@
         <a class="nav-link" href="conferenciers.php">Profil</a>
       </li>
     </ul>
-    
+
+
+    <?php 
+  
+  session_start();  
+
+  // si l'utilisateur est logué (la session existe, çàd dire que $_SESSION["user"] existe, il est ISSET) alors on affiche son nom, son id et un lien LOGOUT
+  if (isset($_SESSION["user"])) {
+
+    echo "<p>username:  <b> ".$_SESSION["user"]."</b>";
+    echo " user id:  <b> ".$_SESSION["userid"]."</b>";
+    echo ' - <a href="inc/logout.inc.php">logout</a></P>';
+
+    // s'il n'est pas logué, on affiche le lien pour se loguer
+  } else {
+
+    echo '<a class="nav-link ml-5" href="href="register.php"  data-toggle="modal" data-target="#exampleModal">Inscription - Connexion</a>';
+
+  } // si n'est pas logué
+  
+  
+   ?>
+
   </div>
-
-<button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal" href="connexion.php">Connexion</button>
-<button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal" href="#">Inscription</button>
-
+<!-- <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal" href="register.php">Connexion</button>
+<button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal" href="#">Inscription</button>  -->
 </nav>
 

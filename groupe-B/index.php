@@ -11,6 +11,7 @@
       <h3>Jeu, 7 mai, 08:00</h3>
     <p class="text-justify">Circuit rentable</p>
     <button type="button" class="btn btn-outline-dark w-50">Je m'inscris</button>
+    <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#">Ajouter aux favoris</a>
     </div>
   </div>
     </div>
@@ -21,6 +22,7 @@
       <h3>Mer, 24 avril, 16:45</h3>
     <p class="text-justify">Créer ton circuit!</p>
     <button type="button" class="btn btn-outline-dark w-50">Je m'inscris</button>
+    <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#">Ajouter aux favoris</a>
     </div>
   </div>
     </div>
@@ -31,6 +33,7 @@
       <h3>Jeu, 24 mai, 14:00</h3>
     <p class="text-justify">Art du dessin: L'abstrait</p>
     <button type="button" class="btn btn-outline-dark w-50">Je m'inscris</button>
+    <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#">Ajouter aux favoris</a>
     </div>
   </div>
     </div>
