@@ -16,48 +16,75 @@
   width: 30%;
 }
 
-.card-entier.pedagogique .cartes .card-left h2 {
+body {
+  background-image: url(../img/background-bas-bas.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+nav {
+  background-image: url(../img/background-top.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.activite {
+  margin: auto;
+  font-family: 'Segoe', sans-serif;
+  color: #3d3d3d;
+  text-align: center;
+}
+
+.divactivite1 {
+  margin-bottom: 100px;
+}
+
+.divactivite1 .row {
+  margin-top: 60px;
+}
+
+.divactivite1 .row .card-entier.pedagogique .cartes .card-left h2 {
   background-color: #1393CC;
   color: white;
 }
 
-.card-entier.technique .cartes .card-left h2 {
+.divactivite1 .row .card-entier.technique .cartes .card-left h2 {
   background-color: #956187;
 }
 
-.card-entier.paramedical .cartes .card-left h2 {
+.divactivite1 .row .card-entier.paramedical .cartes .card-left h2 {
   background-color: #DB1B0E;
 }
 
-.card-entier.artsappliques .cartes .card-left h2 {
+.divactivite1 .row .card-entier.artsappliques .cartes .card-left h2 {
   background-color: #74B626;
 }
 
-.card-entier.economiquesocial .cartes .card-left h2 {
+.divactivite1 .row .card-entier.economiquesocial .cartes .card-left h2 {
   background-color: #F59500;
 }
 
-.card-entier .cartes {
-  margin-bottom: 15px;
+.divactivite1 .row .card-entier .cartes {
   min-height: 275px;
   margin-right: 0px;
 }
 
-.card-entier .cartes .card-left {
+.divactivite1 .row .card-entier .cartes .card-left {
   position: relative;
   padding-right: 0;
   padding-left: 0;
   min-height: 250px;
 }
 
-.card-entier .cartes .card-left img {
+.divactivite1 .row .card-entier .cartes .card-left img {
   width: 100%;
   height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.card-entier .cartes .card-left h2 {
+.divactivite1 .row .card-entier .cartes .card-left h2 {
   position: absolute;
   top: 0;
   left: 0px;
@@ -72,48 +99,48 @@
   min-width: 170px;
 }
 
-.card-entier .cartes .card-right {
+.divactivite1 .row .card-entier .cartes .card-right {
   position: relative;
   background-color: #f7f7f7;
   padding: 10px;
 }
 
-.card-entier .cartes .card-right h1 {
+.divactivite1 .row .card-entier .cartes .card-right h1 {
   font-size: 22px;
 }
 
-.card-entier .cartes .card-right h4 {
+.divactivite1 .row .card-entier .cartes .card-right h4 {
   font-size: 17px;
   font-weight: 400;
 }
 
-.card-entier .cartes .card-right .coeur {
+.divactivite1 .row .card-entier .cartes .card-right .coeur {
   position: absolute;
   right: 10px;
   top: 15px;
 }
 
-.card-entier .cartes .card-right .coeur img {
+.divactivite1 .row .card-entier .cartes .card-right .coeur img {
   width: 35px;
   height: auto;
 }
 
-.card-entier .cartes .card-right p {
+.divactivite1 .row .card-entier .cartes .card-right p {
   font-size: 15px;
 }
 
-.card-entier .cartes .card-right span {
+.divactivite1 .row .card-entier .cartes .card-right span {
   margin-top: 40px;
   font-size: 14px;
 }
 
-.card-entier .cartes .card-right h5 {
+.divactivite1 .row .card-entier .cartes .card-right h5 {
   font-size: 14px;
   padding-top: 10px;
   font-weight: 400;
 }
 
-.card-entier .cartes .card-right .inscription {
+.divactivite1 .row .card-entier .cartes .card-right .inscription {
   font-size: 14px;
   position: absolute;
   right: 15px;
@@ -123,10 +150,159 @@
   border-radius: 0%;
 }
 
-.card-entier .cartes .card-right .inscription:hover {
+.divactivite1 .row .card-entier .cartes .card-right .inscription:hover {
   background-color: #28a745 !important;
   color: white;
   border: 1px solid #28a745;
+}
+
+.divactivite2 {
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  background-color: white;
+}
+
+.divactivite2 .container .row {
+  margin-top: 60px;
+}
+
+.divactivite2 .container .row .activite {
+  margin-top: 120px;
+}
+
+.divactivite2 .container .row .card-entier.pedagogique .cartes .card-left h2 {
+  background-color: #1393CC;
+  color: white;
+}
+
+.divactivite2 .container .row .card-entier.technique .cartes .card-left h2 {
+  background-color: #956187;
+}
+
+.divactivite2 .container .row .card-entier.paramedical .cartes .card-left h2 {
+  background-color: #DB1B0E;
+}
+
+.divactivite2 .container .row .card-entier.artsappliques .cartes .card-left h2 {
+  background-color: #74B626;
+}
+
+.divactivite2 .container .row .card-entier.economiquesocial .cartes .card-left h2 {
+  background-color: #F59500;
+}
+
+.divactivite2 .container .row .card-entier .cartes {
+  min-height: 275px;
+  margin-right: 0px;
+}
+
+.divactivite2 .container .row .card-entier .cartes .card-left {
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+  min-height: 250px;
+}
+
+.divactivite2 .container .row .card-entier .cartes .card-left img {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.divactivite2 .container .row .card-entier .cartes .card-left h2 {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background-color: #956187;
+  color: white;
+  font-size: 15px;
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  text-align: center;
+  min-width: 170px;
+}
+
+.divactivite2 .container .row .card-entier .cartes .card-right {
+  position: relative;
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+
+.divactivite2 .container .row .card-entier .cartes .card-right h1 {
+  font-size: 22px;
+}
+
+.divactivite2 .container .row .card-entier .cartes .card-right h4 {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.divactivite2 .container .row .card-entier .cartes .card-right .coeur {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.divactivite2 .container .row .card-entier .cartes .card-right .coeur img {
+  width: 35px;
+  height: auto;
+}
+
+.divactivite2 .container .row .card-entier .cartes .card-right p {
+  font-size: 15px;
+}
+
+.divactivite2 .container .row .card-entier .cartes .card-right span {
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.divactivite2 .container .row .card-entier .cartes .card-right h5 {
+  font-size: 14px;
+  padding-top: 10px;
+  font-weight: 400;
+}
+
+.divactivite2 .container .row .card-entier .cartes .card-right .inscription {
+  font-size: 14px;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  background-color: #f7f7f7;
+  color: black;
+  border-radius: 0%;
+}
+
+.divactivite2 .container .row .card-entier .cartes .card-right .inscription:hover {
+  background-color: #28a745 !important;
+  color: white;
+  border: 1px solid #28a745;
+}
+
+.footer {
+  background-color: #505050;
+  margin-top: 90px;
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+}
+
+.footer .container {
+  padding-top: 90px;
+  color: white;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+.footer .container .row .col-3 a {
+  color: white !important;
+  text-decoration: none;
+}
+
+.footer .container .row .col-3 h2 {
+  font-size: 20px;
 }
 
 #screensize {
