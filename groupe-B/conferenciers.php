@@ -1,5 +1,10 @@
-<?php include('header.php');?>
+<?php require "header.php";?>
 
-	Conferenciers
+<div class="container">
 
-<?php include('footer.php');?>
+
+
+
+</div> <!--container-->
+
+<?php require "footer.php";?>
