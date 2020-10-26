@@ -12,32 +12,25 @@ $eventid = $_SESSION["eventid"];
 
 <?php 
 
-// echo "<h1>".$eventid."</h1>";
-
-// 2) on va chercher tous les speakers qui sont dans les activités de l'événement actif. 
-$sql = " SELECT DISTINCT activity_speaker FROM activities 
-
-LEFT JOIN speakers ON activities.activity_speaker = speakers.speaker_id
-WHERE activities.event_id = '$eventid'";
-$speakersid = $conn->query($sql);
-foreach ($speakersid as $speakerid) {
-
-    // 3) on récupère l'id du speaker  (il n'y aura pas de doublons car on a fait une query DISTINCT)
-   $activity_speaker= $speakerid["activity_speaker"];
 
 
-
-
-
-// 4) pendant qu'on est dans la boucle des speakers qui sont dans les événements actifs, on va récupérer le reste des infos du speaker sur base de don id $activity_speaker qu'on a récupéré à l'étape suivante
-// boucle 
-$sql = " SELECT * FROM speakers WHERE speaker_id = '$activity_speaker'";
+// 2) on va chercher tous les conférenciers
+$sql = " SELECT * FROM speakers ORDER BY  'speaker_name'";
 $speakers = $conn->query($sql);
 
 
-// 5) pour chaque speaker on va afficher les infos dans une div .conferencier
+// 3) pour chaque conferencier on récupère son id
 foreach ($speakers as $speaker) {
 
+        $speakerid= $speaker["speaker_id"]; // on stocke son id dans $speakerid
+
+        //4) puis on vérifie si son id est bien présent dans les activités qui font partie de l'événement actif
+        $sql = " SELECT * FROM activities WHERE activity_speaker = '$speakerid' AND event_id = '$eventid'";
+        $results = $conn->query($sql); 
+        $rowcount=mysqli_num_rows($results); 
+
+        // 5) s'il y a un résultat, on l'affiche !
+        if ($rowcount > 0) {
 
     
 ?>
@@ -59,11 +52,13 @@ foreach ($speakers as $speaker) {
 </div> <!-- conferencier -->
 
 
-<?php // fin de boucle 
+<?php 
 
-}
 
-} // for each DISTINCT  activity_speaker FROM activities 
+
+        } // if ($rowcount > 0)
+
+} // for each  foreach ($speakers as $speaker) 
 ?>
 
 </div> <!-- row -->

@@ -20,6 +20,7 @@ foreach ($events as $event) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="scss/style.css">
     <title></title>
 </head>

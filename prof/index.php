@@ -22,7 +22,7 @@ $sql = " SELECT * FROM activities
           LEFT JOIN buildings ON activities.building_id = buildings.building_id
           LEFT JOIN categories ON activities.category_id = categories.category_id
           LEFT JOIN speakers ON activities.activity_speaker = speakers.speaker_id
-          WHERE activities.event_id = '$eventid ';
+          WHERE activities.event_id = '$eventid';
 ";
 $activities = $conn->query($sql);
 foreach ($activities as $activity) {    // Début de la boucle
