@@ -25,13 +25,13 @@
         <a class="nav-link" href="index.php">Accueil<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="activites.php">Evénements</a>
+        <a class="nav-link" href="conferenciers.php">Conférenciers</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="favoris.php">Favoris</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="conferenciers.php">Profil</a>
+        <a class="nav-link" href="#">Profil</a>
       </li>
     </ul>
     

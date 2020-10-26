@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+body {
+  background-color: red;
+}
+
+.bg-white {
+  height: 400px;
+=======
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 0px) {
   #resolution {
@@ -48,16 +56,38 @@
   }
 }
 
+<<<<<<< HEAD
 body {
 <<<<<<< HEAD
   background-color: red;
 =======
   background-color: green;
 >>>>>>> dedd0bec95951527b535b0202aaab13abe599169
+=======
+#navbar-footer {
+  background-color: purple;
+  padding: 2rem;
+  width: 100%;
+  bottom: 0;
+}
+
+.heff-footer {
+  color: white;
+  margin-left: 80%;
+}
+
+.nav-link-footer {
+  color: white;
+}
+
+a:hover {
+  color: #807e7e;
+  text-decoration: underline;
+>>>>>>> edenmaestro
 }
 
 .bg-white {
-  height: 400px;
+>>>>>>> cdc07a7eb0e4539ff33cb234728977a3fef0363b
   display: block;
   color: white;
 }
@@ -72,6 +102,10 @@ a.navbar-brand img {
 }
 
 h1 {
+<<<<<<< HEAD
   background-color: royalblue;
+=======
+  color: #a781ff;
+>>>>>>> cdc07a7eb0e4539ff33cb234728977a3fef0363b
 }
 /*# sourceMappingURL=style.css.map */
