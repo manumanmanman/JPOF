@@ -8,6 +8,8 @@
 	<link href="scss/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+ <div id="resolution"></div> <!-- barre pour les tailles écrans -->
+ 
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -23,13 +25,13 @@
         <a class="nav-link" href="index.php">Accueil<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="activites.php">Evénements</a>
+        <a class="nav-link" href="conferenciers.php">Conférenciers</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="favoris.php">Favoris</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="conferenciers.php">Profil</a>
+        <a class="nav-link" href="#">Profil</a>
       </li>
     </ul>
     

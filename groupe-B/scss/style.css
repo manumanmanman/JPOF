@@ -1,9 +1,84 @@
+<<<<<<< HEAD
 body {
   background-color: red;
 }
 
 .bg-white {
   height: 400px;
+=======
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 0px) {
+  #resolution {
+    background-color: mediumseagreen;
+  }
+  #resolution::after {
+    content: "Small devices (landscape phones, 576px and up)";
+  }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  #resolution {
+    background-color: #7bb33c;
+  }
+  #resolution::after {
+    content: "Small devices (landscape phones, 576px and up)";
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  #resolution {
+    background-color: #787af7;
+  }
+  #resolution::after {
+    content: "Medium devices (tablets, 768px and up)";
+  }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #resolution {
+    background-color: #f52d8a;
+  }
+  #resolution::after {
+    content: "Large devices (desktops, 992px and up)";
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #resolution {
+    background-color: #e049e0;
+  }
+  #resolution::after {
+    content: "Extra large devices (large desktops, 1200px and up)";
+  }
+}
+
+#navbar-footer {
+  background-color: purple;
+  padding: 2rem;
+  width: 100%;
+  bottom: 0;
+}
+
+.heff-footer {
+  color: white;
+  margin-left: 80%;
+}
+
+.nav-link-footer {
+  color: white;
+}
+
+a:hover {
+  color: #807e7e;
+  text-decoration: underline;
+}
+
+.bg-white {
+>>>>>>> cdc07a7eb0e4539ff33cb234728977a3fef0363b
   display: block;
   color: white;
 }
@@ -18,6 +93,10 @@ a.navbar-brand img {
 }
 
 h1 {
+<<<<<<< HEAD
   background-color: royalblue;
+=======
+  color: #a781ff;
+>>>>>>> cdc07a7eb0e4539ff33cb234728977a3fef0363b
 }
 /*# sourceMappingURL=style.css.map */
