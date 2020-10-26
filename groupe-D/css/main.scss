@@ -6,15 +6,10 @@
 @import "MD";
 @import "SM";
 @import "XS";
+@import "conferenciers";
+@import "about";
+@import "activites";
+@import "contact";
+@import "footer";
+@import "detailactivite";
 
-.modal-backdrop.show {
-    opacity: 0.75;
-}
-
-.redheart {
-    color: red;
-}
-
-.grayheart {
-    color: lightgray;
-}

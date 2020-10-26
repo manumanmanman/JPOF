@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 #bienvenue{
     height: 200px;
     width: 100%;
@@ -9,14 +11,12 @@
         vertical-align: middle;
         line-height: 200px;
         color: white;
+        
     }
 }
 
-
-
-
 .carre {
-    width: 150px;
+    width: 180px;
     height: 150px;
     margin: auto;
     margin-top: -75px;
@@ -40,13 +40,11 @@
 }
 
 
-
-
-   .far , .fas{
+.far , .fas{
        color: rgb(255, 255, 255);
       
-   }
-   
+}
+
 }
 .full-card {
     margin-bottom: 15px;
@@ -58,9 +56,13 @@
 
     
 
-    li {
+ li {
        text-transform: uppercase;
         font-weight: 600;
+        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'Roboto', sans-serif;
 
         .mauve {
             color:$purple
@@ -77,12 +79,28 @@
         .vert {
             color:$green
         }
+        .black {
+            color:rgb(27, 27, 27)
+        }
+
 
         &:hover {
-            border-bottom: solid 2px black;
+            border-bottom: solid 1.5px black;
         }
        
     } 
     //fin li
 }
 //fin nav-cat
+
+.modal-backdrop.show {
+    opacity: 0.75;
+}
+
+.redheart {
+    color: red;
+}
+
+.grayheart {
+    color: lightgray;
+}

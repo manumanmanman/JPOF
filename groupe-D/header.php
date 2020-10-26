@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/main.css">
     <title>JPOF SARAH</title>
 </head>
@@ -29,19 +29,22 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav mx-auto">
-    <li class="nav-item active">
-        <a class="nav-link" href="#"><img src="img/heff_logo.png" alt=""></a>
+    <li class="nav-item">
+        <img src="img/heff_logo.png" alt="">
       </li>
-      <li class="nav-item active">
+      <li class="nav-item <?php if($page == "accueil"){echo "active";} ?>">
+        <a class="nav-link" href="index.php">Accueil</a>
+      </li>
+      <li class="nav-item <?php if($page == "activites"){echo "active";} ?>">
         <a class="nav-link" href="activites.php">Activités</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?php if($page == "conferenciers"){echo "active";} ?>">
         <a class="nav-link" href="conferenciers.php">Conférenciers</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?php if($page == "apropos"){echo "active";} ?>">
         <a class="nav-link" href="about.php">A propos</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?php if($page == "contact"){echo "active";} ?>">
         <a class="nav-link" href="contact.php">Contact</a>
       </li>
     </ul>

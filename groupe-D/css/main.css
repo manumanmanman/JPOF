@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 nav img {
   height: 20px;
   width: auto;
@@ -18,7 +19,7 @@ nav img {
 }
 
 .carre {
-  width: 150px;
+  width: 180px;
   height: 150px;
   margin: auto;
   margin-top: -75px;
@@ -38,7 +39,7 @@ nav img {
 }
 
 .carre.technique {
-  background-color: #956187;
+  background-color: #721459;
 }
 
 .carre.pedagogique {
@@ -62,10 +63,14 @@ nav img {
 .nav-cat li {
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .nav-cat li .mauve {
-  color: #956187;
+  color: #721459;
 }
 
 .nav-cat li .orange {
@@ -84,8 +89,24 @@ nav img {
   color: #74B626;
 }
 
+.nav-cat li .black {
+  color: #1b1b1b;
+}
+
 .nav-cat li:hover {
-  border-bottom: solid 2px black;
+  border-bottom: solid 1.5px black;
+}
+
+.modal-backdrop.show {
+  opacity: 0.75;
+}
+
+.redheart {
+  color: red;
+}
+
+.grayheart {
+  color: lightgray;
 }
 
 #screensize {
@@ -141,15 +162,23 @@ nav img {
   }
 }
 
-.modal-backdrop.show {
-  opacity: 0.75;
+.conferencier .left img {
+  width: 100%;
 }
 
-.redheart {
-  color: red;
+.detail {
+  width: 400px;
+  height: 120px;
+  margin: 0;
+  margin-top: 20px;
 }
 
-.grayheart {
-  color: lightgray;
+.card-img-detail {
+  width: 400px;
+  height: auto;
+}
+
+.card-title-detail {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */

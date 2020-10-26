@@ -1,83 +1,60 @@
-
 <?php 
-$page = 'accueil';
-require("header.php");
+$page = 'activites';
+$activityid = $_GET["activityid"];
+require "header.php" ;
+
+date_default_timezone_set("Europe/Brussels");
+setlocale(LC_TIME, "fr_FR"); 
+
+$sql = " SELECT * FROM activities
+          LEFT JOIN rooms ON activities.room_id = rooms.room_id
+          LEFT JOIN buildings ON activities.building_id = buildings.building_id
+          LEFT JOIN categories ON activities.category_id = categories.category_id
+          LEFT JOIN speakers ON activities.activity_speaker = speakers.speaker_id
+
+          WHERE activities.activity_id = '$activityid '
+      ";
+
+
+$activities = $conn->query($sql);
+foreach ($activities as $activity) {    // Début de la boucle
+
+    $datevent = strtotime( $activity['activity_date'] );
+    // $datevent = utf8_encode(strftime("%A %d %B %G ", $datevent ));
+    $datevent = (strftime("%A %d %B %G ", $datevent ));
+
+    $heuredebut = strtotime( $activity['activity_start'] );
+    $heuredebut = strftime("%Hh%M", $heuredebut);
+
+    $heurefin = strtotime( $activity['activity_end'] );
+    $heurefin = strftime("%Hh%M", $heurefin);
+
+    $activityid = $activity["activity_id"];
+
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
+
+    if (isset($_SESSION["userid"])) {
+        $userid = $_SESSION["userid"];
+    }
+    
+
+
 ?>
-
-<div id="bienvenue">
-<h1>Bienvenue</h1>
-</div>
-
-
-
-<nav class="navbar navbar-expand-lg justify-content-center nav-cat">
-  
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav mx-auto">
-    <li class="nav-item active">
-        <a class="nav-link black" href="#"> Toutes les activités</a>
-      </li>
-    <li class="nav-item active">
-        <a class="nav-link mauve" href="#"> Technique</a>
-      </li>
-    <li class="nav-item active">
-        <a class="nav-link orange" href="#"> Economique et Social</a>
-      </li>
-    <li class="nav-item active">
-        <a class="nav-link rouge" href="#"> Paramédical</a>
-      </li>
-    <li class="nav-item active">
-        <a class="nav-link vert" href="#"> Arts Appliqués</a>
-      </li>
-    <li class="nav-item active">
-        <a class="nav-link bleu" href="#"> Pédagogique</a>
-      </li>
-      
-    </ul>
-  </div>
-</nav>
-
 
 
 
 
 <div class="container">
- <div class="row">
-
-<!-- COMMENCER MA BOUCLE  -->
-<?php 
-
-date_default_timezone_set("Europe/Brussels");
-setlocale(LC_TIME, "fr_FR"); 
-
-$page = 'accueil';
-
-$sql = "SELECT * FROM activities
-        LEFT JOIN rooms ON activities.room_id = rooms.room_id
-        LEFT JOIN buildings ON activities.building_id = buildings.building_id
-        LEFT JOIN categories ON activities.category_id = categories.category_id
-        LEFT JOIN speakers ON activities.activity_speaker = speakers.speaker_id";
-
-
-
-$activities = $conn->query($sql);
-
-foreach($activities as $activity) { // DEBUT DE LE BOUCLE
-
-  $activityid = $activity["activity_id"];
  
 
 
-?>
  
-        <div class="col-12 col-md-4 full-card">
-        <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/activites.jpg " alt="Card image cap">
+        
+        <img class="card-img-detail" src="img/activites.jpg " alt="Card image cap">
 
-    <div class="carre <?php echo $activity["category_slug"]?>">
+    <div class="carre detail <?php echo $activity["category_slug"]?>">
     <i class="far fa-bookmark">  <?php echo utf8_encode ($activity["category_name"])?></i> <br>
     <i class="far fa-calendar-alt">   <?php echo utf8_encode ($activity["activity_date"])?></i> <br>
     <i class="fas fa-map-marker-alt"> <?php echo utf8_encode ($activity["building_name"])?></i> <br>
@@ -85,9 +62,9 @@ foreach($activities as $activity) { // DEBUT DE LE BOUCLE
 
     </div>  <!-- FIN DU CARE -->
 
-  <div class="card-body">
-    <h5 class="card-title"> <a href="detail-activite.php?activityid=<?php echo $activity["activity_id"];?>"> 
-    <?php echo utf8_encode ($activity["activity_name"]);?></a></h5>
+  
+    <h5 class="card-title-detail"> 
+    <?php echo utf8_encode ($activity["activity_name"]);?></h5>
     <p class="card-text"><?php echo utf8_encode ($activity["activity_description"])?></p>
     
     
@@ -152,25 +129,6 @@ echo '</div>';
     
   </div>
 
-</div> <!-- FIN DU CARD-BODY -->
-
-
-    
-</div> <!-- FIN DU FULL-CARD -->
-  
-<?php
-
-} 
-//  FIN DE FOREACH
-
-
-
-
-?>
-
-    
-</div>
-    <!-- row -->
 
    
 
@@ -200,4 +158,12 @@ echo utf8_encode ($activity["speaker_name"])."<hr>";
 
 
 
-<?php include("footer.php");?>
+
+
+
+
+
+
+
+<?php } // foreach   fin de la boucle ?>
+<?php require "footer.php" ?>
