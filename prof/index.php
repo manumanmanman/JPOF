@@ -1,4 +1,6 @@
-<?php require "header.php" ?>
+<?php 
+$page = 'accueil';
+require "header.php" ?>
 <div class="container">
         <div class="row">
 
@@ -27,18 +29,26 @@ foreach ($activities as $activity) {    // Début de la boucle
     $heurefin = strftime("%Hh%M", $heurefin);
 
     $activityid = $activity["activity_id"];
-    $userid = $_SESSION["userid"];
+
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
+
+    if (isset($_SESSION["userid"])) {
+        $userid = $_SESSION["userid"];
+    }
+    
 
     ?>
             <div id="id_<?php echo $activityid ; ?>" class="col-lg-6 card-entier <?php echo $activity["category_slug"]; ?>">
               
                     <div class="cartes row">
                     <div class="carte card-left col-6">
-                        <img src="img/escape-room-escape-game-orleans.jpg" alt="escape-room">
+                        <img src="<?php echo $activity["activity_img"]; ?>" alt="<?php echo utf8_encode($activity["activity_name"]); ?>">
                         <h2><?php echo utf8_encode($activity["category_name"]); ?></h2>
                     </div>
                     <div class="col-6 carte card-right">
-                        <h1><?php echo utf8_encode($activity["activity_name"]); ?> - avec id: <?php echo $activity["activity_id"]; ?></h1>
+                        <h1><a href="detail-activite.php?activityid=<?php  echo $activity["activity_id"]; ?>"><?php echo utf8_encode($activity["activity_name"]); ?></a>  <?php //echo $activity["activity_id"]; ?></h1>
                         <h4>Le <?php echo $datevent; ?> <br>
                         de <?php echo $heuredebut; ?> à <?php echo $heurefin; ?></h4>
                        

@@ -1,4 +1,4 @@
-<?php require("inc/connexion.inc.php"); ?>
+<?php require("inc/connexion.inc.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,16 +16,19 @@
   </button>
   <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item mx-3">
-        <a class="nav-link" href="#">Accueil</a>
+      <li class="nav-item mx-3 <?php if($page == "accueil"){echo "active";} ?>">
+        <a class="nav-link" href="index.php">Accueil</a>
       </li>
-      <li class="nav-item mx-3">
-        <a class="nav-link" href="#">Conférenciers</a>
+      <li class="nav-item mx-3 <?php if($page == "activites"){echo "active";} ?>">
+        <a class="nav-link" href="activites.php">Activites</a>
       </li>
-      <li class="nav-item mx-3">
+      <li class="nav-item mx-3 <?php if($page == "conferenciers"){echo "active";} ?>">
+        <a class="nav-link" href="conferenciers.php" >Conférenciers</a>
+      </li>
+      <li class="nav-item mx-3 <?php if($page == "apropos"){echo "active";} ?>">
         <a class="nav-link" href="#">À propos</a>
       </li>
-      <li class="nav-item ml-3 mr-5">
+      <li class="nav-item ml-3 mr-5 <?php if($page == "contact"){echo "active";} ?>">
         <a class="nav-link" href="#">Contact</a>
       </li>
     </ul>
