@@ -1,6 +1,21 @@
-<?php require("inc/connexion.inc.php");?>
+<?php require("inc/connexion.inc.php");
+session_start();  
+
+$sql = " SELECT * FROM events WHERE event_on = '1'";
+$events = $conn->query($sql);
+foreach ($events as $event) {
+
+  $_SESSION["eventid"] = utf8_encode($event["event_id"]);
+  $_SESSION["eventname"] = utf8_encode($event["event_name"]);
+  $_SESSION["eventdate"] = utf8_encode($event["event_date"]);
+  $_SESSION["eventdescription"] = utf8_encode($event["event_description"]);
+
+
+}
+
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +49,7 @@
     </ul>
     <?php 
   
-  session_start();  
+  
 
   // si l'utilisateur est logué (la session existe, çàd dire que $_SESSION["user"] existe, il est ISSET) alors on affiche son nom, son id et un lien LOGOUT
   if (isset($_SESSION["user"])) {

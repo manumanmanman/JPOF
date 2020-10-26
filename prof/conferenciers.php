@@ -2,6 +2,9 @@
 $page = 'conferenciers';
 require "header.php" ;
 
+// 1) on récupère l'id de l'event qui est actif
+$eventid = $_SESSION["eventid"];
+
 ?>
 
 <div class="container">
@@ -9,11 +12,34 @@ require "header.php" ;
 
 <?php 
 
+// echo "<h1>".$eventid."</h1>";
+
+// 2) on va chercher tous les speakers qui sont dans les activités de l'événement actif. 
+$sql = " SELECT DISTINCT activity_speaker FROM activities 
+
+LEFT JOIN speakers ON activities.activity_speaker = speakers.speaker_id
+WHERE activities.event_id = '$eventid'";
+$speakersid = $conn->query($sql);
+foreach ($speakersid as $speakerid) {
+
+    // 3) on récupère l'id du speaker  (il n'y aura pas de doublons car on a fait une query DISTINCT)
+   $activity_speaker= $speakerid["activity_speaker"];
+
+
+
+
+
+// 4) pendant qu'on est dans la boucle des speakers qui sont dans les événements actifs, on va récupérer le reste des infos du speaker sur base de don id $activity_speaker qu'on a récupéré à l'étape suivante
 // boucle 
-$sql = " SELECT * FROM speakers";
+$sql = " SELECT * FROM speakers WHERE speaker_id = '$activity_speaker'";
 $speakers = $conn->query($sql);
+
+
+// 5) pour chaque speaker on va afficher les infos dans une div .conferencier
 foreach ($speakers as $speaker) {
 
+
+    
 ?>
 
 
@@ -36,6 +62,8 @@ foreach ($speakers as $speaker) {
 <?php // fin de boucle 
 
 }
+
+} // for each DISTINCT  activity_speaker FROM activities 
 ?>
 
 </div> <!-- row -->

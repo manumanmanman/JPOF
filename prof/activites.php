@@ -1,15 +1,9 @@
 <?php 
-$page = 'accueil';
-require "header.php";
-
-$eventid = $_SESSION["eventid"];
-
-
-?>
+$page = 'activites';
+require "header.php" ?>
 <div class="container">
-<h1>Page index.php</h1>
-<h1>Event ID: <?php echo   $_SESSION["eventid"]; ?> - Name: <?php echo   $_SESSION["eventname"]; ?> - <?php echo   $_SESSION["eventdate"]; ?></h1>
-<p><?php echo   $_SESSION["eventdescription"]; ?></p>
+
+<h1>Page activites.php</h1>
         <div class="row">
 
   <!-- commencer ma boucle -->
@@ -22,7 +16,6 @@ $sql = " SELECT * FROM activities
           LEFT JOIN buildings ON activities.building_id = buildings.building_id
           LEFT JOIN categories ON activities.category_id = categories.category_id
           LEFT JOIN speakers ON activities.activity_speaker = speakers.speaker_id
-          WHERE activities.event_id = '$eventid ';
 ";
 $activities = $conn->query($sql);
 foreach ($activities as $activity) {    // Début de la boucle
