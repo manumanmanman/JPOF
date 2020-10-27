@@ -50,7 +50,7 @@ foreach ($events as $event) {
         <a class="nav-link" href="favoris.php">Favoris</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Profil</a>
+        <a class="nav-link" href="profil.php">Profil</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="contact.php">Contact</a>
