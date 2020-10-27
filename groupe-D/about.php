@@ -1,1 +1,19 @@
-<?php include("header.php");?>
+<?php
+$page = 'apropos';
+include("header.php");?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php include("footer.php");?>

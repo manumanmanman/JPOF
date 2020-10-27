@@ -1,5 +1,184 @@
-img {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+nav img {
   height: 20px;
   width: auto;
+}
+
+#bienvenue {
+  height: 200px;
+  width: 100%;
+  background-image: url("../img/banniere-home.jpg");
+  background-size: cover;
+}
+
+#bienvenue h1 {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
+  color: white;
+}
+
+.carre {
+  width: 180px;
+  height: 150px;
+  margin: auto;
+  margin-top: -75px;
+  padding: 10px;
+}
+
+.carre.arts-appliques {
+  background-color: #74B626;
+}
+
+.carre.paramedical {
+  background-color: #DB1B0E;
+}
+
+.carre.economiquesocial {
+  background-color: #F59500;
+}
+
+.carre.technique {
+  background-color: #721459;
+}
+
+.carre.pedagogique {
+  background-color: #1393CC;
+}
+
+.carre .far, .carre .fas {
+  color: white;
+}
+
+.full-card {
+  margin-bottom: 15px;
+  min-height: 200px;
+}
+
+.nav-cat {
+  font-size: 20px;
+  margin: 15px 0px;
+}
+
+.nav-cat li {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-cat li .mauve {
+  color: #721459;
+}
+
+.nav-cat li .orange {
+  color: #F59500;
+}
+
+.nav-cat li .rouge {
+  color: #DB1B0E;
+}
+
+.nav-cat li .bleu {
+  color: #1393CC;
+}
+
+.nav-cat li .vert {
+  color: #74B626;
+}
+
+.nav-cat li .black {
+  color: #1b1b1b;
+}
+
+.nav-cat li:hover {
+  border-bottom: solid 1.5px black;
+}
+
+.modal-backdrop.show {
+  opacity: 0.75;
+}
+
+.redheart {
+  color: red;
+}
+
+.grayheart {
+  color: lightgray;
+}
+
+#screensize {
+  width: 25%;
+  height: 30px;
+  z-index: 1000;
+  position: fixed;
+  background-color: blue;
+  top: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+#screensize:after {
+  content: "XL > 1200px";
+}
+
+@media (max-width: 1199.98px) {
+  #screensize {
+    background-color: magenta;
+  }
+  #screensize:after {
+    content: "LG < 1200px";
+  }
+}
+
+@media (max-width: 991.98px) {
+  #screensize {
+    background-color: green;
+  }
+  #screensize:after {
+    content: "MD < 992px";
+  }
+}
+
+@media (max-width: 767.98px) {
+  #screensize {
+    background-color: orange;
+  }
+  #screensize:after {
+    content: "SM < 768px";
+  }
+}
+
+@media (max-width: 575.98px) {
+  #screensize {
+    background-color: red;
+  }
+  #screensize:after {
+    content: "XS < 576px";
+  }
+}
+
+.conferencier .left img {
+  width: 100%;
+}
+
+.detail {
+  width: 400px;
+  height: 120px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.card-img-detail {
+  width: 400px;
+  height: auto;
+}
+
+.card-title-detail {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */

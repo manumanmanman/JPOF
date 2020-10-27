@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+#bienvenue{
+    height: 200px;
+    width: 100%;
+    background-image: url("../img/banniere-home.jpg");
+    background-size: cover;
+    
+    h1 {
+        text-align: center;
+        vertical-align: middle;
+        line-height: 200px;
+        color: white;
+        
+    }
+}
+
+.carre {
+    width: 180px;
+    height: 150px;
+    margin: auto;
+    margin-top: -75px;
+    padding: 10px;
+
+
+&.arts-appliques {
+    background-color:$green;
+}
+&.paramedical {
+    background-color:$red;
+}
+&.economiquesocial {
+    background-color:$orange;
+}
+&.technique {
+    background-color:$purple;
+}
+&.pedagogique{
+    background-color:$blue;
+}
+
+
+.far , .fas{
+       color: rgb(255, 255, 255);
+      
+}
+
+}
+.full-card {
+    margin-bottom: 15px;
+    min-height:200px
+}
+.nav-cat {
+    font-size: 20px;
+    margin:15px 0px;
+
+    
+
+ li {
+       text-transform: uppercase;
+        font-weight: 600;
+        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'Roboto', sans-serif;
+
+        .mauve {
+            color:$purple
+        }
+        .orange {
+            color:$orange
+        }
+        .rouge {
+            color:$red
+        }
+        .bleu {
+            color:$blue
+        }
+        .vert {
+            color:$green
+        }
+        .black {
+            color:rgb(27, 27, 27)
+        }
+
+
+        &:hover {
+            border-bottom: solid 1.5px black;
+        }
+       
+    } 
+    //fin li
+}
+//fin nav-cat
+
+.modal-backdrop.show {
+    opacity: 0.75;
+}
+
+.redheart {
+    color: red;
+}
+
+.grayheart {
+    color: lightgray;
+}

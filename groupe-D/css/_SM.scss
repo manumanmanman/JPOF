@@ -1,0 +1,15 @@
+@media (max-width: 767.98px) { 
+
+
+
+   #screensize {
+       
+        background-color: orange;
+       
+      
+
+        &:after {
+            content:"SM < 768px";
+        }
+    }
+ }
