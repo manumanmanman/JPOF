@@ -14,7 +14,7 @@ $eventid = $_SESSION["eventid"];
 
 
 
-// 2) on va chercher tous les conférenciers
+// 2) on va chercher tous les conférenciers (pour pouvoir ordonner par nom de famille) puis on fait un RIGHT JOIN pour ne prendre que ceux qui sont présents dans l'activité de l'évnement actif
 $sql = " SELECT  * FROM speakers 
         RIGHT JOIN  activities ON speakers.speaker_id = activities.activity_speaker
         WHERE activities.event_id = '$eventid'
@@ -28,18 +28,11 @@ $sql = " SELECT  * FROM speakers
 $speakers = $conn->query($sql);
 
 
-// 3) pour chaque conferencier on récupère son id
+// 3) on fait la boucle
 foreach ($speakers as $speaker) {
 
         $speakerid= $speaker["speaker_id"]; // on stocke son id dans $speakerid
 
-        //4) puis on vérifie si son id est bien présent dans les activités qui font partie de l'événement actif
-        // $sql = " SELECT * FROM activities WHERE activity_speaker = '$speakerid' AND event_id = '$eventid'";
-        // $results = $conn->query($sql); 
-        // $rowcount=mysqli_num_rows($results); 
-
-        // // 5) s'il y a un résultat, on l'affiche !
-        // if ($rowcount > 0) {
 
     
 ?>
@@ -62,10 +55,6 @@ foreach ($speakers as $speaker) {
 
 
 <?php 
-
-
-
-        // } // if ($rowcount > 0)
 
 } // for each  foreach ($speakers as $speaker) 
 ?>
