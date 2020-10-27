@@ -6,6 +6,7 @@
 
 
 
+@import "main";  
 @import "XL";  
 @import "LG";  
 @import "MD";  
@@ -14,11 +15,3 @@
 
 
 
-// .modal-backdrop {
-
-//     background-color: red;
-// }
-
-.modal-backdrop.show {
-    opacity: 0.75;
-}

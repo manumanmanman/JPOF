@@ -1,0 +1,26 @@
+html {
+    font-size: 62.5% ;
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+h3 {
+    color:green;
+   
+}
+
+h4{
+
+    color: red;
+}
+
+// .modal-backdrop {
+
+//     background-color: red;
+// }
+
+.modal-backdrop.show {
+    opacity: 0.75;
+}

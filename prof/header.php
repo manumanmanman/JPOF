@@ -47,27 +47,25 @@ foreach ($events as $event) {
       <li class="nav-item ml-3 mr-5 <?php if($page == "contact"){echo "active";} ?>">
         <a class="nav-link" href="contact.php">Contact</a>
       </li>
-    </ul>
-    <?php 
-  
-  
+      <?php 
+          // si l'utilisateur est logué (la session existe, çàd dire que $_SESSION["user"] existe, il est ISSET) alors on affiche son nom, son id et un lien LOGOUT
+        if (isset($_SESSION["user"])) {
 
-  // si l'utilisateur est logué (la session existe, çàd dire que $_SESSION["user"] existe, il est ISSET) alors on affiche son nom, son id et un lien LOGOUT
-  if (isset($_SESSION["user"])) {
+          echo '<li class="nav-item mx-3" ><a class="nav-link" href="mon-profil.php"><b> '.$_SESSION["user"].'</a></li>';
+          // echo " user id:  <b> ".$_SESSION["userid"]."</b>";
+          echo ' <li class="nav-item mx-3" ><a class="nav-link" href="inc/logout.inc.php">logout</a></li>';
 
-    echo "<p>username:  <b> ".$_SESSION["user"]."</b>";
-    echo " user id:  <b> ".$_SESSION["userid"]."</b>";
-    echo ' - <a href="inc/logout.inc.php">logout</a></P>';
+          // s'il n'est pas logué, on affiche le lien pour se loguer
+        } else {
 
-    // s'il n'est pas logué, on affiche le lien pour se loguer
-  } else {
+          echo '<li class="nav-item mx-3" ><a class="nav-link ml-5" href="href="register.php"  data-toggle="modal" data-target="#exampleModal">Inscription - Connexion</a></li>';
 
-    echo '<a class="nav-link ml-5" href="href="register.php"  data-toggle="modal" data-target="#exampleModal">Inscription - Connexion</a>';
-
-  } // si n'est pas logué
+        } // si n'est pas logué
   
   
    ?>
+    </ul>
+
 
 
     

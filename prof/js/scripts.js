@@ -37,7 +37,10 @@ $( document ).ready(function() {
            success : function(data){ //  contient le HTML renvoyé
             
             
-            $(coeurparent).html(data);  
+            // $(coeurparent).html(data); 
+            $(coeurparent).children().removeClass("remove").addClass("add");   
+            $(coeurparent).children().children().attr("fill","gray");   
+          
             
         
            
@@ -46,7 +49,7 @@ $( document ).ready(function() {
        
        
        }); // $.ajax function
-
+      //  $(this).find(".bi-heart-fill").attr("fill","gray");
 
     }); // click
 
@@ -58,6 +61,7 @@ $( document ).ready(function() {
         var activityid = $(this).attr('data-activity');
         console.log("add: "+activityid) ;
         var coeurparent =  $(this).parent();
+        // var current = $(this).find(".bi-heart-fill");
 
         $.ajax({
             // 1) on définit le fichier vers lequel on envoye la requête POST
@@ -69,6 +73,7 @@ $( document ).ready(function() {
         // 3) on définit les variables POST qui sont ennvoyées au fichier .php qui les récupère sous forme de $_POST["nom"] 
           data : { 
             activity_id: activityid
+           
                 }, // On fait passer nos variables au script coucou.php
          
          // 4) format de retour du fichier php dans "data"
@@ -77,16 +82,22 @@ $( document ).ready(function() {
            // 5) fonction à effectuer en cas de succès
            success : function(data){ //  contient le HTML renvoyé
             
+            //var myVar = $(this).find('.bi-heart-fill');
+            // $(coeurparent).html(data);   
+            $(coeurparent).children().removeClass("add").addClass("remove");   
+            $(coeurparent).children().children().attr("fill","red");   
             
-            $(coeurparent).html(data);   
-            // $(current).hide();
         
            
            
            } // success
+
+           
        
        
        }); // $.ajax function
+
+      //  $(this).find(".bi-heart-fill").attr("fill","red");
 
 
     }); // click

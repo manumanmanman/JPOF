@@ -49,7 +49,7 @@ foreach ($activities as $activity) {    // Début de la boucle
     
 
     ?>
-            <div id="id_<?php echo $activityid ; ?>" class="col-lg-6 card-entier <?php echo $activity["category_slug"]; ?>">
+            <div id="id_<?php echo $activityid ; ?>" class="col-lg-6 card-entier <?php echo $activity["category_slug"]; ?> campus_<?php echo $activity["building_id"]; ?>">
               
                     <div class="cartes row">
                     <div class="carte card-left col-6">
@@ -71,20 +71,23 @@ foreach ($activities as $activity) {    // Début de la boucle
                                                 $sql2 = "SELECT * FROM favorites WHERE activity_id = '$activityid' AND user_token = '$userid '";
                                                 $results = $conn->query($sql2); 
                                                 $rowcount=mysqli_num_rows($results); 
-                                                echo ' <div class="coeur">';
-                                                if ($rowcount > 0) { // si le résultat = 1, ça veut dire que cette activité est dans les favors du user, et donc on lui met un lien pour le SUPPRIMER de ses favoris
+                                                if ($rowcount > 0) {
+                                                $inscrit = "inscrit"; 
+                                                } else { $inscrit = "pas inscrit";}
+                                                echo ' <div class="coeur">';?>
+                                                <a class="<?php if($inscrit == "inscrit"){echo "remove";} else {echo "add";} ?>" href="#" data-activity="<?php echo $activity["activity_id"]; ?>">
+                                               
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="<?php if($inscrit == "inscrit"){echo "red";} else {echo "gray";} ?>" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                                  </svg>
 
-                                                    // echo ' <a class= "coeur remove" href="inc/remove-from-favorites.php?activity_id='.$activity["activity_id"].'"><img src="img/image-coeur-png-1.png" title="Retirer des favoris"></a>';
-                                                    echo ' <a class="remove" href="#" data-activity="'.$activity["activity_id"].'"><img src="img/image-coeur-png-1.png" title="Retirer des favoris"></a>';
+                                                 <?php //echo $inscrit; ?>
+                                                
+                                                </a>
 
-
-                                                } else { // sinon, ça veut dire que ce n'est pas dans ses favoris, et donc on lui met un lien pour l'AJOUTER dans ses favoris
-
-                                                    // echo '<a class= "coeur add" href="inc/add-to-favorites.php?activity_id='.$activity["activity_id"].'"><img src="img/image-coeur-png-blanc.png" title="Ajouter aux favoris"></a>';
-                                                    echo '<a class="add" href="#" data-activity="'.$activity["activity_id"].'"><img src="img/image-coeur-png-blanc.png" title="Ajouter aux favoris"></a>';
-                                                }
+                                                </div>
+                                               <?php  
                                 
-                                                echo '</div>';
 
 
                             } else { // s'il n'est pas logué, on lui affiche le lien pour se connecter
