@@ -5,13 +5,16 @@
         <a class="nav-link active nav-link-footer" href="index.php">Accueil</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link nav-link-footer" href="activites.php">Evénements</a>
+        <a class="nav-link nav-link-footer" href="conferenciers.php">Conférenciers</a>
     </li>
     <li class="nav-item">
         <a class="nav-link nav-link-footer" href="favoris.php">Favoris</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link nav-link-footer" href="conferenciers.php">Profil</a>
+        <a class="nav-link nav-link-footer" href="#">Profil</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link nav-link-footer" href="contact.php">Contact</a>
     </li>
 </ul>
 
