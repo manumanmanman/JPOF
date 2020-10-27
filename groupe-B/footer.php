@@ -1,6 +1,6 @@
 <footer id="navbar-footer">
 
-<ul class="nav flex-column">
+<ul class="nav"><!--flex-column-->
     <li class="nav-item">
         <a class="nav-link active nav-link-footer" href="index.php">Accueil</a>
     </li>

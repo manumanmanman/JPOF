@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-body {
-  background-color: red;
-}
-
-.bg-white {
-  height: 400px;
-=======
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 0px) {
   #resolution {
@@ -56,19 +48,12 @@ body {
   }
 }
 
-<<<<<<< HEAD
-body {
-<<<<<<< HEAD
-  background-color: red;
-=======
-  background-color: green;
->>>>>>> dedd0bec95951527b535b0202aaab13abe599169
-=======
 #navbar-footer {
-  background-color: purple;
+  background-color: #380038;
   padding: 2rem;
   width: 100%;
   bottom: 0;
+  margin-top: 80px;
 }
 
 .heff-footer {
@@ -83,11 +68,62 @@ body {
 a:hover {
   color: #807e7e;
   text-decoration: underline;
->>>>>>> edenmaestro
+}
+
+.menu {
+  padding: 2rem;
+}
+
+.heff_logo {
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+
+.container_home {
+  position: relative;
+}
+
+.image_home {
+  width: 100%;
+}
+
+.info_home {
+  position: absolute;
+  z-index: 2;
+  margin-top: -190px;
+  margin-left: 50px;
+}
+
+.heff_titre {
+  color: white;
+}
+
+#btn_info_home {
+  background-color: #a781ff;
+  color: white;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.wrapper {
+  margin-top: 80px;
+}
+
+.nav-link-even {
+  color: black;
+  font-size: 20px;
+}
+
+.h1_home {
+  margin-left: 70px;
+}
+
+.menu_even {
+  margin-left: 50px;
+  margin-bottom: 30px;
 }
 
 .bg-white {
->>>>>>> cdc07a7eb0e4539ff33cb234728977a3fef0363b
   display: block;
   color: white;
 }
@@ -102,10 +138,6 @@ a.navbar-brand img {
 }
 
 h1 {
-<<<<<<< HEAD
-  background-color: royalblue;
-=======
   color: #a781ff;
->>>>>>> cdc07a7eb0e4539ff33cb234728977a3fef0363b
 }
 /*# sourceMappingURL=style.css.map */
