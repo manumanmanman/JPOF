@@ -1,10 +1,9 @@
 <?php require "header.php";?>
 
-<div class="container">
+
+<a href="detail-conferenciers.php">Page détail conférencier</a>
 
 
 
-
-</div> <!--container-->
 
 <?php require "footer.php";?>
