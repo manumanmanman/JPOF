@@ -2,12 +2,13 @@ body{
     background-image: url(../img/background-bas-bas.png);
     background-repeat: no-repeat;
     background-size: contain;
+    //background-position: center -100px;
 }
 nav{
-    background-image: url(../img/background-top.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    //background-image: url(../img/background-top.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
 }
 
 .activite{
@@ -15,12 +16,15 @@ nav{
     font-family: 'Segoe', sans-serif;
     color: rgb(61, 61, 61);
     text-align: center;
+    padding-top:50px;
 }
 
+.bi-nav-body{
+    background-color: rgba(255, 255, 255, 0.397);
+
 .divactivite1{
-    margin-bottom: 100px;
-
-
+    margin-bottom: 70px;
+    padding-bottom: 200px;//align nav body
 .row{
     margin-top: 60px;
    
@@ -175,9 +179,25 @@ nav{
         
     }//fin cartes tout tout
 }// fin card-entier
+    .toutevenement{
+        margin: auto;
+        margin-top: 50px;
+        a{
+        text-align: center;
+        font-size: 16px;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border-radius: 0%;
+            &:hover{
+                background-color: #28a745 !important;
+                color: white;
+                border: 1px solid #28a745;
+            }
+        }
+    }   
 }//fin row
 }//fin container divactivite1
-
+} //fin bi-nav-body
 
 
 
@@ -189,7 +209,7 @@ nav{
 .divactivite2{
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
     background-color: white;
-
+    margin-top: -170px; //align nav body
 
 .container{
 
@@ -199,7 +219,7 @@ nav{
    
 
 .activite{
-    margin-top: 120px;
+    margin-top: 150px;
 
 }
 .card-entier{
@@ -351,14 +371,30 @@ nav{
         
     }//fin cartes tout tout
 }// fin card-entier
-
 }//fin row
+.toutevenement{
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    a{
+    text-align: center;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 0%;
+        &:hover{
+            background-color: #28a745 !important;
+            color: white;
+            border: 1px solid #28a745;
+        }
+    }
+}   
 }//fin container
 }//fin container-fluid divactivite2
 
 .footer{
     background-color: rgb(80, 80, 80);
-    margin-top: 90px;
+    margin-top: 100px;
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
     .container{
         padding-top: 90px;
@@ -366,13 +402,17 @@ nav{
         font-size: 15px;
         padding-bottom: 20px;
         .row{
-            .col-3{
+            .col-lg-3{
                 a{
                     color:white !important;
                     text-decoration: none;
                 }
                 h2{
                     font-size: 20px;
+                }
+                img{
+                    width: 60%;
+                    height: auto;
                 }
             }
 

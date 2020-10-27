@@ -2,7 +2,7 @@
 <div id="screensize"></div>
 <br>
 
-
+<div class="container-fluid bi-nav-body">
 <div class="container divactivite1">
         <div class="row">
             <h1 class="col-12 activite">Activitées de la journée Ferrer 2021</h1>
@@ -102,9 +102,13 @@
                 
             </div> <!--  card fin -->
 
+            <div class="col12 toutevenement">
+            <a href="#" class= "btn btn-success inscription">Voir toutes les activitées</a>
+            </div>
+
         </div> <!-- row fin -->
     </div> <!-- container fin -->
-
+</div><!-- container-fluid fin -->
 
 
 
@@ -220,6 +224,9 @@
                 
             </div> <!--  card fin -->
             </div><!-- container fin -->
+            <div class="col12 toutevenement">
+            <a href="#" class= "btn btn-success inscription">Voir toutes les activitées</a>
+            </div>
         </div> <!-- row fin -->
     </div> <!-- container-fluid fin -->
 

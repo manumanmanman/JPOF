@@ -2,7 +2,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-3">
+                <div class="col-lg-3 col-6">
                     <h2>COORDONNÉES</h2>
 
                     <p>Siège social
@@ -17,7 +17,7 @@
                 </div>
 
 
-                <div class="col-3">
+                <div class="col-lg-3 col-6">
                     <h2>PRATIQUE</h2>
 
                     <a href="#" target= "_blank">Contact</a><br>
@@ -30,7 +30,7 @@
                 </div>
 
 
-                <div class="col-3">
+                <div class="col-lg-3 col-6">
                     <a href="#" target= "_blank">Facebook</a><br>
                     <a href="#" target= "_blank">Twitter </a><br>
                     <a href="#" target= "_blank">LinkedIn </a><br>
@@ -39,7 +39,7 @@
                 </div>
 
 
-                <div class="col-3">
+                <div class="col-lg-3 col-6">
                     <img src="img/bxl_logo.png" alt="logo ville de Bruxelles">
                 </div>
 

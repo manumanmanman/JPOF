@@ -22,69 +22,68 @@ body {
   background-size: contain;
 }
 
-nav {
-  background-image: url(../img/background-top.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 .activite {
   margin: auto;
   font-family: 'Segoe', sans-serif;
   color: #3d3d3d;
   text-align: center;
+  padding-top: 50px;
 }
 
-.divactivite1 {
-  margin-bottom: 100px;
+.bi-nav-body {
+  background-color: rgba(255, 255, 255, 0.397);
 }
 
-.divactivite1 .row {
+.bi-nav-body .divactivite1 {
+  margin-bottom: 70px;
+  padding-bottom: 200px;
+}
+
+.bi-nav-body .divactivite1 .row {
   margin-top: 60px;
 }
 
-.divactivite1 .row .card-entier.pedagogique .cartes .card-left h2 {
+.bi-nav-body .divactivite1 .row .card-entier.pedagogique .cartes .card-left h2 {
   background-color: #1393CC;
   color: white;
 }
 
-.divactivite1 .row .card-entier.technique .cartes .card-left h2 {
+.bi-nav-body .divactivite1 .row .card-entier.technique .cartes .card-left h2 {
   background-color: #956187;
 }
 
-.divactivite1 .row .card-entier.paramedical .cartes .card-left h2 {
+.bi-nav-body .divactivite1 .row .card-entier.paramedical .cartes .card-left h2 {
   background-color: #DB1B0E;
 }
 
-.divactivite1 .row .card-entier.artsappliques .cartes .card-left h2 {
+.bi-nav-body .divactivite1 .row .card-entier.artsappliques .cartes .card-left h2 {
   background-color: #74B626;
 }
 
-.divactivite1 .row .card-entier.economiquesocial .cartes .card-left h2 {
+.bi-nav-body .divactivite1 .row .card-entier.economiquesocial .cartes .card-left h2 {
   background-color: #F59500;
 }
 
-.divactivite1 .row .card-entier .cartes {
+.bi-nav-body .divactivite1 .row .card-entier .cartes {
   min-height: 275px;
   margin-right: 0px;
 }
 
-.divactivite1 .row .card-entier .cartes .card-left {
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-left {
   position: relative;
   padding-right: 0;
   padding-left: 0;
   min-height: 250px;
 }
 
-.divactivite1 .row .card-entier .cartes .card-left img {
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-left img {
   width: 100%;
   height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.divactivite1 .row .card-entier .cartes .card-left h2 {
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-left h2 {
   position: absolute;
   top: 0;
   left: 0px;
@@ -99,48 +98,48 @@ nav {
   min-width: 170px;
 }
 
-.divactivite1 .row .card-entier .cartes .card-right {
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right {
   position: relative;
   background-color: #f7f7f7;
   padding: 10px;
 }
 
-.divactivite1 .row .card-entier .cartes .card-right h1 {
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right h1 {
   font-size: 22px;
 }
 
-.divactivite1 .row .card-entier .cartes .card-right h4 {
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right h4 {
   font-size: 17px;
   font-weight: 400;
 }
 
-.divactivite1 .row .card-entier .cartes .card-right .coeur {
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right .coeur {
   position: absolute;
   right: 10px;
   top: 15px;
 }
 
-.divactivite1 .row .card-entier .cartes .card-right .coeur img {
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right .coeur img {
   width: 35px;
   height: auto;
 }
 
-.divactivite1 .row .card-entier .cartes .card-right p {
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right p {
   font-size: 15px;
 }
 
-.divactivite1 .row .card-entier .cartes .card-right span {
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right span {
   margin-top: 40px;
   font-size: 14px;
 }
 
-.divactivite1 .row .card-entier .cartes .card-right h5 {
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right h5 {
   font-size: 14px;
   padding-top: 10px;
   font-weight: 400;
 }
 
-.divactivite1 .row .card-entier .cartes .card-right .inscription {
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right .inscription {
   font-size: 14px;
   position: absolute;
   right: 15px;
@@ -150,7 +149,26 @@ nav {
   border-radius: 0%;
 }
 
-.divactivite1 .row .card-entier .cartes .card-right .inscription:hover {
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right .inscription:hover {
+  background-color: #28a745 !important;
+  color: white;
+  border: 1px solid #28a745;
+}
+
+.bi-nav-body .divactivite1 .row .toutevenement {
+  margin: auto;
+  margin-top: 50px;
+}
+
+.bi-nav-body .divactivite1 .row .toutevenement a {
+  text-align: center;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border-radius: 0%;
+}
+
+.bi-nav-body .divactivite1 .row .toutevenement a:hover {
   background-color: #28a745 !important;
   color: white;
   border: 1px solid #28a745;
@@ -160,6 +178,7 @@ nav {
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
   background-color: white;
+  margin-top: -170px;
 }
 
 .divactivite2 .container .row {
@@ -167,7 +186,7 @@ nav {
 }
 
 .divactivite2 .container .row .activite {
-  margin-top: 120px;
+  margin-top: 150px;
 }
 
 .divactivite2 .container .row .card-entier.pedagogique .cartes .card-left h2 {
@@ -282,9 +301,29 @@ nav {
   border: 1px solid #28a745;
 }
 
+.divactivite2 .container .toutevenement {
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.divactivite2 .container .toutevenement a {
+  text-align: center;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border-radius: 0%;
+}
+
+.divactivite2 .container .toutevenement a:hover {
+  background-color: #28a745 !important;
+  color: white;
+  border: 1px solid #28a745;
+}
+
 .footer {
   background-color: #505050;
-  margin-top: 90px;
+  margin-top: 100px;
   -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 }
@@ -296,13 +335,18 @@ nav {
   padding-bottom: 20px;
 }
 
-.footer .container .row .col-3 a {
+.footer .container .row .col-lg-3 a {
   color: white !important;
   text-decoration: none;
 }
 
-.footer .container .row .col-3 h2 {
+.footer .container .row .col-lg-3 h2 {
   font-size: 20px;
+}
+
+.footer .container .row .col-lg-3 img {
+  width: 60%;
+  height: auto;
 }
 
 #screensize {
