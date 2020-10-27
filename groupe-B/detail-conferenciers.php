@@ -7,7 +7,7 @@
 					<img src="https://via.placeholder.com/365" alt="conférencier">
 				</div>
 				<div class="dos col-12 col-lg-8">
-					<h2>INFORMATIONS</h2>
+				<h1 class="h1_home">Informations</h1>
 					<p>Alexandre Flo, professeur en médecine à la haute école Ffrancisco Ferrer</p>
 					<p>Section médicale</p>
 					<p>LinkedIn : Alexandre Flo</p>

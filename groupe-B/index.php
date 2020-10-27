@@ -58,6 +58,7 @@ $eventid = $_SESSION["eventid"];
     <p class="text-justify"><?php echo utf8_encode($activity["category_name"]); ?></p>
     <button type="button" class="btn btn-outline-dark w-50">Je m'inscris</button>
     <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#">Ajouter aux favoris</a>
+    <a class="nav-link" href="details-even.php">Détails évènements</a>
     </div>
   </div>
     </div>
@@ -69,6 +70,7 @@ $eventid = $_SESSION["eventid"];
     <p class="text-justify">Créer ton circuit!</p>
     <button type="button" class="btn btn-outline-dark w-50">Je m'inscris</button>
     <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#">Ajouter aux favoris</a>
+    <a class="nav-link" href="details-even.php">Détails évènements</a>
     </div>
   </div>
     </div>
@@ -80,6 +82,7 @@ $eventid = $_SESSION["eventid"];
     <p class="text-justify">Art du dessin: L'abstrait</p>
     <button type="button" class="btn btn-outline-dark w-50">Je m'inscris</button>
     <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#">Ajouter aux favoris</a>
+    <a class="nav-link" href="details-even.php">Détails évènements</a>
     </div>
   </div>
     </div>
@@ -132,6 +135,7 @@ $eventid = $_SESSION["eventid"];
     <p class="text-justify">Circuit rentable</p>
     <button type="button" class="btn btn-outline-dark w-50">Je m'inscris</button>
     <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#">Ajouter aux favoris</a>
+    <a class="nav-link" href="details-even.php">Détails évènements</a>
     </div>
   </div>
     </div>
@@ -143,6 +147,7 @@ $eventid = $_SESSION["eventid"];
     <p class="text-justify">Créer ton circuit!</p>
     <button type="button" class="btn btn-outline-dark w-50">Je m'inscris</button>
     <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#">Ajouter aux favoris</a>
+    <a class="nav-link" href="details-even.php">Détails évènements</a>
     </div>
   </div>
     </div>
@@ -154,6 +159,7 @@ $eventid = $_SESSION["eventid"];
     <p class="text-justify">Art du dessin: L'abstrait</p>
     <button type="button" class="btn btn-outline-dark w-50">Je m'inscris</button>
     <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#">Ajouter aux favoris</a>
+    <a class="nav-link" href="details-even.php">Détails évènements</a>
     </div>
   </div>
     </div>

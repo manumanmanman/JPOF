@@ -1,4 +1,15 @@
-<?php include('header.php');?>
+<?php require "header.php" ?>
 
 	Favoris
-<?php include('footer.php');?>
+
+
+
+
+
+
+
+
+
+
+
+<?php require "footer.php" ?>

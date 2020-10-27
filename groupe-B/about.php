@@ -1,5 +1,14 @@
-<?php include('header.php');?>
+<?php require "header.php" ?>
 
 	About
 
-<?php include('footer.php');?>
+
+
+
+
+
+
+
+
+
+<?php require "footer.php";?>
