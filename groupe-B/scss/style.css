@@ -1,0 +1,143 @@
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 0px) {
+  #resolution {
+    background-color: mediumseagreen;
+  }
+  #resolution::after {
+    content: "Small devices (landscape phones, 576px and up)";
+  }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  #resolution {
+    background-color: #7bb33c;
+  }
+  #resolution::after {
+    content: "Small devices (landscape phones, 576px and up)";
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  #resolution {
+    background-color: #787af7;
+  }
+  #resolution::after {
+    content: "Medium devices (tablets, 768px and up)";
+  }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #resolution {
+    background-color: #f52d8a;
+  }
+  #resolution::after {
+    content: "Large devices (desktops, 992px and up)";
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #resolution {
+    background-color: #e049e0;
+  }
+  #resolution::after {
+    content: "Extra large devices (large desktops, 1200px and up)";
+  }
+}
+
+#navbar-footer {
+  background-color: #380038;
+  padding: 2rem;
+  width: 100%;
+  bottom: 0;
+  margin-top: 80px;
+}
+
+.heff-footer {
+  color: white;
+  margin-left: 80%;
+}
+
+.nav-link-footer {
+  color: white;
+}
+
+a:hover {
+  color: #807e7e;
+  text-decoration: underline;
+}
+
+.menu {
+  padding: 2rem;
+}
+
+.heff_logo {
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+
+.container_home {
+  position: relative;
+}
+
+.image_home {
+  width: 100%;
+}
+
+.info_home {
+  position: absolute;
+  z-index: 2;
+  margin-top: -190px;
+  margin-left: 50px;
+}
+
+.heff_titre {
+  color: white;
+}
+
+#btn_info_home {
+  background-color: #a781ff;
+  color: white;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.wrapper {
+  margin-top: 80px;
+}
+
+.nav-link-even {
+  color: black;
+  font-size: 20px;
+}
+
+.h1_home {
+  margin-left: 70px;
+}
+
+.menu_even {
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.bg-white {
+  display: block;
+  color: white;
+}
+
+a.navbar-brand {
+  background-color: white;
+}
+
+a.navbar-brand img {
+  height: 50px;
+  width: auto;
+}
+
+h1 {
+  color: #a781ff;
+}
+/*# sourceMappingURL=style.css.map */

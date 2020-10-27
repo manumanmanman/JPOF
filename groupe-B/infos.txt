@@ -1,0 +1,6 @@
+
+
+Pour les tailles{
+    col-12 
+    col-md-6
+}

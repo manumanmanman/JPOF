@@ -1,0 +1,61 @@
+.menu{
+    padding:2rem;
+}
+
+.heff_logo{
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+.container_home{
+    position: relative;
+}
+.image_home{
+    width: 100%;
+   
+}
+
+.info_home{
+    position:absolute;
+    z-index:2;
+    margin-top: -190px;
+    margin-left: 50px;
+}
+
+.heff_titre{
+    color:white;
+   
+}
+
+#btn_info_home{
+    background-color: #a781ff;
+    color:white;
+    border-radius: 20px;
+    padding:8px;
+
+}
+
+.wrapper{
+    margin-top: 80px;
+}
+
+.nav-link-even{
+    color:black;
+    
+    font-size: 20px;
+
+}
+
+.h1_home{
+    margin-left:70px;
+}
+
+.menu_even{
+    margin-left:50px;
+    margin-bottom: 30px;
+}
+
+// .scrolling-wrapper{
+//     overflow-x: scroll;
+    
+// }

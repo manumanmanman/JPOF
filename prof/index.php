@@ -173,3 +173,4 @@ foreach ($activities as $activity) {    // Début de la boucle
 
 
 <?php require "footer.php" ?>
+
