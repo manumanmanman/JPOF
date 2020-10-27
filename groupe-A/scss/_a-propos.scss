@@ -1,0 +1,45 @@
+.a-propos{
+    background-color: rgb(255, 255, 255);
+
+    .container{
+        padding-bottom: 200px;//align nav body
+        .row{
+            margin-top: 60px;
+            min-height: 500px;
+            .titreexplication{
+                margin: auto;
+                font-family: 'Segoe', sans-serif;
+                color: rgb(61, 61, 61);
+                text-align: center;
+                padding-top:50px;
+                padding-bottom: 50px;
+            }
+            .explication{
+                font-family: sans-serif;
+                color: rgb(0, 0, 0);
+            }
+            .lienliste{
+                margin: auto;
+                .intervenant{
+                    margin-top: 60px;
+                    text-align: center;
+                    font-size: 18px;
+                    background-color: rgb(255, 255, 255);
+                    font-family: 'Segoe', sans-serif;
+                    color: rgb(87, 87, 87);
+                    border-radius: 0%;
+                    &:hover{
+                    background-color: #28a745 !important;
+                    color: white;
+                    border: 1px solid #28a745;
+                    }
+                    img{
+                        width: 15%;
+                        height:auto;
+                    }
+                }
+            }// fin lienliste
+
+        }// fin row
+    }//fin container divactivite1
+} //fin bi-nav-body

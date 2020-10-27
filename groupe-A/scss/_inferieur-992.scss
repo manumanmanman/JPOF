@@ -8,5 +8,10 @@
         }
 
     }
+    .divactivite2{
+        clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+        background-color: white;
+        margin-top: -220px; //align nav body
+    }    
 
  };

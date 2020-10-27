@@ -15,13 +15,13 @@
   <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item mx-3">
-        <a class="nav-link" href="#">Accueil</a>
+        <a class="nav-link" href="index.php">Accueil</a>
       </li>
       <li class="nav-item mx-3">
         <a class="nav-link" href="#">Conférenciers</a>
       </li>
       <li class="nav-item mx-3">
-        <a class="nav-link" href="#">À propos</a>
+        <a class="nav-link" href="a-propos.php">À propos</a>
       </li>
       <li class="nav-item ml-3 mr-5">
         <a class="nav-link" href="#">Contact</a>
