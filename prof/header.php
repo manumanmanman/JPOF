@@ -24,7 +24,7 @@ foreach ($events as $event) {
     <link rel="stylesheet" href="scss/style.css">
     <title></title>
 </head>
-<body>
+<body id="<?php echo $page; ?>">
 <div id="screensize"></div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,7 @@ foreach ($events as $event) {
       <li class="nav-item mx-3 <?php if($page == "activites"){echo "active";} ?>">
         <a class="nav-link" href="activites.php">Activites</a>
       </li>
-      <li class="nav-item mx-3 <?php if($page == "conferenciers"){echo "active";} ?>">
+      <li class="nav-item mx-3 <?php if($page == "conferenciers" || $page == "conferencier"){echo "active";} ?>">
         <a class="nav-link" href="conferenciers.php" >Conférenciers</a>
       </li>
       <li class="nav-item mx-3 <?php if($page == "apropos"){echo "active";} ?>">

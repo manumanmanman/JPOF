@@ -1,6 +1,6 @@
 <?php 
 
-$page = 'conferenciers';
+$page = 'conferencier';
 require "header.php" ;
 $idconferencier = $_GET["conferencierid"];
 
