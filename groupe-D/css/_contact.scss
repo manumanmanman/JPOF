@@ -1,0 +1,21 @@
+#contact {
+    margin: auto;
+    height: 100px;
+    width: 300px;}
+ 
+#nom, #prenom {width: 46%; margin: 5px;}
+#mail, #msg {width: 95%;margin: 5px;}
+ 
+#contact .button {float: right;margin-right: 10px;}
+button {background: black;
+    color: white;
+    border-style: none;
+    padding: 5px 10px;}
+ 
+#nom, #prenom, #mail, #msg { border: 1px solid;}
+ 
+#contact h2 {text-transform: uppercase;
+    text-align: center;
+    margin: 15px 0;}
+ 
+.contacta {    margin-top: 50px;}
