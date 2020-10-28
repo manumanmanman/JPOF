@@ -85,6 +85,11 @@ body {
   min-height: 200px;
 }
 
+.card-img-top {
+  height: 200px;
+  width: 100%;
+}
+
 .nav-cat {
   font-size: 20px;
   margin: 15px 0px;
@@ -104,28 +109,108 @@ body {
   color: #721459;
 }
 
+.nav-cat li .mauve::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #721459;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.nav-cat li .mauve:hover::after {
+  width: 100%;
+}
+
 .nav-cat li .orange {
   color: #F59500;
 }
 
-.nav-cat li .rouge {
-  color: #DB1B0E;
+.nav-cat li .orange::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #F59500;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.nav-cat li .orange:hover::after {
+  width: 100%;
 }
 
 .nav-cat li .bleu {
   color: #1393CC;
 }
 
+.nav-cat li .bleu::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #1393CC;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.nav-cat li .bleu:hover::after {
+  width: 100%;
+}
+
+.nav-cat li .black {
+  color: black;
+}
+
+.nav-cat li .black::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.nav-cat li .black:hover::after {
+  width: 100%;
+}
+
+.nav-cat li .rouge {
+  color: #DB1B0E;
+}
+
+.nav-cat li .rouge::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #DB1B0E;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.nav-cat li .rouge:hover::after {
+  width: 100%;
+}
+
 .nav-cat li .vert {
   color: #74B626;
 }
 
-.nav-cat li .black {
-  color: #1b1b1b;
+.nav-cat li .vert::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #74B626;
+  -webkit-transition: width .3s;
+  transition: width .3s;
 }
 
-.nav-cat li:hover {
-  border-bottom: solid 1.5px black;
+.nav-cat li .vert:hover::after {
+  width: 100%;
 }
 
 .modal-backdrop.show {
@@ -242,18 +327,63 @@ button {
 }
 
 .detail {
-  width: 400px;
+  width: 100%;
   height: 120px;
   margin: 0;
   margin-top: 20px;
+  color: white;
 }
 
 .card-img-detail {
-  width: 400px;
+  width: 100%;
   height: auto;
 }
 
 .card-title-detail {
   margin-top: 20px;
+}
+
+.container-fluid {
+  margin-top: 15px;
+}
+
+.right i {
+  margin-top: 15px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.right .far, .right .fas {
+  font-size: 25px;
+}
+
+.detail-activity {
+  padding: 50px;
+  margin-left: 25px;
+}
+
+.btn {
+  color: white;
+  float: right;
+}
+
+.btn.artsappliques {
+  background-color: #74B626;
+}
+
+.btn.paramedical {
+  background-color: #DB1B0E;
+}
+
+.btn.economiquesocial {
+  background-color: #F59500;
+}
+
+.btn.technique {
+  background-color: #721459;
+}
+
+.btn.pedagogique {
+  background-color: #1393CC;
 }
 /*# sourceMappingURL=main.css.map */
