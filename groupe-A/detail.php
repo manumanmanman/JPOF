@@ -1,15 +1,16 @@
 <?php require "header.php" ?>
-
+<div id="screensize"></div>
+<br>
 
 
 <div class="container">
     <div class="event">
         <div class="row">
-            <div class="col-12 col-md-6 imgevent">
-                <h4 class="catevent">Economie</h4>
+            <div class="col-12 col-md-6 imgact">
+                <h4>Economie</h4>
                 <img src="img/escape-room-escape-game-orleans.jpg" alt="escape-room">
             </div>
-            <div class="col-12 col-md-6 txtevent">
+            <div class="col-12 col-md-6 txtact">
             <h1>Atelier Ecape Game</h1>
                         <h4>De 11h à 13h</h4>
                         <a class= "coeur" href=""><img src="img/image-coeur-png-blanc.png" alt="coeur"></a>

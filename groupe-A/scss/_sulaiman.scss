@@ -1,20 +1,165 @@
-.imgevent {
+.imgact {
     background-color: bisque;
     height: 50vh;
     padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } //fin imgactivitie
 
+    h4 {
+        position: absolute;
+        background-color:  $red;
+        color : white;
+        text-align: center;
+        padding: 10px 30px ;
+        width: 30%;
+        
+    } //fin h4 titre cat
 }
 
-.txtevent {
-    background-color: rgb(247, 197, 136);
+.txtact {
+    background-color: rgb(247, 247, 247);
     height: 50vh;
+    position: relative;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
-}
-
-.catevent {
-    background-color: red;
-    color : white;
-    padding: 10px 30px ;
-    width: 30%;
     
+
+    .coeur{
+        position: absolute;
+            right:35px;
+            top: 30px;
+        img{
+            width: 50px;
+            height: auto;
+            
+
+        }
+
+    } // fin coeur
+
+    p{
+        font-size: 22px;
+
+    }
+    span{
+        margin-top: 40px;
+        font-size: 22px;
+
+    }
+    h5{
+        font-size: 22px;
+        padding-top: 10px;
+        font-weight: 400;
+
+    }
+
+    .inscription{
+        font-size: 20px;
+        position: absolute;
+        right: 35px;
+        bottom: 30px;
+        background-color: rgb(247, 247, 247);
+        color: black;
+        border-radius: 0%;
+        &:hover{
+            background-color: #28a745 !important;
+            color: white;
+            border: 1px solid #28a745;
+        }
+
+    
+    } //fin inscription       
+
+} //fin txtevent
+
+.google-maps{
+    padding: 0;
+    iframe {
+        width: 100%;
+        height: 100%;
+        
+    }
+} //div carte google maps
+
+.contact {
+    background-color: rgb(247, 247, 247);
+    height: 50vh;
+    position: relative;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+        h4{
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+
+} //div contact
+
+.row {
+    display: flex;
+    justify-content: center;
+    .rounded-circle {
+        position: relative;
+        width: 20vw;
+        height: 20vw;
+        overflow: hidden;
+        border-radius: 50%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    } //foto 
+
+    .info-speaker {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+        height: 40vh;
+
+        h4{
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+ 
 }
+
+.events-liés {
+    display: flex;
+    
+  .col-md-6{
+      display: flex;
+      justify-content: center;
+  }
+}
+
+.liens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.events-speaker {
+    width: 700px;
+  
+}
+
