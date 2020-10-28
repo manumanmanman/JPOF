@@ -1,14 +1,17 @@
 .detail {
-    width: 400px;
+    width: 100%;
     height: 120px;
     margin: 0; 
     margin-top: 20px;
+    color:white;
 }
 
 .card-img-detail {
 
-    width: 400px;
+    width: 100%;
     height: auto;
+
+    
 }
 
 .card-title-detail {
@@ -16,3 +19,45 @@
     margin-top: 20px;
 }
 
+.container-fluid {
+    margin-top:15px;
+}
+
+.right {
+    
+    
+    
+    i{
+    margin-top:15px;
+    margin-right: 10px;
+    font-size:18px;
+    }
+
+    .far, .fas {
+        font-size: 25px;
+    }
+}
+.detail-activity {
+    padding:50px;
+    margin-left: 25px;
+}
+.artsappliques {
+    background-color:$green;
+}
+.paramedical {
+    background-color:$red;
+}
+.economiquesocial {
+    background-color:$orange;
+}
+.technique {
+    background-color:$purple;
+}
+.pedagogique{
+    background-color:$blue;
+}
+
+.btn {
+    color:white;
+    float: right;
+}

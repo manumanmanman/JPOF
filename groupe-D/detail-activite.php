@@ -3,6 +3,7 @@ $page = 'activites';
 $activityid = $_GET["activityid"];
 require "header.php" ;
 
+
 date_default_timezone_set("Europe/Brussels");
 setlocale(LC_TIME, "fr_FR"); 
 
@@ -44,21 +45,35 @@ foreach ($activities as $activity) {    // Début de la boucle
 ?>
 
 
+<div id="bienvenue">
+<h1><?php echo utf8_encode ($activity["activity_name"]);?></h1>
+</div>
 
 
-<div class="container">
+<div class="container-fluid">
  
 
-
+<div class="row detail-activity">
  
-        
-        <img class="card-img-detail" src="img/activites.jpg " alt="Card image cap">
+<div class="col-12 col-md-6 left"> 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.4903577753253!2d4.340286715726704!3d50.840603279531074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c470f84554f5%3A0x94c79c309d9e1e21!2sRue%20de%20la%20Fontaine%204%2C%201000%20Bruxelles!5e0!3m2!1sfr!2sbe!4v1603801690513!5m2!1sfr!2sbe" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-    <div class="carre detail <?php echo $activity["category_slug"]?>">
-    <i class="far fa-bookmark">  <?php echo utf8_encode ($activity["category_name"])?></i> <br>
-    <i class="far fa-calendar-alt">   <?php echo utf8_encode ($activity["activity_date"])?></i> <br>
-    <i class="fas fa-map-marker-alt"> <?php echo utf8_encode ($activity["building_name"])?></i> <br>
-    <i class="fas fa-microphone">  <?php echo utf8_encode ($activity["speaker_name"])?></i>
+</div>
+<!-- FIN LEFT -->
+
+
+<div class="col-12 col-md-6 right"> 
+        <img class="card-img-detail" src="<?php echo ($activity["activity_img"])?>" alt="Card image cap">
+
+    <div class="row carre detail <?php echo $activity["category_slug"]?>">
+    <div class="col-md-6 ">
+    <i class="far fa-bookmark"> </i> <?php echo utf8_encode ($activity["category_name"])?><br>
+    <i class="far fa-calendar-alt">   </i> <?php echo utf8_encode ($activity["activity_date"]).' de ' . $heuredebut .' à '. $heurefin ?>
+    </div>
+    <div class="col-md-6 ">
+    <i class="fas fa-map-marker-alt"></i>  <?php echo utf8_encode ($activity["building_name"])?><br>
+    <i class="fas fa-microphone"></i>  <?php echo utf8_encode ($activity["speaker_name"])?>
+    </div>
 
     </div>  <!-- FIN DU CARE -->
 
@@ -114,20 +129,22 @@ echo '</div>';
 
     
    
+<a href="#" class= "btn <?php echo $activity["category_slug"]?> ">S'inscrire</a>
     
     
     
     
     
     
+</div>
+<!-- FIN RIGHT -->
     
     
     
     
     
-    
-    
-  </div>
+  </div> 
+  <!-- FIN ROW -->
 
 
    

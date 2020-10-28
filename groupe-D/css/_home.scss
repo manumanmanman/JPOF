@@ -23,7 +23,7 @@
     padding: 10px;
 
 
-&.arts-appliques {
+&.artsappliques {
     background-color:$green;
 }
 &.paramedical {
@@ -50,6 +50,11 @@
     margin-bottom: 15px;
     min-height:200px
 }
+
+.card-img-top {
+    height: 200px;
+    width: 100%;
+}
 .nav-cat {
     font-size: 20px;
     margin:15px 0px;
@@ -63,30 +68,113 @@
         padding-left: 10px;
         padding-right: 10px;
         font-family: 'Roboto', sans-serif;
+      
 
         .mauve {
-            color:$purple
+            color:$purple;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background: $purple;
+                transition: width .3s;
+            }
+            
+            &:hover::after {
+                width: 100%;
+                //transition: width .3s;
+            }
         }
         .orange {
-            color:$orange
-        }
-        .rouge {
-            color:$red
+            color:$orange;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background: $orange;
+                transition: width .3s;
+            }
+            
+            &:hover::after {
+                width: 100%;
+                //transition: width .3s;
+            }
         }
         .bleu {
-            color:$blue
-        }
-        .vert {
-            color:$green
+            color:$blue;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background: $blue;
+                transition: width .3s;
+            }
+            
+            &:hover::after {
+                width: 100%;
+                //transition: width .3s;
+            }
         }
         .black {
-            color:rgb(27, 27, 27)
-        }
+            color:black;
 
-
-        &:hover {
-            border-bottom: solid 1.5px black;
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background: black;
+                transition: width .3s;
+            }
+            
+            &:hover::after {
+                width: 100%;
+                //transition: width .3s;
+            }
         }
+        .rouge {
+            color:$red;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background: $red;
+                transition: width .3s;
+            }
+            
+            &:hover::after {
+                width: 100%;
+                //transition: width .3s;
+            }
+        }
+        .vert {
+            color:$green;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background: $green;
+                transition: width .3s;
+            }
+            
+            &:hover::after {
+                width: 100%;
+                //transition: width .3s;
+            }
+        }
+       
+
+       
        
     } 
     //fin li

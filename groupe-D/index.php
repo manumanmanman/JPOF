@@ -75,7 +75,7 @@ foreach($activities as $activity) { // DEBUT DE LE BOUCLE
  
         <div class="col-12 col-md-4 full-card">
         <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/activites.jpg " alt="Card image cap">
+        <img class="card-img-top" src="<?php echo ($activity["activity_img"])?>" alt="Card image cap">
 
     <div class="carre <?php echo $activity["category_slug"]?>">
     <i class="far fa-bookmark">  <?php echo utf8_encode ($activity["category_name"])?></i> <br>
