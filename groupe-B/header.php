@@ -19,14 +19,14 @@ foreach ($events as $event) {
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>page-web-type</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="scss/style.css" rel="stylesheet" type="text/css">
-</head>
+  <title><?php echo $_SESSION["eventname"]; ?></title>
+</head>	
 
 
 <body id="<?php echo $page; ?>">
- <div id="resolution"></div> <!-- barre pour les tailles écrans -->
+<div id="resolution"></div> <!-- barre pour les tailles écrans -->
 
 <div class="menu">
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -45,37 +45,35 @@ foreach ($events as $event) {
       </li>
       <li class="nav-item <?php if($page == "conferenciers" || $page == "conferencier"){echo "active";} ?>">
         <a class="nav-link" href="conferenciers.php">Conférenciers</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link <?php if($page == "profil"){echo "active";} ?>" href="profil.php">Profil</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="favoris.php">Favoris</a>
+        <a class="nav-link <?php if($page == "apropos"){echo "active";} ?>" href="about.php">A propos</a>
       </li>
+     
       <li class="nav-item">
-        <a class="nav-link" href="profil.php">Profil</a>
+        <a class="nav-link <?php if($page == "contact"){echo "active";} ?>" href="contact.php">Contact</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.php">Contact</a>
-      </li>
+
+      <?php 
+          // si l'utilisateur est logué (la session existe, çàd dire que $_SESSION["user"] existe, il est ISSET) alors on affiche son nom, son id et un lien LOGOUT
+        if (isset($_SESSION["user"])) {
+
+          echo '<li class="nav-item mx-3" ><a class="nav-link" href="mon-profil.php"><b> '.$_SESSION["user"].'</a></li>';
+          // echo " user id:  <b> ".$_SESSION["userid"]."</b>";
+          echo ' <li class="nav-item mx-3" ><a class="nav-link" href="inc/logout.inc.php">logout</a></li>';
+
+          // s'il n'est pas logué, on affiche le lien pour se loguer
+        } else {
+
+          echo '<li class="nav-item mx-3" ><a class="nav-link ml-5" href=""  data-toggle="modal" data-target="#exampleModal">Inscription - Connexion</a></li>';
+
+        } // si n'est pas logué
+      ?>
+
     </ul>
   </div>
-
-  <?php 
-  
-  // si l'utilisateur est logué (la session existe, çàd dire que $_SESSION["user"] existe, il est ISSET) alors on affiche son nom, son id et un lien LOGOUT
-  if (isset($_SESSION["user"])) {
-
-    echo "<p>username:  <b> ".$_SESSION["user"]."</b>";
-    echo " user id:  <b> ".$_SESSION["userid"]."</b>";
-    echo ' - <a href="inc/logout.inc.php">logout</a></P>';
-
-    // s'il n'est pas logué, on affiche le lien pour se loguer
-  } else {
-
-    echo '<a class="nav-link ml-5" href="href="register.php"  data-toggle="modal" data-target="#exampleModal">Inscription - Connexion</a>';
-
-  } // si n'est pas logué
-  
-   ?>
-
-
 </nav>
 </div> <!--/ div menu-->

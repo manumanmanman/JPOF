@@ -105,22 +105,173 @@ a:hover {
   padding: 8px;
 }
 
-.wrapper {
-  margin-top: 80px;
-}
-
 .nav-link-even {
   color: black;
   font-size: 20px;
 }
 
 .h1_home {
-  margin-left: 70px;
+  margin-top: 50px;
 }
 
 .menu_even {
-  margin-left: 50px;
   margin-bottom: 30px;
+}
+
+/*********************************************************    CARTES ACTI    *******************************************/
+.card-entier {
+  border: 1px gray;
+  margin-bottom: 15px;
+  min-height: 275px;
+}
+
+.card-entier.technique .category-name-color {
+  color: #956187;
+}
+
+.card-entier.arts-appliques .category-name-color {
+  color: #74B626;
+}
+
+.card-entier.economiquesocial .category-name-color {
+  color: #F59500;
+}
+
+.card-entier.pedagogique .category-name-color {
+  color: #1393CC;
+}
+
+.card-entier.paramedical .category-name-color {
+  color: #DB1B0E;
+}
+
+.card-entier .cartes .card-img-top {
+  padding-right: 0;
+  padding-left: 0;
+  min-height: 250px;
+  position: relative;
+}
+
+.card-entier .cartes .card-img-top img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.card-entier .cartes .card-left h2 {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  min-width: 50%;
+  text-align: center;
+  font-size: 15px;
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.card-entier .cartes .card-right {
+  padding: 10px;
+  position: relative;
+  background-color: #f7f7f7;
+}
+
+.card-entier .cartes .card-right h1 {
+  font-size: 22px;
+  padding-right: 25px;
+}
+
+.card-entier .cartes .card-right h4 {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.card-entier .cartes .card-right .coeur {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.card-entier .cartes .card-right .coeur img {
+  width: 20px;
+  height: auto;
+}
+
+.card-entier .cartes .card-right p {
+  font-size: 15px;
+}
+
+.card-entier .cartes .card-right span {
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.card-entier .cartes .card-right h5 {
+  font-size: 14px;
+  padding-top: 10px;
+  font-weight: 400;
+}
+
+.card-entier .cartes .card-right .inscription {
+  font-size: 14px;
+  position: absolute;
+  background-color: #f7f7f7;
+  color: black;
+  border-radius: 0%;
+}
+
+.card-entier .cartes .card-right .inscription:hover {
+  background-color: #28a745 !important;
+  color: white;
+  border: 1px solid #28a745;
+}
+
+.cartes {
+  margin-right: 1px;
+  margin-left: 1px;
+}
+
+.coeur {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.coeur img {
+  width: 20px;
+  height: auto;
+}
+
+/*********************************************************    DETAILS EVEN    *******************************************/
+.coeur-details-even {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.coeur-details-even img {
+  width: 40px;
+  height: auto;
+}
+
+.img-details-even {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+
+.contenantboutoninscription {
+  margin-top: 2rem;
+  text-align: end;
 }
 
 .bg-white {
