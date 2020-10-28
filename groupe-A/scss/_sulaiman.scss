@@ -87,7 +87,7 @@
         height: 100%;
         
     }
-}
+} //div carte google maps
 
 .contact {
     background-color: rgb(247, 247, 247);
@@ -105,4 +105,61 @@
         }
 
 
+} //div contact
+
+.row {
+    display: flex;
+    justify-content: center;
+    .rounded-circle {
+        position: relative;
+        width: 20vw;
+        height: 20vw;
+        overflow: hidden;
+        border-radius: 50%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    } //foto 
+
+    .info-speaker {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+        height: 40vh;
+
+        h4{
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+ 
 }
+
+.events-liés {
+    display: flex;
+    
+  .col-md-6{
+      display: flex;
+      justify-content: center;
+  }
+}
+
+.liens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.events-speaker {
+    width: 700px;
+  
+}
+
