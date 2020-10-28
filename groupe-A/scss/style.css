@@ -363,6 +363,14 @@ body {
   height: auto;
 }
 
+.nav-link.ml-5 {
+  margin-left: 1rem !important;
+}
+
+#logo {
+  display: none;
+}
+
 .a-propos {
   background-color: white;
 }
@@ -422,6 +430,7 @@ body {
 .custom-select {
   position: relative;
   font-family: Arial;
+  width: 20%;
 }
 
 .custom-select select {
@@ -526,6 +535,16 @@ body {
 
 .filtre-tout .collapse .card-body .tout span, .filtre-tout .collapsing .card-body .tout span {
   margin-top: 8px;
+  width: 10%;
+}
+
+.filtre-tout .collapse .card-body .tout .jour, .filtre-tout .collapsing .card-body .tout .jour {
+  padding-top: 9px;
+  margin-left: 2px;
+}
+
+.filtre-tout .collapse .card-body .tout .jour input, .filtre-tout .collapsing .card-body .tout .jour input {
+  width: 100%;
 }
 
 #screensize {
@@ -543,12 +562,65 @@ body {
   content: "XL (> 1200px)";
 }
 
+@media (max-width: 1245px) {
+  .navbar .navbar-collapse {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .bi-nav-body .divactivite1 #corps {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 1199.98px) {
   #screensize {
     background-color: #00d300;
   }
   #screensize:after {
     content: "L (< 1200px) ";
+  }
+  .custom-select {
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: 0.8rem;
+  }
+  .filtre-tout {
+    width: 100%;
+    margin: auto;
+    background-color: rgba(219, 219, 219, 0);
+    padding: 25px 0px;
+    border-radius: 10px;
+    margin-top: -50px;
+  }
+  .filtre-tout .collapse, .filtre-tout .collapsing {
+    width: 90%;
+    margin: auto;
+  }
+  .filtre-tout .collapse .card-body .tout, .filtre-tout .collapsing .card-body .tout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    place-content: center;
+  }
+  .filtre-tout .collapse .card-body .tout span, .filtre-tout .collapsing .card-body .tout span {
+    margin-top: 8px;
+    width: 10%;
+    font-size: 0.8rem;
+  }
+  .filtre-tout .collapse .card-body .tout .jour, .filtre-tout .collapsing .card-body .tout .jour {
+    padding-top: 9px;
+  }
+  .filtre-tout .collapse .card-body .tout .jour input, .filtre-tout .collapsing .card-body .tout .jour input {
+    width: 100%;
   }
 }
 
@@ -565,6 +637,24 @@ body {
     background-color: white;
     margin-top: -220px;
   }
+  .navbar-collapse.justify-content-center.collapse.show, .navbar-collapse.justify-content-center.collapse, .justify-content-center.collapsing {
+    text-align: center;
+  }
+  .navbar.navbar-expand-lg.navbar-light {
+    background-color: #e6e6e6;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+  .nav-item.ml-3.mr-5 {
+    margin-right: 1rem !important;
+  }
+  .nav-link.ml-5 {
+    margin-left: 0rem !important;
+  }
+  #logo {
+    display: inline-block;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -579,6 +669,47 @@ body {
             clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
     background-color: white;
     margin-top: -170px;
+  }
+  .custom-select {
+    position: relative;
+    font-family: Arial;
+    width: 100%;
+  }
+  .filtre-tout {
+    width: 100%;
+    margin: auto;
+    background-color: rgba(219, 219, 219, 0);
+    padding: 25px 0px;
+    border-radius: 10px;
+    margin-top: -50px;
+  }
+  .filtre-tout .collapse, .filtre-tout .collapsing {
+    width: 90%;
+    margin: auto;
+  }
+  .filtre-tout .collapse .card-body .tout, .filtre-tout .collapsing .card-body .tout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    place-content: center;
+  }
+  .filtre-tout .collapse .card-body .tout span, .filtre-tout .collapsing .card-body .tout span {
+    margin-top: 8px;
+    width: 100%;
+    text-transform: uppercase;
+  }
+  .filtre-tout .collapse .card-body .tout .jour, .filtre-tout .collapsing .card-body .tout .jour {
+    padding-top: 9px;
+    margin-left: 0px;
+  }
+  .filtre-tout .collapse .card-body .tout .jour input, .filtre-tout .collapsing .card-body .tout .jour input {
+    width: 100%;
   }
 }
 

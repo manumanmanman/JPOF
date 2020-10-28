@@ -4,7 +4,7 @@
 
 <div class="container-fluid bi-nav-body">
 <div class="container divactivite1">
-        <div class="row">
+        <div class="row" id="corps">
             <h1 class="col-12 activite">Activitées de la journée Ferrer 2021</h1>
 
             <div class="col-lg-6 card-entier pedagogique">

@@ -19,9 +19,10 @@
   <div class="card card-body">
       <div class="tout">
     <span>Trier par </span>
-                <div class="custom-select departement" style="width:200px;">
+                <div class="custom-select departement">
                     <select>
-                        <option value="0">un département :</option>
+                        <option value="0">département :</option>
+                        <option value="1">Tout</option>
                         <option value="1">Technique graphique</option>
                         <option value="2">Pédagolique</option>
                         <option value="3">Art appliqués</option>
@@ -30,20 +31,24 @@
                     </select>
                 </div><!--departement fin -->
 
-                <div class="custom-select heure" style="width:200px;">
+                <div class="custom-select heure">
                     <select>
-                        <option value="0">une tranche horaire :</option>
-                        <option value="1">entre 8h et 10h</option>
-                        <option value="2">entre 10h et 12h</option>
-                        <option value="3">entre 12h et 14h</option>
-                        <option value="4">entre 14h et 16h</option>
-                        <option value="5">entre 16h et 18h</option>
+                        <option value="0">horaire :</option>
+                        <option value="1">Tout</option>
+                        <option value="1">8h - 10h</option>
+                        <option value="2">10h - 12h</option>
+                        <option value="3">12h - 14h</option>
+                        <option value="4">14h - 16h</option>
+                        <option value="5">16h - 18h</option>
                     </select>
                 </div><!--heure fin -->
 
-                <div class="custom-select implantation" style="width:200px;">
+
+
+                <div class="custom-select implantation">
                     <select>
-                        <option value="0">une implantation :</option>
+                        <option value="0">implantation :</option>
+                        <option value="1">Tout</option>
                         <option value="1">Aneessens</option>
                         <option value="2">Palais du midi</option>
                         <option value="3">Brugmann</option>
@@ -51,6 +56,19 @@
                         <option value="5">Lemonnier</option>
                     </select>
                 </div><!--implantation fin -->
+
+
+                <div class="custom-select jour">
+                    
+                    <input type="date" id="start" name="trip-start"
+                    value="2021-10-28"
+                    min="2021-01-01" max="2021-12-31">
+                    
+                </div><!--jour fin -->
+
+
+
+
             </div>
     </div> <!--card fin -->
 </div> <!--collapse fin -->

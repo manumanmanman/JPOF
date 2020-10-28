@@ -29,6 +29,7 @@
 .custom-select {
     position: relative;
     font-family: Arial;
+    width: 20%;
   }
   
   .custom-select select {
@@ -118,6 +119,14 @@
 
             span{
                 margin-top: 8px;
+                width: 10%;
+            }
+            .jour{
+              padding-top: 9px;
+              margin-left: 2px;
+              input{
+                width: 100%;
+              }
             }
 
             }

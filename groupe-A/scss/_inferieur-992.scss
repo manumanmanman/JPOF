@@ -14,4 +14,25 @@
         margin-top: -220px; //align nav body
     }    
 
+    .navbar-collapse.justify-content-center.collapse.show, .navbar-collapse.justify-content-center.collapse, .justify-content-center.collapsing{
+        text-align: center;
+    }
+    .navbar.navbar-expand-lg.navbar-light{
+        background-color: rgb(230, 230, 230);
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+    .nav-item.ml-3.mr-5{
+        margin-right:
+        1rem !important;
+    }
+    .nav-link.ml-5{
+        margin-left: 0rem!important;
+    }
+    #logo{
+        display: inline-block;
+    }
+    
+
  };
