@@ -15,12 +15,12 @@
                     <div class="row conftout">
 
                         <div class="conf-left col-6">
-                            <a href="detail-conferencier.php"><img src="img/escape-room-escape-game-orleans.jpg" alt=""></a>
+                            <a href="detail-speaker.php"><img src="img/escape-room-escape-game-orleans.jpg" alt=""></a>
                             
                         </div><!--  left fin -->
 
                         <div class="col-6 conf-right">
-                            <a href="detail-conferencier.php"><h1>Jean Boffrot</h1></a>
+                            <a href="detail-speaker.php"><h1>Jean Boffrot</h1></a>
                             <a href="linkedin/prof=Jeanboffrot"><img src="img/linkedin.png" alt="profil linkedin de Jean Boffrot"></a><br>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit adipisci beatae nemo quia rem accusamus fugiat neque veniam quisquam assumenda fugit eius cumque.</p>
                         </div><!--  right fin -->
@@ -38,12 +38,12 @@
                     <div class="row conftout">
 
                         <div class="conf-left col-6">
-                            <a href="detail-conferencier.php"><img src="img/escape-room-escape-game-orleans.jpg" alt=""></a>
+                            <a href="detail-speaker.php"><img src="img/escape-room-escape-game-orleans.jpg" alt=""></a>
                             
                         </div><!--  left fin -->
 
                         <div class="col-6 conf-right">
-                            <a href="detail-conferencier.php"><h1>Jean Boffrot</h1></a>
+                            <a href="detail-speaker.php"><h1>Jean Boffrot</h1></a>
                             <a href="linkedin/prof=Jeanboffrot"><img src="img/linkedin.png" alt="profil linkedin de Jean Boffrot"></a><br>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit adipisci beatae nemo quia rem accusamus fugiat neque veniam quisquam assumenda fugit eius cumque.</p>
                         </div><!--  right fin -->
@@ -58,12 +58,12 @@
                     <div class="row conftout">
 
                         <div class="conf-left col-6">
-                            <a href="detail-conferencier.php"><img src="img/escape-room-escape-game-orleans.jpg" alt=""></a>
+                            <a href="detail-speaker.php"><img src="img/escape-room-escape-game-orleans.jpg" alt=""></a>
                             
                         </div><!--  left fin -->
 
                         <div class="col-6 conf-right">
-                            <a href="detail-conferencier.php"><h1>Jean Boffrot</h1></a>
+                            <a href="detail-speaker.php"><h1>Jean Boffrot</h1></a>
                             <a href="linkedin/prof=Jeanboffrot"><img src="img/linkedin.png" alt="profil linkedin de Jean Boffrot"></a><br>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit adipisci beatae nemo quia rem accusamus fugiat neque veniam quisquam assumenda fugit eius cumque.</p>
                         </div><!--  right fin -->

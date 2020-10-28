@@ -175,6 +175,23 @@ body{
                     }
 
                 
+                } //fin inscription 
+                .deinscription{
+                    font-size: 0.88rem;
+                    position: absolute;
+                    right: 15px;
+                    bottom: 15px;
+                    background-color: rgb(247, 247, 247);
+                    color: black;
+                    border-radius: 0%;
+                    border: 1px solid #cf3f3f;
+                    &:hover{
+                        background-color: #cf3f3f !important;
+                        color: white;
+                        border: 1px solid #cf3f3f;
+                    }
+
+                
                 } //fin inscription       
             }//fin card-right
         
@@ -207,13 +224,13 @@ body{
 
 
 
-.divactivite2{
+.dubas{
     clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
     background-color: white;
     margin-top: -170px; //align nav body
-    font-size: 2rem;
+    //font-size: 2rem;
 
-.container{
+.divactivite2{
 padding-bottom: 100px;
 
 .row{

@@ -28,6 +28,6 @@
         <a class="nav-link" href="#">Contact</a>
       </li>
     </ul>
-    <a class="nav-link ml-5" href="#">Inscription - Connexion</a>
+    <a class="nav-link ml-5" data-toggle="modal" data-target="#exampleModal" href="#">Inscription - Connexion</a>
   </div>
 </nav>

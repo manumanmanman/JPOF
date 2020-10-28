@@ -26,7 +26,7 @@
                         <h5>local 140</h5>
 
                         
-                        <a href="#" class= "btn btn-success inscription">Je m'inscris</a>
+                        <a href="#" class= "btn btn-success inscription">Je m'inscris</a> <!--  class desinscription possible  -->
                     </div>
                     </div>
                 
@@ -132,8 +132,8 @@
 
 
 
-    <div class="container-fluid divactivite2">
-        <div class="container">
+    <div class="container-fluid dubas">
+        <div class="container divactivite2">
         <div class="row">
             <h1 class="col-12 activite">Activitées de la journée Porte ouverte 2021</h1>
 

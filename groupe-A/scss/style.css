@@ -160,6 +160,23 @@ body {
   border: 1px solid #28a745;
 }
 
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right .deinscription {
+  font-size: 0.88rem;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  background-color: #f7f7f7;
+  color: black;
+  border-radius: 0%;
+  border: 1px solid #cf3f3f;
+}
+
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right .deinscription:hover {
+  background-color: #cf3f3f !important;
+  color: white;
+  border: 1px solid #cf3f3f;
+}
+
 .bi-nav-body .divactivite1 .row .toutevenement {
   margin: auto;
   margin-top: 50px;
@@ -179,67 +196,66 @@ body {
   border: 1px solid #28a745;
 }
 
-.divactivite2 {
+.dubas {
   -webkit-clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
   background-color: white;
   margin-top: -170px;
-  font-size: 2rem;
 }
 
-.divactivite2 .container {
+.dubas .divactivite2 {
   padding-bottom: 100px;
 }
 
-.divactivite2 .container .row {
+.dubas .divactivite2 .row {
   margin-top: 60px;
 }
 
-.divactivite2 .container .row .activite {
+.dubas .divactivite2 .row .activite {
   margin-top: 150px;
 }
 
-.divactivite2 .container .row .card-entier.pedagogique .cartes .card-left h2 {
+.dubas .divactivite2 .row .card-entier.pedagogique .cartes .card-left h2 {
   background-color: #1393CC;
   color: white;
 }
 
-.divactivite2 .container .row .card-entier.technique .cartes .card-left h2 {
+.dubas .divactivite2 .row .card-entier.technique .cartes .card-left h2 {
   background-color: #956187;
 }
 
-.divactivite2 .container .row .card-entier.paramedical .cartes .card-left h2 {
+.dubas .divactivite2 .row .card-entier.paramedical .cartes .card-left h2 {
   background-color: #DB1B0E;
 }
 
-.divactivite2 .container .row .card-entier.artsappliques .cartes .card-left h2 {
+.dubas .divactivite2 .row .card-entier.artsappliques .cartes .card-left h2 {
   background-color: #74B626;
 }
 
-.divactivite2 .container .row .card-entier.economiquesocial .cartes .card-left h2 {
+.dubas .divactivite2 .row .card-entier.economiquesocial .cartes .card-left h2 {
   background-color: #F59500;
 }
 
-.divactivite2 .container .row .card-entier .cartes {
+.dubas .divactivite2 .row .card-entier .cartes {
   min-height: 275px;
   margin-right: 0px;
 }
 
-.divactivite2 .container .row .card-entier .cartes .card-left {
+.dubas .divactivite2 .row .card-entier .cartes .card-left {
   position: relative;
   padding-right: 0;
   padding-left: 0;
   min-height: 250px;
 }
 
-.divactivite2 .container .row .card-entier .cartes .card-left img {
+.dubas .divactivite2 .row .card-entier .cartes .card-left img {
   width: 100%;
   height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.divactivite2 .container .row .card-entier .cartes .card-left h2 {
+.dubas .divactivite2 .row .card-entier .cartes .card-left h2 {
   position: absolute;
   top: 0;
   left: 0px;
@@ -254,48 +270,48 @@ body {
   min-width: 170px;
 }
 
-.divactivite2 .container .row .card-entier .cartes .card-right {
+.dubas .divactivite2 .row .card-entier .cartes .card-right {
   position: relative;
   background-color: #f7f7f7;
   padding: 10px;
 }
 
-.divactivite2 .container .row .card-entier .cartes .card-right h1 {
+.dubas .divactivite2 .row .card-entier .cartes .card-right h1 {
   font-size: 1.35rem;
 }
 
-.divactivite2 .container .row .card-entier .cartes .card-right h4 {
+.dubas .divactivite2 .row .card-entier .cartes .card-right h4 {
   font-size: 1.05rem;
   font-weight: 400;
 }
 
-.divactivite2 .container .row .card-entier .cartes .card-right .coeur {
+.dubas .divactivite2 .row .card-entier .cartes .card-right .coeur {
   position: absolute;
   right: 10px;
   top: 15px;
 }
 
-.divactivite2 .container .row .card-entier .cartes .card-right .coeur svg {
+.dubas .divactivite2 .row .card-entier .cartes .card-right .coeur svg {
   width: 30px;
   height: auto;
 }
 
-.divactivite2 .container .row .card-entier .cartes .card-right p {
+.dubas .divactivite2 .row .card-entier .cartes .card-right p {
   font-size: 0.93rem;
 }
 
-.divactivite2 .container .row .card-entier .cartes .card-right span {
+.dubas .divactivite2 .row .card-entier .cartes .card-right span {
   margin-top: 40px;
   font-size: 0.88rem;
 }
 
-.divactivite2 .container .row .card-entier .cartes .card-right h5 {
+.dubas .divactivite2 .row .card-entier .cartes .card-right h5 {
   font-size: 0.88rem;
   padding-top: 10px;
   font-weight: 400;
 }
 
-.divactivite2 .container .row .card-entier .cartes .card-right .inscription {
+.dubas .divactivite2 .row .card-entier .cartes .card-right .inscription {
   font-size: 0.88rem;
   position: absolute;
   right: 15px;
@@ -305,19 +321,19 @@ body {
   border-radius: 0%;
 }
 
-.divactivite2 .container .row .card-entier .cartes .card-right .inscription:hover {
+.dubas .divactivite2 .row .card-entier .cartes .card-right .inscription:hover {
   background-color: #28a745 !important;
   color: white;
   border: 1px solid #28a745;
 }
 
-.divactivite2 .container .toutevenement {
+.dubas .divactivite2 .toutevenement {
   margin: auto;
   margin-top: 50px;
   text-align: center;
 }
 
-.divactivite2 .container .toutevenement a {
+.dubas .divactivite2 .toutevenement a {
   text-align: center;
   font-size: 1rem;
   background-color: white;
@@ -325,7 +341,7 @@ body {
   border-radius: 0%;
 }
 
-.divactivite2 .container .toutevenement a:hover {
+.dubas .divactivite2 .toutevenement a:hover {
   background-color: #28a745 !important;
   color: white;
   border: 1px solid #28a745;
@@ -662,6 +678,30 @@ body {
   width: 100%;
 }
 
+.form-connection input {
+  width: 31%;
+}
+
+.form-connection input:first-child {
+  margin-right: 3px;
+}
+
+.form-connection .seconnecter {
+  font-size: 0.88rem;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  background-color: #f7f7f7;
+  color: black;
+  border-radius: 0%;
+}
+
+.form-connection .seconnecter:hover {
+  background-color: #28a745 !important;
+  color: white;
+  border: 1px solid #28a745;
+}
+
 #screensize {
   width: 200px;
   height: 27px;
@@ -840,6 +880,36 @@ body {
             clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
     background-color: white;
     margin-top: -220px;
+  }
+  .form-connection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-connection input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .form-connection input:first-child {
+    margin-right: 3px;
+  }
+  .form-connection .seconnecter {
+    font-size: 0.88rem;
+    position: initial;
+    right: 15px;
+    bottom: 15px;
+    background-color: #f7f7f7;
+    color: black;
+    border-radius: 0%;
+  }
+  .form-connection .seconnecter:hover {
+    background-color: #28a745 !important;
+    color: white;
+    border: 1px solid #28a745;
   }
 }
 /*# sourceMappingURL=style.css.map */
