@@ -106,7 +106,7 @@ foreach ($activities as $activity) {    // Début de la boucle
 
                         <span>Campus: <?php echo utf8_encode($activity["building_name"]); ?></span>
                         <h5>Local: <?php echo utf8_encode($activity["room_name"]); ?></h5>
-                        <!-- <h5>Places total: <?php echo utf8_encode($activity["activity_size"]); ?></h5> -->
+                        <h5>Places disponibles pour cette activité: <?php echo utf8_encode($activity["activity_size"]); ?></h5>
 
 
                             <?php
@@ -115,6 +115,12 @@ foreach ($activities as $activity) {    // Début de la boucle
                                                 $results = $conn->query($sql3); 
                                                 $nombreinscriptions=mysqli_num_rows($results); 
                                                 $placesrestantes = $activity["activity_size"] - $nombreinscriptions;
+
+                                                if ($placesrestantes == 1) {
+                                                    $places = 'place';
+                                                } else {
+                                                    $places = 'places';
+                                                }
                                               
                                                                     
                             
@@ -124,7 +130,8 @@ foreach ($activities as $activity) {    // Début de la boucle
                             <?php 
                             
                             if ($nombreinscriptions < $activity["activity_size"]) {
-                                echo '<h5>Places disponibles: <span class="disponible">'.$placesrestantes.'</span> /'.$activity["activity_size"].'</h5>';
+                                // echo '<h5>Places disponibles: <span class="disponible">'.$placesrestantes.'</span> sur '.$activity["activity_size"].'</h5>';
+                                echo '<h5>Il reste encore <span class="disponible">'.$placesrestantes.'</span> '.$places.'.</h5>';
 
 
                                             // on va aussi aller voir si l'utilisateur connecté est déjà inscrit à l'activité
