@@ -64,7 +64,7 @@ foreach ($events as $event) {
           // s'il n'est pas logué, on affiche le lien pour se loguer
         } else {
 
-          echo '<li class="nav-item mx-3" ><a class="nav-link ml-5" href="href="register.php"  data-toggle="modal" data-target="#exampleModal">Inscription - Connexion</a></li>';
+          echo '<li class="nav-item mx-3" ><a class="nav-link ml-5" href=""  data-toggle="modal" data-target="#exampleModal">Inscription - Connexion</a></li>';
 
         } // si n'est pas logué
   

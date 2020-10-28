@@ -15,7 +15,7 @@ $eventid = $_SESSION["eventid"];
 
 
 // 2) on va chercher tous les conférenciers (pour pouvoir ordonner par nom de famille) puis on fait un RIGHT JOIN pour ne prendre que ceux qui sont présents dans l'activité de l'évnement actif
-$sql = " SELECT  * FROM speakers 
+$sql = "SELECT  * FROM speakers 
         RIGHT JOIN  activities ON speakers.speaker_id = activities.activity_speaker
         WHERE activities.event_id = '$eventid'
         GROUP BY activities.activity_speaker

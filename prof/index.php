@@ -75,12 +75,12 @@ foreach ($activities as $activity) {    // Début de la boucle
                                                 $results = $conn->query($sql2); 
                                                 $rowcount=mysqli_num_rows($results); 
                                                 if ($rowcount > 0) {
-                                                $inscrit = "inscrit"; 
-                                                } else { $inscrit = "pas inscrit";}
+                                                $inscritfavoris = "inscrit"; 
+                                                } else { $inscritfavoris = "pas inscrit";}
                                                 echo ' <div class="coeur">';?>
-                                                <a class="<?php if($inscrit == "inscrit"){echo "remove";} else {echo "add";} ?>" href="#" data-activity="<?php echo $activity["activity_id"]; ?>">
+                                                <a class="<?php if($inscritfavoris == "inscrit"){echo "remove";} else {echo "add";} ?>" href="#" data-activity="<?php echo $activity["activity_id"]; ?>">
                                                
-                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="<?php if($inscrit == "inscrit"){echo "red";} else {echo "gray";} ?>" xmlns="http://www.w3.org/2000/svg">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="<?php if($inscritfavoris == "inscrit"){echo "red";} else {echo "gray";} ?>" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
                                                   </svg>
 
@@ -98,35 +98,15 @@ foreach ($activities as $activity) {    // Début de la boucle
                             echo '<a class= "coeur" href="#"  data-toggle="modal" data-target="#exampleModal"><img src="img/image-coeur-png-blanc.png" title="Vous devez être connecté afin d\'ajouter l\'activité à vos favoris"></a>';
 
                             } // affichage lein pour se connecter
-                            
-                            
-                            
+       
                             ?>
-                            
-
-
-
-
-
-
-
-
-
-                        
-               
-                            
-
-            
-
-                        
-
-
-
+      
 
                         <p><?php echo utf8_encode($activity["activity_description"]); ?></p>
 
                         <span>Campus: <?php echo utf8_encode($activity["building_name"]); ?></span>
                         <h5>Local: <?php echo utf8_encode($activity["room_name"]); ?></h5>
+                        <h5>Places total: <?php echo utf8_encode($activity["activity_size"]); ?></h5>
 
                         
                         <a href="#" class= "btn btn-success inscription">Je m'inscris</a>
@@ -135,45 +115,13 @@ foreach ($activities as $activity) {    // Début de la boucle
              
             </div> <!-- card entier -->
 
-            <?php
-
-    
-// echo utf8_encode($activity["activity_id"])."<br>";
-// echo "<strong>".utf8_encode($activity["activity_name"])."</strong><br>";
-// echo utf8_encode($activity["activity_description"])."<br>";
-
-// echo "<span style='color:red'>".utf8_encode($activity["room_name"])."</span><br>";
-// echo "<span style='color:orange'>".utf8_encode($activity["building_name"])."</span><br>";
-// echo "<span style='color:blue'>".utf8_encode($activity["category_name"])."</span><br>";
-// echo "<span style='color:yellowgreen'>".utf8_encode($activity["speaker_name"])." ".utf8_encode($activity["speaker_surname"])."</span><br>";
-
-// echo $datevent."<br>";
-// echo $heuredebut."<br>";
-// echo $heurefin."<hr>";
-
-?>
 
          <!-- fermer ma boucle     -->
  <?php } // foreach   fin de la boucle ?>
      
 
-            
-
         </div>   <!-- row -->
-
-
-
-
-
-
-
-
 </div>  <!-- / container  -->
-
-
-
-
-
 
 <?php require "footer.php" ?>
 
