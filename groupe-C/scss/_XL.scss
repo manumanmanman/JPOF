@@ -1,0 +1,22 @@
+
+#screensize {
+    width: 100%; 
+    height: 20px;
+    position: fixed;
+    top:0;
+    right:0;
+    background-color: $blue;
+    color: white;
+    z-index: 10000;
+    opacity: .5;
+    text-align: center;
+    &:after {
+		content: "XL (> 1200px)";
+	  }
+}
+
+
+
+
+
+
