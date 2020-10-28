@@ -42,7 +42,7 @@ echo utf8_encode($favorite["activity_name"]).'<div class="coeur"><a class="remov
 
 ?>
 
-
+ici
 
 <h4>Activités auxquelles vous êtes inscrit</h4>
 

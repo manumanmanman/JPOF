@@ -30,7 +30,9 @@ foreach ($activities as $activity) {    // Début de la boucle
 
     $datevent = strtotime( $activity['activity_date'] );
     // $datevent = utf8_encode(strftime("%A %d %B %G ", $datevent ));
-    $datevent = (strftime("%A %d %B %G ", $datevent ));
+    $datevent = utf8_encode(strftime("%A %d %B %G ", $datevent ));
+
+    // $datevent = mb_convert_encoding($datevent , 'UTF-8');
 
     $heuredebut = strtotime( $activity['activity_start'] );
     $heuredebut = strftime("%Hh%M", $heuredebut);
@@ -56,12 +58,12 @@ foreach ($activities as $activity) {    // Début de la boucle
               
                     <div class="cartes row">
                     <div class="carte card-left col-6">
-                        <img src="<?php echo $activity["activity_img"]; ?>" alt="<?php echo utf8_encode($activity["activity_name"]); ?>">
-                        <h2><?php echo utf8_encode($activity["category_name"]); ?></h2>
+                        <img src="<?php echo $activity["activity_img"]; ?>" alt="<?php echo ($activity["activity_name"]); ?>">
+                        <h2><?php echo ($activity["category_name"]); ?></h2>
                     </div>
                     <div class="col-6 carte card-right">
-                        <h1><a href="detail-activite.php?activityid=<?php  echo $activity["activity_id"]; ?>"><?php echo utf8_encode($activity["activity_name"]); ?></a>  <?php //echo $activity["activity_id"]; ?></h1>
-                        <h4>Le <?php echo $datevent; ?> <br>
+                        <h1><a href="detail-activite.php?activityid=<?php  echo $activity["activity_id"]; ?>"><?php echo ($activity["activity_name"]); ?></a>  <?php //echo $activity["activity_id"]; ?></h1>
+                        <h4>Le <?php echo ($datevent); ?> <br>
                         de <?php echo $heuredebut; ?> à <?php echo $heurefin; ?></h4>
                        
                        
@@ -102,10 +104,10 @@ foreach ($activities as $activity) {    // Début de la boucle
                             ?>
       
 
-                        <p><?php echo utf8_encode($activity["activity_description"]); ?></p>
+                        <p><?php echo ($activity["activity_description"]); ?></p>
 
-                        <span>Campus: <?php echo utf8_encode($activity["building_name"]); ?></span>
-                        <h5>Local: <?php echo utf8_encode($activity["room_name"]); ?></h5>
+                        <span>Campus: <?php echo ($activity["building_name"]); ?></span>
+                        <h5>Local: <?php echo ($activity["room_name"]); ?></h5>
                         <h5>Places disponibles pour cette activité: <?php echo utf8_encode($activity["activity_size"]); ?></h5>
 
 
@@ -174,6 +176,17 @@ foreach ($activities as $activity) {    // Début de la boucle
 
         </div>   <!-- row -->
 </div>  <!-- / container  -->
+
+
+<?php
+
+$text = "A strange string to pass, maybe with some ø, æ, å characters."; 
+
+foreach(mb_list_encodings() as $chr){ 
+        echo mb_convert_encoding($text, 'UTF-8', $chr)." : ".$chr."<br>";    
+ } 
+
+?>
 
 <?php require "footer.php" ?>
 

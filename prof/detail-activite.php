@@ -19,7 +19,7 @@ foreach ($activities as $activity) {    // Début de la boucle
 
     $datevent = strtotime( $activity['activity_date'] );
     // $datevent = utf8_encode(strftime("%A %d %B %G ", $datevent ));
-    $datevent = (strftime("%A %d %B %G ", $datevent ));
+    $datevent = utf8_encode(strftime("%A %d %B %G ", $datevent ));
 
     $heuredebut = strtotime( $activity['activity_start'] );
     $heuredebut = strftime("%Hh%M", $heuredebut);
@@ -47,12 +47,12 @@ foreach ($activities as $activity) {    // Début de la boucle
               
               <div class="cartes row">
               <div class="carte card-left col-12">
-                  <img src="<?php echo $activity["activity_img"]; ?>" alt="<?php echo utf8_encode($activity["activity_name"]); ?>">
-                  <h2><?php echo utf8_encode($activity["category_name"]); ?></h2>
+                  <img src="<?php echo $activity["activity_img"]; ?>" alt="<?php echo ($activity["activity_name"]); ?>">
+                  <h2><?php echo ($activity["category_name"]); ?></h2>
               </div>
               <div class="col-12 carte card-right">
-                  <h1><?php echo utf8_encode($activity["activity_name"]); ?> <?php //echo $activity["activity_id"]; ?></h1>
-                  <h4>Le <?php echo $datevent; ?> <br>
+                  <h1><?php echo ($activity["activity_name"]); ?> <?php //echo $activity["activity_id"]; ?></h1>
+                  <h4>Le <?php echo ($datevent); ?> <br>
                   de <?php echo $heuredebut; ?> à <?php echo $heurefin; ?></h4>
                  
                  
@@ -94,10 +94,10 @@ foreach ($activities as $activity) {    // Début de la boucle
 
 
 
-                  <p><?php echo utf8_encode($activity["activity_description"]); ?></p>
+                  <p><?php echo ($activity["activity_description"]); ?></p>
 
-                  <span>Campus: <?php echo utf8_encode($activity["building_name"]); ?></span>
-                  <h5>Local: <?php echo utf8_encode($activity["room_name"]); ?></h5>
+                  <span>Campus: <?php echo ($activity["building_name"]); ?></span>
+                  <h5>Local: <?php echo ($activity["room_name"]); ?></h5>
 
                   
                   <a href="#" class= "btn btn-success inscription">Je m'inscris</a>

@@ -1,4 +1,5 @@
 <?php 
+// header('Content-Type: text/html; charset=utf-8');
 // on inclut la connexion 
 require("inc/connexion.inc.php");
 // on démarre une session pour avoir les variables de session disponibles sur toutes lespages
@@ -23,7 +24,7 @@ foreach ($events as $event) {
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/bootstrap.min.css">
     <!-- <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet"> -->
