@@ -1,4 +1,6 @@
-   
+
+
+<!-- dans le footer on charge le modal qui contient le formulaire de login et enregistrement qui sera disponible sur toutes les pages -->
    <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
@@ -61,7 +63,7 @@
   </div>
 </div>
    
-   
+   <!-- on charge les scripts -->
    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
    <!-- <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script> -->

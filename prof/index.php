@@ -1,28 +1,29 @@
 <?php 
-$page = 'accueil';
-require "header.php";
+$page = 'accueil'; // on définit la page dans laquell on est. cela sert pour l'id sur le body et pour le menu pour voir lequel est actif afin d'y ajouter la classe 'active'
+require "header.php";  // on inclut le header
 
-$eventid = $_SESSION["eventid"];
+$eventid = $_SESSION["eventid"]; // on crée la variable $eventid  sur base de $_SESSION["eventid"] qui est disponible dans le header, ceci afin de faire les requêtes d'activités uniquement sur l'event actif
 
 
 ?>
 <div class="container">
-<h1>Page index.php</h1>
 <h1>Event ID: <?php echo   $_SESSION["eventid"]; ?> - Name: <?php echo   $_SESSION["eventname"]; ?> - <?php echo   $_SESSION["eventdate"]; ?></h1>
-<p><?php echo   $_SESSION["eventdescription"]; ?></p>
+<p><?php echo   $_SESSION["eventdescription"]; ?></p> <!-- on affiche les infos de l'event actif. ces variables de sessions proviennent du header -->
         <div class="row">
 
   <!-- commencer ma boucle -->
   <?php
+  // pour formater la date
 date_default_timezone_set("Europe/Brussels");
 setlocale(LC_TIME, "fr_FR"); 
 
+// on va chercher les activités avec des INNER JOIN pour avoir les infos des rooms, conferenciers (speakers) etc, et uniquement pour l'event actif ($eventid) qu'on a récupéré dans le header
 $sql = " SELECT * FROM activities
           LEFT JOIN rooms ON activities.room_id = rooms.room_id
           LEFT JOIN buildings ON activities.building_id = buildings.building_id
           LEFT JOIN categories ON activities.category_id = categories.category_id
           LEFT JOIN speakers ON activities.activity_speaker = speakers.speaker_id
-          WHERE activities.event_id = '$eventid';
+          WHERE activities.event_id = '$eventid'; 
 ";
 $activities = $conn->query($sql);
 foreach ($activities as $activity) {    // Début de la boucle
@@ -43,12 +44,14 @@ foreach ($activities as $activity) {    // Début de la boucle
 // ini_set('display_startup_errors', 1);
 // error_reporting(E_ALL);
 
+    // on check si le user est connecté et alors on récupère son id
     if (isset($_SESSION["userid"])) {
         $userid = $_SESSION["userid"];
     }
     
 
     ?>
+            <!-- dans la boucle on crée la div .card-entier qui va contenir toutes les infos d'un event. on y ajoute les classes qui vont servir aux filtres-->
             <div id="id_<?php echo $activityid ; ?>" class="col-lg-6 card-entier <?php echo $activity["category_slug"]; ?> campus_<?php echo $activity["building_id"]; ?>">
               
                     <div class="cartes row">
