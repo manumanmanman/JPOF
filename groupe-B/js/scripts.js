@@ -164,6 +164,12 @@ var parent =  $(this).parent();
 }); // click désinscription registration activité
 
 
+//click
+$("#cancel").click(function(e){
+  e.preventDefault();
+})
+
+
 
 
 });//ready

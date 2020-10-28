@@ -1,4 +1,5 @@
-<?php require "header.php" ?>
+<?php $page = 'contact'; require "header.php";
+$eventid = $_SESSION["eventid"];?>
 <div class="container">
 <div class="row">
 <div class="col-12 col-md-6 left">

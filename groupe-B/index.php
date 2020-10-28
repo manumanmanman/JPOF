@@ -8,7 +8,7 @@ $eventid = $_SESSION["eventid"];?>
   </div>
     <div class="info_home">
       <h1 class="heff_titre">Haute Ecole <br> Francisco Ferrer</h1>
-      <button type="button" id="btn_info_home" href="about.php">Voir plus d'informations</button>
+      <a class="plus-info" id="btn_info_home" href="about.php">Voir plus d'informations</a>
     </div>
   </div>
 

@@ -135,7 +135,7 @@ foreach ($activities as $activity) {    // Début de la boucle
                                 
                             } else { // s'il n'est pas logué, on lui affiche le lien pour se connecter
 
-                            echo '<a class= "coeur-details-even" href="#"  data-toggle="modal" data-target="#exampleModal"><img src="img/image-coeur-png-blanc.png" title="Vous devez être connecté afin d\'ajouter l\'activité à vos favoris"></a>';
+                            echo '<a class= "coeur-details-even" href=""  data-toggle="modal" data-target="#exampleModal"><img src="img/image-coeur-png-blanc.png" title="Vous devez être connecté afin d\'ajouter l\'activité à vos favoris"></a>';
 
                             } // affichage lein pour se connecter
        
