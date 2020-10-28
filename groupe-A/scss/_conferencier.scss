@@ -1,0 +1,106 @@
+.allconf{
+    background-color: rgb(255, 255, 255);
+
+    .container{
+        padding-bottom: 200px;//align nav body
+        .rowconf{
+            margin-top: 60px;
+            min-height: 500px;
+            .titreconferencier{
+                margin: auto;
+                font-family: 'Segoe', sans-serif;
+                color: rgb(61, 61, 61);
+                text-align: center;
+                padding-top:50px;
+                padding-bottom: 50px;
+            }
+            .conferencier{
+                font-family: sans-serif;
+                color: rgb(0, 0, 0);
+                margin-top: 25px;
+
+                .conftout{
+                    padding-right: 10px;
+                    .conf-left{
+                        padding-right: 0;
+                        padding-left: 0;
+                        min-height: 250px; //by julien
+                        //border: 1px green solid
+                        img{
+                            width: 100%;
+                            height: 275px; //by julien
+                            object-fit: cover;
+                        }&:hover{
+                            opacity: 0.8;
+                            transition: 0.4s;
+                        }
+                        
+                    }
+
+                    .conf-right{
+                        // background-color: rgb(247, 247, 247);
+                        padding: 20px;
+                        a{
+                            color: black;
+                            text-decoration: none;
+                            h1{
+                                font-size: 1.55rem;
+                            }
+                            &:hover {
+                                color:rgb(119, 119, 119);
+                                transition: .4s;
+                            }
+
+                        }
+                        
+                        a{
+                            font-size: 1.05rem;
+                            font-weight: 400;
+                            img{
+                                width: 10%;
+                                height: auto;
+                            }
+                            &:hover{
+                                opacity: 0.5;
+                            }
+                        }
+                        p{
+                            padding-top: 5px;
+                            font-size: 0.93rem;
+
+                        }
+                    }
+
+                }
+
+            }
+
+
+
+
+            .lienall{
+                margin: auto;
+                text-align: center;
+                .acti{
+                    margin-top: 60px;
+                    text-align: center;
+                    font-size: 18px;
+                    background-color: rgb(255, 255, 255);
+                    font-family: 'Segoe', sans-serif;
+                    color: rgb(87, 87, 87);
+                    border-radius: 0%;
+                    &:hover{
+                    background-color: #28a745 !important;
+                    color: white;
+                    border: 1px solid #28a745;
+                    }
+                    img{
+                        width: 15%;
+                        height:auto;
+                    }
+                }
+            }// fin lienall
+
+        }// fin row
+    }//fin container
+} //fin allconf

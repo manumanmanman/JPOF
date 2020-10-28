@@ -17,7 +17,9 @@
                     <div class="col-6 carte card-right">
                         <h1>Atelier Ecape Game</h1>
                         <h4>De 11h à 13h</h4>
-                        <a class= "coeur" href=""><img src="img/image-coeur-png-blanc.png" alt="coeur"></a>
+                        <a class= "coeur" href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="gray" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                        </svg></a>
                         <p>Dans cette atelier, vous allez dévelloper vos sens et votre logique en vous laissant dans des enigmes ...</p>
 
                         <span>Aneessens</span>
@@ -40,7 +42,9 @@
                     <div class="col-6 carte card-right">
                         <h1>Atelier Ecape Game</h1>
                         <h4>De 11h à 13h</h4>
-                        <a class= "coeur" href=""><img src="img/image-coeur-png-blanc.png" alt="coeur"></a>
+                        <a class= "coeur" href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="gray" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                        </svg></a>
                         <p>Dans cette atelier, vous allez dévelloper vos sens et votre logique en vous laissant dans des enigmes ...</p>
 
                         <span>Aneessens</span>
@@ -65,7 +69,9 @@
                     <div class="col-6 carte card-right">
                         <h1>Atelier Ecape Game</h1>
                         <h4>De 11h à 13h</h4>
-                        <a class= "coeur" href=""><img src="img/image-coeur-png-blanc.png" alt="coeur"></a>
+                        <a class= "coeur" href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="gray" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                        </svg></a>
                         <p>Dans cette atelier, vous allez dévelloper vos sens et votre logique en vous laissant dans des enigmes ...</p>
 
                         <span>Aneessens</span>
@@ -89,7 +95,9 @@
                     <div class="col-6 carte card-right">
                         <h1>Atelier Ecape Game</h1>
                         <h4>De 11h à 13h</h4>
-                        <a class= "coeur" href=""><img src="img/image-coeur-png-blanc.png" alt="coeur"></a>
+                        <a class= "coeur" href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="gray" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                        </svg></a>
                         <p>Dans cette atelier, vous allez dévelloper vos sens et votre logique en vous laissant dans des enigmes ...</p>
 
                         <span>Aneessens</span>
@@ -139,7 +147,9 @@
                     <div class="col-6 carte card-right">
                         <h1>Atelier Ecape Game</h1>
                         <h4>De 11h à 13h</h4>
-                        <a class= "coeur" href=""><img src="img/image-coeur-png-blanc.png" alt="coeur"></a>
+                        <a class= "coeur" href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="gray" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                        </svg></a>
                         <p>Dans cette atelier, vous allez dévelloper vos sens et votre logique en vous laissant dans des enigmes ...</p>
 
                         <span>Aneessens</span>
@@ -162,7 +172,9 @@
                     <div class="col-6 carte card-right">
                         <h1>Atelier Ecape Game</h1>
                         <h4>De 11h à 13h</h4>
-                        <a class= "coeur" href=""><img src="img/image-coeur-png-blanc.png" alt="coeur"></a>
+                        <a class= "coeur" href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="gray" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                        </svg></a>
                         <p>Dans cette atelier, vous allez dévelloper vos sens et votre logique en vous laissant dans des enigmes ...</p>
 
                         <span>Aneessens</span>
@@ -187,7 +199,9 @@
                     <div class="col-6 carte card-right">
                         <h1>Atelier Ecape Game</h1>
                         <h4>De 11h à 13h</h4>
-                        <a class= "coeur" href=""><img src="img/image-coeur-png-blanc.png" alt="coeur"></a>
+                        <a class= "coeur" href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="gray" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                        </svg></a>
                         <p>Dans cette atelier, vous allez dévelloper vos sens et votre logique en vous laissant dans des enigmes ...</p>
 
                         <span>Aneessens</span>
@@ -211,7 +225,9 @@
                     <div class="col-6 carte card-right">
                         <h1>Atelier Ecape Game</h1>
                         <h4>De 11h à 13h</h4>
-                        <a class= "coeur" href=""><img src="img/image-coeur-png-blanc.png" alt="coeur"></a>
+                        <a class= "coeur" href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="gray" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                        </svg></a>
                         <p>Dans cette atelier, vous allez dévelloper vos sens et votre logique en vous laissant dans des enigmes ...</p>
 
                         <span>Aneessens</span>

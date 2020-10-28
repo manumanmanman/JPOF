@@ -31,7 +31,7 @@
             
 
             <div class="col12 lienliste">
-            <a href="#" class= "btn btn-success intervenant">Liste des intervenants <img src="img/Groupe 12.png"></a>
+            <a href="conferencier.php" class= "btn btn-success intervenant">Liste des conférenciers <img src="img/Groupe 12.png"></a>
             </div>
 
         </div> <!-- row fin -->

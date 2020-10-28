@@ -19,7 +19,7 @@
         <a class="nav-link" href="index.php">Accueil</a>
       </li>
       <li class="nav-item mx-3">
-        <a class="nav-link" href="#">Conférenciers</a>
+        <a class="nav-link" href="conferencier.php">Conférenciers</a>
       </li>
       <li class="nav-item mx-3">
         <a class="nav-link" href="a-propos.php">À propos</a>

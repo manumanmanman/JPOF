@@ -124,8 +124,8 @@ body {
   top: 15px;
 }
 
-.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right .coeur img {
-  width: 35px;
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right .coeur svg {
+  width: 30px;
   height: auto;
 }
 
@@ -275,8 +275,8 @@ body {
   top: 15px;
 }
 
-.divactivite2 .container .row .card-entier .cartes .card-right .coeur img {
-  width: 35px;
+.divactivite2 .container .row .card-entier .cartes .card-right .coeur svg {
+  width: 30px;
   height: auto;
 }
 
@@ -369,6 +369,121 @@ body {
 
 #logo {
   display: none;
+}
+
+.allconf {
+  background-color: white;
+}
+
+.allconf .container {
+  padding-bottom: 200px;
+}
+
+.allconf .container .rowconf {
+  margin-top: 60px;
+  min-height: 500px;
+}
+
+.allconf .container .rowconf .titreconferencier {
+  margin: auto;
+  font-family: 'Segoe', sans-serif;
+  color: #3d3d3d;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.allconf .container .rowconf .conferencier {
+  font-family: sans-serif;
+  color: black;
+  margin-top: 25px;
+}
+
+.allconf .container .rowconf .conferencier .conftout {
+  padding-right: 10px;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-left {
+  padding-right: 0;
+  padding-left: 0;
+  min-height: 250px;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-left img {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-left:hover {
+  opacity: 0.8;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-right {
+  padding: 20px;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-right a {
+  color: black;
+  text-decoration: none;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-right a h1 {
+  font-size: 1.55rem;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-right a:hover {
+  color: #777777;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-right a {
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-right a img {
+  width: 10%;
+  height: auto;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-right a:hover {
+  opacity: 0.5;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-right p {
+  padding-top: 5px;
+  font-size: 0.93rem;
+}
+
+.allconf .container .rowconf .lienall {
+  margin: auto;
+  text-align: center;
+}
+
+.allconf .container .rowconf .lienall .acti {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 18px;
+  background-color: white;
+  font-family: 'Segoe', sans-serif;
+  color: #575757;
+  border-radius: 0%;
+}
+
+.allconf .container .rowconf .lienall .acti:hover {
+  background-color: #28a745 !important;
+  color: white;
+  border: 1px solid #28a745;
+}
+
+.allconf .container .rowconf .lienall .acti img {
+  width: 15%;
+  height: auto;
 }
 
 .a-propos {
