@@ -3,6 +3,7 @@ $userid = $_SESSION["userid"];
 
 ?>
 <div class="container">
+ 
 <div class="row">
 <div class="col-12">
 <?php 
@@ -24,28 +25,45 @@ if (!isset($_SESSION["user"])) { // il n'est pas logué, on redirige vers la pag
 
 
  ?>
-<h3>Bienvenue : <?php echo $user["user_name"]; ?></h3>
+ <h1>Bienvenue : <?php echo $user["user_name"]; ?></h1>
+ </div>
 
+ <div class="col-12 col-md-6">
 <h4>Activités dans vos favoris</h4>
 <?php 
 $sql = "SELECT  * FROM favorites 
         RIGHT JOIN  activities ON favorites.activity_id = activities.activity_id
         WHERE favorites.user_token = '$userid'";
 $favorites = $conn->query($sql);
-foreach ($favorites as $favorite) {
+foreach ($favorites as $favorite) { ?>
 
 
-echo utf8_encode($favorite["activity_name"]).'<div class="coeur"><a class="remove" href="#" data-activity="'.$favorite["activity_id"].'">Retirer des favoris</a></div><br>';
+<div class="favorisurprofil">
+<h3><?php echo ($favorite["activity_name"]); ?></h3>
+<div class="coeur"><a class="remove btn btn-danger" href="#" data-activity="<?php echo ($favorite["activity_id"]); ?>"><span class="texte">Retirer des favoris</span></a></div>
+</div>
 
-    } //($favorites as $favorite) {
 
-
-?>
-
-ici
+   <?php } //($favorites as $favorite) ?>
+</div>
+<div class="col-12 col-md-6">
 
 <h4>Activités auxquelles vous êtes inscrit</h4>
+<?php 
+$sql = "SELECT  * FROM registrations 
+        RIGHT JOIN  activities ON registrations.activity_id = activities.activity_id
+        WHERE registrations.user_token = '$userid'";
+$registrations = $conn->query($sql);
+foreach ($registrations as $registration) { ?>
 
+
+<div class="inscritsurprofil">
+<h3><a href="detail-activite.php?activityid=<?php  echo $registration["activity_id"]; ?>"><?php echo ($registration["activity_name"]); ?></a></h3>
+<div class="contenantboutoninscription"><a class="desinscriptionactvite  btn btn-danger" href="#" data-activity="<?php echo ($registration["activity_id"]); ?>"><span class="texte">Se désinscrire</span></a></div>
+</div>
+
+
+   <?php } //($favorites as $favorite) ?>
 
 
 

@@ -112,6 +112,11 @@ foreach ($activities as $activity) {    // Début de la boucle
 
 
                             <?php
+
+
+                                // si connecté 
+                                if(isset($_SESSION["user"])){
+
                             // aller chercher dans la table registrations le nombre d'inscrits pour un event donné (celui dans lequel on se trouve dans la boucle)
                             $sql3 = "SELECT * FROM registrations WHERE activity_id = '$activityid' ";
                                                 $results = $conn->query($sql3); 
@@ -158,6 +163,12 @@ foreach ($activities as $activity) {    // Début de la boucle
                                 echo "COMPLET";
                             }
                             
+                        } // si connecté
+
+                        else {
+                            echo '<a href="#" class= "btn btn-success inscriptionactvite"   data-toggle="modal" data-target="#exampleModal">Je m\'inscris</a>';
+
+                        }
                             
                             ?>
 
@@ -177,16 +188,6 @@ foreach ($activities as $activity) {    // Début de la boucle
         </div>   <!-- row -->
 </div>  <!-- / container  -->
 
-
-<?php
-
-$text = "A strange string to pass, maybe with some ø, æ, å characters."; 
-
-foreach(mb_list_encodings() as $chr){ 
-        echo mb_convert_encoding($text, 'UTF-8', $chr)." : ".$chr."<br>";    
- } 
-
-?>
 
 <?php require "footer.php" ?>
 

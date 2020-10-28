@@ -31,7 +31,10 @@ $( document ).ready(function() {
                        
             // $(coeurparent).html(data); 
             $(coeurparent).children().removeClass("remove").addClass("add");   
-            $(coeurparent).children().children().attr("fill","gray");   
+            $(coeurparent).children().children().attr("fill","gray"); 
+
+            // uniquement pour sur la page mon profil!
+            $(coeurparent).parent(".favorisurprofil").remove();   
 
            
            } // success    
@@ -157,6 +160,8 @@ $( document ).ready(function() {
 
               disponible = disponible -(-1);
               $(parent).siblings("h5").children().text(disponible);
+              // uniquement pour sur la page mon profil!
+            $(parent).parent(".inscritsurprofil").remove();  
 
             } // success
           }); // $.ajax function
