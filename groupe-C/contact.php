@@ -11,7 +11,7 @@
         </div>
         <div class="form-group col-6">
             <label for="exampleFormControlInput2">Nom</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1">
+            <input type="email" class="form-control" id="exampleFormControlInput2">
           </div>
         <div class="form-group col-12">
           <label for="exampleFormControlTextarea1">Message</label>
