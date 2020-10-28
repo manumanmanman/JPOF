@@ -106,10 +106,55 @@ foreach ($activities as $activity) {    // Début de la boucle
 
                         <span>Campus: <?php echo utf8_encode($activity["building_name"]); ?></span>
                         <h5>Local: <?php echo utf8_encode($activity["room_name"]); ?></h5>
-                        <h5>Places total: <?php echo utf8_encode($activity["activity_size"]); ?></h5>
+                        <!-- <h5>Places total: <?php echo utf8_encode($activity["activity_size"]); ?></h5> -->
+
+
+                            <?php
+                            // aller chercher dans la table registrations le nombre d'inscrits pour un event donné (celui dans lequel on se trouve dans la boucle)
+                            $sql3 = "SELECT * FROM registrations WHERE activity_id = '$activityid' ";
+                                                $results = $conn->query($sql3); 
+                                                $nombreinscriptions=mysqli_num_rows($results); 
+                                                $placesrestantes = $activity["activity_size"] - $nombreinscriptions;
+                                              
+                                                                    
+                            
+                            ?>
+                            
+
+                            <?php 
+                            
+                            if ($nombreinscriptions < $activity["activity_size"]) {
+                                echo '<h5>Places disponibles: <span class="disponible">'.$placesrestantes.'</span> /'.$activity["activity_size"].'</h5>';
+
+
+                                            // on va aussi aller voir si l'utilisateur connecté est déjà inscrit à l'activité
+                                            $sql4 = "SELECT * FROM registrations WHERE activity_id = '$activityid' AND user_token = '$userid '";
+                                            $results = $conn->query($sql4); 
+                                            $rowcount=mysqli_num_rows($results); 
+                                            echo '<div class="contenantboutoninscription">';
+                                            if ($rowcount > 0) {
+                                               
+                                             // si oui, on lui propose de se désinscrire
+                                             echo '<a href="#" class= "btn btn-danger desinscriptionactvite" data-activity="'.$activity["activity_id"].'">Je me désinscris</a>';
+                                            } else {
+                                           // si non, on lui propose de s'y inscrire
+                                            echo '<a href="#" class= "btn btn-success inscriptionactvite" data-activity="'.$activity["activity_id"].'">Je m\'inscris</a>';
+                                            }
+                                            echo "</div>"; //#contenantboutoninscription
+
+                                            
+
+                            } else {
+
+                                echo "COMPLET";
+                            }
+                            
+                            
+                            ?>
+
 
                         
-                        <a href="#" class= "btn btn-success inscription">Je m'inscris</a>
+                        
                     </div>
                     </div>
              

@@ -122,23 +122,6 @@ foreach ($activities as $activity) {    // Début de la boucle
              
             </div> <!-- card entier -->
 
-            <?php
-
-    
-// echo utf8_encode($activity["activity_id"])."<br>";
-// echo "<strong>".utf8_encode($activity["activity_name"])."</strong><br>";
-// echo utf8_encode($activity["activity_description"])."<br>";
-
-// echo "<span style='color:red'>".utf8_encode($activity["room_name"])."</span><br>";
-// echo "<span style='color:orange'>".utf8_encode($activity["building_name"])."</span><br>";
-// echo "<span style='color:blue'>".utf8_encode($activity["category_name"])."</span><br>";
-// echo "<span style='color:yellowgreen'>".utf8_encode($activity["speaker_name"])." ".utf8_encode($activity["speaker_surname"])."</span><br>";
-
-// echo $datevent."<br>";
-// echo $heuredebut."<br>";
-// echo $heurefin."<hr>";
-
-?>
 
          <!-- fermer ma boucle     -->
  <?php } // foreach   fin de la boucle ?>
