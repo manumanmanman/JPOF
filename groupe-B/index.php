@@ -2,41 +2,44 @@
 $eventid = $_SESSION["eventid"];?>
 
 <div class="container-fluid">
-  <div class="col-12" class="container_home">
-  <div class="img_home">
-    <img src="img/Rectangle_151.jpg" alt="Home" class="image_home">
-  </div>
-    <div class="info_home">
-      <h1 class="heff_titre">Haute Ecole <br> Francisco Ferrer</h1>
-      <a class="plus-info" id="btn_info_home" href="about.php">Voir plus d'informations</a>
-    </div>
-  </div>
+    <div class="col-12" class="container_home">
+        <div class="img_home">
+            <img src="img/Rectangle_151.jpg" alt="Home" class="image_home">
+        </div>
+        <div class="info_home">
+        <h1 class="heff_titre">Haute Ecole <br> Francisco Ferrer</h1>
+        <a class="plus-info" id="btn_info_home" href="about.php">Voir plus d'informations</a>
+        </div>
+    </div> <!-- col-12 -->
 
-<div class="col-12">
-  <h1 class="h1_home">Evenements à la journée Ferrer</h1>
+    <div class="col-12">
+        <h1 class="h1_home">Evenements à la journée Ferrer</h1>
 
-<div class="menu_even">
-<ul class="nav">
-    <li class="nav-item">
-        <a class="nav-link nav-link-even" href="#">Tous</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link nav-link-even" href="#">Pour vous</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link nav-link-even" href="#">Techniques</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link nav-link-even" href="#">Electroniques</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link nav-link-even" href="#">Droit</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link nav-link-even" href="#">Medecine</a>
-    </li>
-</ul>
-</div>
+        <div class="menu_even">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-even" href="#">Tous</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-even" href="#">Arts appliqués</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-even" href="#">Economique</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-even" href="#">Paramédical</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-even" href="#">Pédagogique</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-even" href="#">Technique</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-even" href="#">Social</a>
+                </li>
+            </ul>
+        </div> <!-- menu_even -->
 
 
 <div class="container">
@@ -87,9 +90,9 @@ foreach ($activities as $activity) {    // Début de la boucle
               
                     <div class="cartes row">
 					<div class="card">
-                    <div class="card-img-top">
-                        <img src="<?php echo $activity["activity_img"]; ?>" alt="<?php echo ($activity["activity_name"]); ?>"> 
-					</div>
+                        <div class="card-img-top">
+                            <img src="<?php echo $activity["activity_img"]; ?>" alt="<?php echo ($activity["activity_name"]); ?>"> 
+                        </div>
 					
                     <div class="carte card-body">
                         <h3>Le <?php echo $datevent; ?> <br>
@@ -121,7 +124,7 @@ foreach ($activities as $activity) {    // Début de la boucle
                                                 
                                                 </a>
 
-                                                </div>
+                                                        </div> 
                                                <?php  
                                 
                             } else { // s'il n'est pas logué, on lui affiche le lien pour se connecter
@@ -132,7 +135,7 @@ foreach ($activities as $activity) {    // Début de la boucle
        
                             ?>  
                         
-					</div>
+                        </div> <!-- card-body -->
 					</div> <!-- card -->
                     </div> <!-- card row -->
              
@@ -143,7 +146,9 @@ foreach ($activities as $activity) {    // Début de la boucle
  <?php } // foreach   fin de la boucle ?>
      
 
-        </div>   <!-- row -->
-</div>  <!-- / container  -->
+        </div>   
+</div>  <!-- row -->
+</div> <!-- / container  -->
+</div><!-- / container fluid -->
 
 <?php require "footer.php" ?>

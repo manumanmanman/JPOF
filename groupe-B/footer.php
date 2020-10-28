@@ -8,7 +8,7 @@
         <a class="nav-link nav-link-footer" href="conferenciers.php">Conférenciers</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link nav-link-footer" href="favoris.php">Favoris</a>
+        <a class="nav-link nav-link-footer" href="about.php">A propos</a>
     </li>
     <li class="nav-item">
         <a class="nav-link nav-link-footer" href="profil.php">Profil</a>

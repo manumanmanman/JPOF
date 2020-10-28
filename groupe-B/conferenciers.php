@@ -11,7 +11,33 @@ $eventid = $_SESSION["eventid"];
 <div class="row">
     <div class="col-12">
         <h1 class="h1_home">Conférenciers</h1>
-    </div> 
+        <div class="menu_even">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-even" href="#">Tous</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-even" href="#">Arts appliqués</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-even" href="#">Economique</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-even" href="#">Paramédical</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-even" href="#">Pédagogique</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-even" href="#">Technique</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-even" href="#">Social</a>
+                </li>
+            </ul>
+        </div> <!-- menu_even -->
+    </div> <!-- col-12 -->
+
 
 <?php 
 
@@ -39,8 +65,9 @@ foreach ($speakers as $speaker) {
                 <h3><?php echo utf8_encode($speaker['speaker_surname'])." ".$speaker['speaker_name'] ?></h3>
                 <p class="text-justify"><a href="https://www.linkedin.com/in/<?php echo $speaker['speaker_linkedin'] ?>" target="_blank" title="Profil Linkedin de <?php echo utf8_encode($speaker['speaker_surname'])." ".$speaker['speaker_name'] ?>"><img src="http://elastik.eu/img/linkedin-logo.png"></a></p>
                 <a href="detail-conferencier.php?conferencierid=<?php echo $speaker['speaker_id'] ?>"><?php echo utf8_encode($speaker['speaker_surname'])." ".$speaker['speaker_name'] ?></a>
-            </div><!-- /card-body-->
-        </div><!-- /col-md-4-->
+            </div><!-- /card-body -->
+            </div><!-- /card -->
+        </div><!-- /col-md-4 -->
 
 <?php } // for each  foreach ($speakers as $speaker) ?>
 
