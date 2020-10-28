@@ -1,7 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 nav img {
-  height: 20px;
+  height: 25px;
   width: auto;
+  position: absolute;
+  left: 0;
+  margin-top: 5px;
+}
+
+.bg-light {
+  background-color: white !important;
+}
+
+.navbar {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 5px;
+}
+
+body {
+  background-color: white;
 }
 
 #bienvenue {
@@ -26,7 +48,7 @@ nav img {
   padding: 10px;
 }
 
-.carre.arts-appliques {
+.carre.artsappliques {
   background-color: #74B626;
 }
 
@@ -46,8 +68,16 @@ nav img {
   background-color: #1393CC;
 }
 
-.carre .far, .carre .fas {
+.carre .icones {
   color: white;
+  margin: -15px;
+  font-size: 14px;
+  padding-left: 18px;
+  padding-top: 18px;
+}
+
+.carre .fas, .carre .far {
+  padding-right: 5px;
 }
 
 .full-card {
@@ -58,6 +88,7 @@ nav img {
 .nav-cat {
   font-size: 20px;
   margin: 15px 0px;
+  text-transform: uppercase;
 }
 
 .nav-cat li {
@@ -103,10 +134,12 @@ nav img {
 
 .redheart {
   color: red;
+  padding-left: 230px;
 }
 
 .grayheart {
   color: lightgray;
+  padding-left: 230px;
 }
 
 #screensize {
@@ -114,7 +147,7 @@ nav img {
   height: 30px;
   z-index: 1000;
   position: fixed;
-  background-color: blue;
+  background-color: rgba(0, 0, 255, 0.199);
   top: 0;
   right: 0;
   text-align: center;
@@ -128,7 +161,7 @@ nav img {
 
 @media (max-width: 1199.98px) {
   #screensize {
-    background-color: magenta;
+    background-color: rgba(255, 0, 255, 0.13);
   }
   #screensize:after {
     content: "LG < 1200px";
@@ -137,7 +170,7 @@ nav img {
 
 @media (max-width: 991.98px) {
   #screensize {
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.185);
   }
   #screensize:after {
     content: "MD < 992px";
@@ -146,7 +179,7 @@ nav img {
 
 @media (max-width: 767.98px) {
   #screensize {
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 0.171);
   }
   #screensize:after {
     content: "SM < 768px";

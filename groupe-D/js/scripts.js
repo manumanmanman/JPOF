@@ -71,4 +71,28 @@ $(coeurparent).html(data);
 
 }); //click
 
+
+$(".filtres li a").click(function(e) {
+e.preventDefault();
+var category = $(this).attr("data-category");
+console.log(category);
+
+if (category == 'all') {
+
+$('.full-card').fadeIn();
+
+
+} else {
+
+    $(".full-card:not(."+category+")").fadeOut();
+}
+
+
+
+}); //click
+
+
+
+
+
 }); //ready

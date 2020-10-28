@@ -19,8 +19,8 @@
 
 </div>
 
-<a href="">Inscription</a> 
 
+<div class="container">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
   
@@ -38,7 +38,7 @@
       <li class="nav-item <?php if($page == "activites"){echo "active";} ?>">
         <a class="nav-link" href="activites.php">Activités</a>
       </li>
-      <li class="nav-item <?php if($page == "conferenciers"){echo "active";} ?>">
+      <li class="nav-item <?php if($page == "conferenciers" || $page == "conferencier"){echo "active";} ?>">
         <a class="nav-link" href="conferenciers.php">Conférenciers</a>
       </li>
       <li class="nav-item <?php if($page == "apropos"){echo "active";} ?>">
@@ -47,10 +47,8 @@
       <li class="nav-item <?php if($page == "contact"){echo "active";} ?>">
         <a class="nav-link" href="contact.php">Contact</a>
       </li>
-    </ul>
-  </div>
-</nav>
-
+     
+ 
 
 <?php 
 
@@ -58,18 +56,26 @@ session_start();
 if(isset($_SESSION["user"])) {
 
 
-  echo "<p>username: <b> ".$_SESSION["user"]."</b>";
-  echo " user id: <b> ".$_SESSION["userid"]."</b>";
+  echo $_SESSION["user"];
   echo ' - <a href="inc/logout.inc.php">log out</a></p>';
 
 
-} else {
+} else { ?>
 
-
-echo '<a href="register.php" data-toggle="modal" data-target="#exampleModal">Connexion</a>';
-
-
-} 
+  <li class="nav-item <?php if($page == "contact"){echo "active";} ?>">
+  <?php 
+  echo '<a href="register.php" data-toggle="modal" data-target="#exampleModal"> Connexion</a>'; } 
 
 
 ?>
+  </li>
+
+
+
+
+
+
+</ul>
+  </div>
+</nav>
+</div>

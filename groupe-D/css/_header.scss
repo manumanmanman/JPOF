@@ -1,4 +1,25 @@
 nav img {
-    height: 20px;
+    height: 25px;
     width: auto;
+    position:absolute;
+    left: 0;
+    margin-top: 5px;
 }
+
+.bg-light {
+    background-color: white!important;
+}
+
+.navbar {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.nav-item {
+
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px;
+}
+
+

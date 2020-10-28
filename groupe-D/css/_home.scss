@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+
+body {
+     background-color: white;
+}
+
 #bienvenue{
     height: 200px;
     width: 100%;
@@ -23,7 +28,7 @@
     padding: 10px;
 
 
-&.arts-appliques {
+&.artsappliques {
     background-color:$green;
 }
 &.paramedical {
@@ -39,11 +44,19 @@
     background-color:$blue;
 }
 
-
-.far , .fas{
-       color: rgb(255, 255, 255);
-      
+ .icones {
+    color: white;
+    margin: -15px;
+    font-size: 14px;
+    padding-left: 18px;
+    padding-top: 18px;
 }
+
+.fas, .far {
+
+    padding-right: 5px;
+}
+
 
 }
 .full-card {
@@ -53,6 +66,7 @@
 .nav-cat {
     font-size: 20px;
     margin:15px 0px;
+    text-transform: uppercase;
 
     
 
@@ -99,8 +113,10 @@
 
 .redheart {
     color: red;
+    padding-left: 230px;
 }
 
 .grayheart {
     color: lightgray;
+    padding-left: 230px;
 }

@@ -16,24 +16,24 @@ require("header.php");
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav mx-auto">
+    <ul class="navbar-nav mx-auto filtres">
     <li class="nav-item active">
-        <a class="nav-link black" href="#"> Toutes les activités</a>
+        <a class="nav-link black" href="#" data-category="all"> Toutes les activités</a>
       </li>
     <li class="nav-item active">
-        <a class="nav-link mauve" href="#"> Technique</a>
+        <a class="nav-link mauve" href="#" data-category="technique"> Technique</a>
       </li>
     <li class="nav-item active">
-        <a class="nav-link orange" href="#"> Economique et Social</a>
+        <a class="nav-link orange" href="#" data-category="economiquesocial"> Economique et Social</a>
       </li>
     <li class="nav-item active">
-        <a class="nav-link rouge" href="#"> Paramédical</a>
+        <a class="nav-link rouge" href="#" data-category="paramedical"> Paramédical</a>
       </li>
     <li class="nav-item active">
-        <a class="nav-link vert" href="#"> Arts Appliqués</a>
+        <a class="nav-link vert" href="#" data-category="artsappliques"> Arts Appliqués</a>
       </li>
     <li class="nav-item active">
-        <a class="nav-link bleu" href="#"> Pédagogique</a>
+        <a class="nav-link bleu" href="#" data-category="pedagogique"> Pédagogique</a>
       </li>
       
     </ul>
@@ -73,15 +73,15 @@ foreach($activities as $activity) { // DEBUT DE LE BOUCLE
 
 ?>
  
-        <div class="col-12 col-md-4 full-card">
+        <div class="col-12 col-md-4 full-card <?php echo $activity["category_slug"]?> ">
         <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="img/activites.jpg " alt="Card image cap">
 
     <div class="carre <?php echo $activity["category_slug"]?>">
-    <i class="far fa-bookmark">  <?php echo utf8_encode ($activity["category_name"])?></i> <br>
-    <i class="far fa-calendar-alt">   <?php echo utf8_encode ($activity["activity_date"])?></i> <br>
-    <i class="fas fa-map-marker-alt"> <?php echo utf8_encode ($activity["building_name"])?></i> <br>
-    <i class="fas fa-microphone">  <?php echo utf8_encode ($activity["speaker_name"])?></i>
+   <p class="icones"> <i class="far fa-bookmark"></i>  <?php echo utf8_encode ($activity["category_name"])?></i></p> <br>
+   <p class="icones"><i class="far fa-calendar-alt"></i>  <?php echo utf8_encode ($activity["activity_date"])?> </p></i> <br>
+   <p class="icones"> <i class="fas fa-map-pin"></i> <?php echo utf8_encode ($activity["building_name"])?></i></p> <br>
+   <p class="icones"> <i class="fas fa-microphone-alt"></i> <?php echo utf8_encode ($activity["speaker_name"])?> </p></i>
 
     </div>  <!-- FIN DU CARE -->
 
