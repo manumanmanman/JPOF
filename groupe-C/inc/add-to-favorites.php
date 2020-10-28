@@ -16,6 +16,8 @@ $sql = "INSERT INTO favorites (activity_id, user_token) VALUES ('$activity_id', 
 // // 4 exécuter la requête SQL
 $favorites = $conn->query($sql);
 
- header("Location: ../index.php");
+//  header("Location: ../index.php");
+
+echo '<a class="remove" href="#" data-activity="'.$activity_id.'">inscrit au favoris</a>';
 
 ?>

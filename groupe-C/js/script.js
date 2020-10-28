@@ -7,7 +7,7 @@ $( document ).ready(function() {
         var activityid = $(this).attr('data-activity');
         console.log("remove"+activityid) ;
         
-        var coeurparent =  $(this);
+        var coeurparent =  $(this).parent();
 
         $.ajax({
             // 1) on définit le fichier vers lequel on envoye la requête POST
@@ -48,7 +48,7 @@ $( document ).ready(function() {
 
         var activityid = $(this).attr('data-activity');
         console.log("add: "+activityid) ;
-        var coeurparent =  $(this);
+        var coeurparent =  $(this).parent();
 
         $.ajax({
             // 1) on définit le fichier vers lequel on envoye la requête POST

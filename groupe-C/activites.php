@@ -64,13 +64,13 @@ foreach ($activities as $activity) {    // Début de la boucle
                                                 if ($rowcount > 0) { // si le résultat = 1, ça veut dire que cette activité est dans les favors du user, et donc on lui met un lien pour le SUPPRIMER de ses favoris
 
                                                     // echo ' <a class= "coeur remove" href="inc/remove-from-favorites.php?activity_id='.$activity["activity_id"].'"><img src="img/image-coeur-png-1.png" title="Retirer des favoris"></a>';
-                                                    echo ' <a class="remove" href="#" data-activity="'.$activity["activity_id"].'"><img src="img/image-coeur-png-1.png" title="Retirer des favoris"></a>';
+                                                    echo ' <a class="remove" href="#" data-activity="'.$activity["activity_id"].'">inscrit au favoris</a>';
 
 
                                                 } else { // sinon, ça veut dire que ce n'est pas dans ses favoris, et donc on lui met un lien pour l'AJOUTER dans ses favoris
 
                                                     // echo '<a class= "coeur add" href="inc/add-to-favorites.php?activity_id='.$activity["activity_id"].'"><img src="img/image-coeur-png-blanc.png" title="Ajouter aux favoris"></a>';
-                                                    echo '<a class="add" href="#" data-activity="'.$activity["activity_id"].'"><img src="img/image-coeur-png-blanc.png" title="Ajouter aux favoris"></a>';
+                                                    echo '<a class="add" href="#" data-activity="'.$activity["activity_id"].'">pas inscrit favoris</a>';
                                                 }
                                 
                                                 echo '</div>';
