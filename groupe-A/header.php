@@ -25,7 +25,7 @@
         <a class="nav-link" href="a-propos.php">À propos</a>
       </li>
       <li class="nav-item ml-3 mr-5">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="contact.php">Contact</a>
       </li>
     </ul>
     <a class="nav-link ml-5" data-toggle="modal" data-target="#exampleModal" href="#">Inscription - Connexion</a>
