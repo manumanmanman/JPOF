@@ -16,7 +16,15 @@
                 <h1>Atelier Ecape Game</h1>
                             <h4>De 11h à 13h</h4>
                             <a class= "coeur" href=""><img src="img/image-coeur-png-blanc.png" alt="coeur"></a>
-                            <p>Dans cette atelier, vous allez dévelloper vos sens et votre logique en vous laissant dans des enigmes ...</p>
+                            <p>Dans cette atelier, vous allez dévelloper vos sens et votre logique en vous laissant dans des enigmes 
+                                jamais élucidé, allez vous réussir ? <br>
+                                Attention ce jeu demande au participant d'ëtre à l'heure afin de le lancer aux heures données.
+                                <br><br>
+                                Par <span id="speaker-txt-detail">Jean Neymar</span>
+
+                        
+                            </p>
+                            
 
                             <span>Aneessens</span>
                             <h5>local 140</h5>
@@ -35,11 +43,11 @@
     
 
 
-<div class="container-fluid dubas">
-        <div class="container divactivite2">
+<div class="container-fluid dubas dubas-detail">
+        <div class="container divactivite2 divactivite2-detail">
         <div class="row">
             
-            <div class="col-lg-6 card-entier pedagogique">
+            <div class="col-lg-6 card-entier pedagogique ">
                 
                     <div class="cartes row">
                     <div class="carte card-left col-6">
