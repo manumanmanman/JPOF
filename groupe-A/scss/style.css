@@ -857,6 +857,23 @@ body {
   width: 100%;
 }
 
+.tout-form {
+  text-align: center;
+}
+
+.tout-form h5 {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.tout-form hr {
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-connection .insert {
+  height: 34.8px;
+}
+
 .form-connection input {
   width: 31%;
 }
@@ -867,15 +884,46 @@ body {
 
 .form-connection .seconnecter {
   font-size: 0.88rem;
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
+  margin-bottom: 4.5px;
   background-color: #f7f7f7;
   color: black;
   border-radius: 0%;
 }
 
 .form-connection .seconnecter:hover {
+  background-color: #28a745 !important;
+  color: white;
+  border: 1px solid #28a745;
+}
+
+.form-inscription .insert {
+  height: 34.8px;
+}
+
+.form-inscription input {
+  width: 46%;
+}
+
+.form-inscription input:first-child {
+  margin-right: 3px;
+}
+
+.form-inscription .fin-input {
+  width: 94%;
+  margin-top: 15px;
+}
+
+.form-inscription .creer {
+  font-size: 0.88rem;
+  margin-bottom: 4.5px;
+  background-color: #f7f7f7;
+  color: black;
+  border-radius: 0%;
+  width: 50%;
+  margin-top: 15px;
+}
+
+.form-inscription .creer:hover {
   background-color: #28a745 !important;
   color: white;
   border: 1px solid #28a745;
