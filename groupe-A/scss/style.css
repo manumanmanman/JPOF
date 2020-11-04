@@ -92,7 +92,7 @@
 
 .contact {
   background-color: #f7f7f7;
-  height: 50vh;
+  height: 65vh;
   position: relative;
   padding: 30px;
   display: -webkit-box;
@@ -113,6 +113,11 @@
   padding: 10px;
   font-size: 20px;
   font-weight: 400;
+}
+
+.contact-container {
+  padding-top: 80px;
+  margin-bottom: -100px;
 }
 
 .row {
