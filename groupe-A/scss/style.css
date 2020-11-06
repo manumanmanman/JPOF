@@ -290,6 +290,7 @@ body {
 
 .bi-nav-body .divactivite1 .row .card-entier .cartes .card-right h1 {
   font-size: 1.35rem;
+  width: 80%;
 }
 
 .bi-nav-body .divactivite1 .row .card-entier .cartes .card-right h4 {
@@ -1142,6 +1143,74 @@ body {
     width: 35vw;
     height: 35vw;
     margin: 30px;
+  }
+  .bi-nav-body .divactivite1 .row .cartes .card-left h2 {
+    font-size: 1.8vh !important;
+  }
+  .bi-nav-body .divactivite1 .row .cartes .card-right {
+    position: relative;
+    background-color: #f7f7f7;
+    padding: 10px;
+  }
+  .bi-nav-body .divactivite1 .row .cartes .card-right h1 {
+    font-size: 2.5vh !important;
+  }
+  .bi-nav-body .divactivite1 .row .cartes .card-right h4 {
+    font-size: 1.9vh !important;
+    font-weight: 400;
+  }
+  .bi-nav-body .divactivite1 .row .cartes .card-right .coeur svg {
+    width: 25px !important;
+    height: auto;
+  }
+  .bi-nav-body .divactivite1 .row .cartes .card-right p {
+    font-size: 1.9vh !important;
+  }
+  .bi-nav-body .divactivite1 .row .cartes .card-right span {
+    font-size: 1.8vh !important;
+  }
+  .bi-nav-body .divactivite1 .row .cartes .card-right h5 {
+    font-size: 1.8vh !important;
+  }
+  .bi-nav-body .divactivite1 .row .cartes .card-right .inscription {
+    font-size: 1.5vh !important;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-left {
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    min-height: 250px;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-left img {
+    width: 100%;
+    height: 275px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-left h2 {
+    font-size: 1.8vh !important;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-right h1 {
+    font-size: 2.5vh !important;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-right h4 {
+    font-size: 1.9vh !important;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-right .coeur svg {
+    width: 25px;
+    height: auto;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-right p {
+    font-size: 1.9vh !important;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-right span {
+    font-size: 1.8vh !important;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-right h5 {
+    font-size: 1.8vh !important;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-right .inscription {
+    font-size: 1.5vh !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
