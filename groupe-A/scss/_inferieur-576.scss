@@ -44,6 +44,46 @@
     }
 
     
+    // .row {
+        
+    //     .rounded-circle {
+          
+    //         width: 35vw;
+    //         height: 35vw;
+    //         margin: 30px;
+            
+          
+    //     } //foto 
+    // } 
+
+    .dubas-detail{
+        height: 150vh;
+      
+    }
+
+    .events-speaker {
+        width: 290px;
+    }
+
+  .container-detail-speaker{
+   
+    margin-top: 0px;
+  
+}
+
+.container-detail-speaker {
+    .event {
+        padding-top: 50px;
+    }
+}
+
+.contact-container {
+   
+    margin-top: 0px;
+}
+
+
+
     .row {
         
         .rounded-circle {
@@ -101,79 +141,212 @@
         }//fin coeur
     } //fin text act
 
-    .dubas {
-    
-        .divactivite2 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .bi-nav-body{
+
+        .divactivite1{
+           
+        .row{
         
-            .row {
-            
-                .card-entier {
+        
+            .cartes{
                 
-                    .cartes {
+                    .card-left{
+                       
+                        img{
+                          
+                        }
+                        h2{
+                             font-size : 1.8vh!important;
+                          
+                        }
                     
-                    .card-right {
+                    }// fin card-left
+        
+                    .card-right{
+                        position: relative;
+                        background-color: rgb(247, 247, 247);
+                        padding: 10px;
+                        h1{
+                            //font-size: 1.35rem;
+                            font-size : 2.5vh!important;
+                        }
+                        h4{
+                            //font-size: 1.05rem;
+                            font-size : 1.9vh!important;
+                            font-weight: 400;
+                        }
+                        .coeur{
+                           
+                            svg{
+                                width: 25px!important;
+                                height: auto;
+                                
+                
+                            }
+        
+                        } // fin coeur
+                        
+                        p{
+                            //font-size: 0.93rem;
+                             font-size : 1.9vh!important;
+        
+                        }
+                        span{
+                            //font-size: 0.88rem;
+                             font-size : 1.8vh!important;
+        
+                        }
+                        h5{
+                            //font-size: 0.88rem;
+                            font-size : 1.8vh!important;
+                            
+        
+                        }
+                        .inscription{
+                            //font-size: 0.88rem;
+                            font-size : 1.5vh!important;
+                           
+                        
+                        } //fin inscription 
+        
+                        .deinscription{
+                          
+                        
+                        } //fin inscription       
+                    }//fin card-right
+                
+            }//fin cartes tout tout
+        // fin card-entier
+            .toutevenement{
+               
+            }   
+        }//fin row
+        }//fin container divactivite1
+        } //fin bi-nav-body
+        
+        
+        
+        
+        
+        
+        
+        
+        .dubas{
+           
+        
+        .divactivite2{
+       
+        
+        .row{
+            
+        .activite{
+           
+        }
+        .card-entier{
+            
+        
+        
+        
+            .cartes{
+               
+        
+                    .card-left{
+                        position: relative;
+                        padding-right: 0;
+                        padding-left: 0;
+                        min-height: 250px; //by julien
+                        //border: 1px green solid
+                        img{
+                            width: 100%;
+                            height: 275px; //by julien
+                            object-fit: cover;
+                        }
+                        h2{
+                            
+                            font-size : 1.8vh!important;
+                            
+                        }
                     
-                        p {
-                            font-size: 0.7rem;
-                        }//fin p
-
-                        h4 {
-                            font-size: 0.9rem;
+                    }// fin card-left
+        
+                    .card-right{
+                        
+                        h1{
+                            font-size : 2.5vh!important;
                         }
-
-                        h1 {
-                            font-size: 1.1rem;
+                        h4{
+                            font-size : 1.9vh!important;
+                            
                         }
-
-                        .coeur svg {
-                            width: 25px;
-                            height: auto;
+                        .coeur{
+                           
+                                svg{
+                                    width: 25px;
+                                    height: auto;
+                                        
+                        
+                                }
+        
+                        } // fin coeur
+                        
+                        p{
+                            font-size : 1.9vh!important;
+        
                         }
-
-                        .inscription {
-                            font-size: 0.7rem;
-
+                        span{
+                            
+                            font-size : 1.8vh!important;
+        
                         }
+                        h5{
+                            font-size : 1.8vh!important;
+                            
+        
+                        }
+                        .inscription{
+                            font-size : 1.5vh!important;
+                           
+                           
+        
+                        
+                        } //fin inscription       
+                    }//fin card-right
+                
+            }//fin cartes tout tout
+        }// fin card-entier
+        }//fin row
+        .toutevenement{
+           
+        }   
+        }//fin container
+        }//fin container-fluid divactivite2
+        
 
-                    }//card-right
-
-                    }//cartes
-
-                }//card-entier
-
-            }//row
-
-        }//fin divactivite2
-
-    }//fin dubas   
-  
-  
-   
-    .dubas-detail{
-        height: 150vh;
-      
-    }
-
-    .events-speaker {
-        width: 290px;
-    }
-
-  .container-detail-speaker{
-   
-    margin-top: 0px;
-  
-}
-
-.container-detail-speaker {
-    .event {
-        padding-top: 50px;
-    }
-}
-
-.contact-container {
-   
-    margin-top: 0px;
-}
+        .conf-right{
+            a{
+                h1{
+                    font-size: 3.2vh !important;
+                }
+            }
+            p{
+                font-size: 1.7vh !important;
+            }
+        }
 
 
 };

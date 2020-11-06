@@ -15,7 +15,7 @@
                         <h2>pedagogique</h2>
                     </div>
                     <div class="col-6 carte card-right">
-                        <h1>Atelier Ecape Game</h1>
+                        <h1><a class="lien-ev" href="detail.php">Atelier Ecape Game</a></h1>
                         <h4>De 11h à 13h</h4>
                         <a class= "coeur" href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="gray" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>

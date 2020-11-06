@@ -60,13 +60,24 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body tout-form">
 
       <form action="inc/login.inc.php" class="form-connection" method="post">
-        <input type="text" name="login" placeholder="votre login">
-        <input type="password" name="mdp" placeholder="mot de passe">
+      <h5>Se connecter</h5>
+        <input class="insert" type="text" name="login" placeholder="votre login">
+        <input class="insert" type="password" name="mdp" placeholder="mot de passe">
         <input type="submit" value="se connecter" class="btn btn-success seconnecter">
       </form>
+<hr>
+
+      <h5>S'inscrire</h5>
+      <form action="inc/inscription.inc.php" class="form-inscription" method="post">
+        <input class="insert" type="mail" name="mail-inscri" placeholder="adresse mail">
+        <input class="insert" type="text" name="login-inscri" placeholder="votre login">
+        <input class="insert fin-input" type="password" name="mdp-inscri" placeholder="mot de passe">
+        <input type="submit" value="s'inscrire" class="btn btn-success creer">
+      </form>
+
 
       </div>
       <!-- <div class="modal-footer">

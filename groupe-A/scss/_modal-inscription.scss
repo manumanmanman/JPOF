@@ -1,6 +1,20 @@
+.tout-form{
+    text-align: center;
+    h5{
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    hr{
+        border-top: 2px solid rgba(0,0,0,.1);;
+    }
+}
+
 
 
 .form-connection{
+    .insert{
+        height: 34.8px;
+    }
     input{
         width: 31%;
         &:first-child{
@@ -9,12 +23,54 @@
     }
     .seconnecter{
         font-size: 0.88rem;
-        position: absolute;
-        right: 15px;
-        bottom: 15px;
+        // position: absolute;
+        // right: 15px;
+        // bottom: 15px;
+        margin-bottom: 4.5px;
         background-color: rgb(247, 247, 247);
         color: black;
         border-radius: 0%;
+        &:hover{
+            background-color: #28a745 !important;
+            color: white;
+            border: 1px solid #28a745;
+        }
+    
+    
+    } //fin seconnecter 
+}
+
+
+
+
+
+
+
+.form-inscription{
+    .insert{
+        height: 34.8px;
+    }
+    input{
+        width: 46%;
+        &:first-child{
+            margin-right: 3px;
+        }
+    }
+    .fin-input{
+        width: 94%;
+        margin-top: 15px;
+    }
+    .creer{
+        font-size: 0.88rem;
+        // position: absolute;
+        // right: 15px;
+        // bottom: 15px;
+        margin-bottom: 4.5px;
+        background-color: rgb(247, 247, 247);
+        color: black;
+        border-radius: 0%;
+        width: 50%;
+        margin-top: 15px;
         &:hover{
             background-color: #28a745 !important;
             color: white;
