@@ -4,7 +4,7 @@
 <br>
 
 
-<div class="container">
+<div class="container-fluid container-detail-speaker">
     <div class="event">
         <div class="row">
             <div class="rounded-circle">
@@ -16,9 +16,12 @@
                         <div class="events-speaker">
                             <div class="row events-liés">
                                     <div class="col-12 col-md-6"><h4>Evenement lié à Jean Neymar : </div>
-                                    <div class="liens col-12 col-md-6"><a href="#">Atelier Escape Game</a></h4>
+                                    <div class="liens col-12 col-md-6">
                                     <a href="#">Atelier Escape Game</a></h4>
-                                    <a href="#">Atelier Escape Game</a></h4></div>
+                                    <a href="#">Atelier Escape Game</a></h4>
+                                    <a href="#">Atelier Escape Game</a></h4>
+                                    
+                                    </div>
                             </div>
                                 <div class="row events-liés">
                                     <div class="col-12 col-md-6"><h4>Contacter Jean Neymar : </h4></div> 

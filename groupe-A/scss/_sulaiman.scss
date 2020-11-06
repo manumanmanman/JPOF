@@ -82,7 +82,7 @@
 
 .google-maps{
     padding: 0;
-    height: 80vh;
+    height: 65vh;
     iframe {
         width: 100%;
         height: 100%;
@@ -101,6 +101,13 @@
 #speaker-txt-detail {
     color: rgb(46, 161, 228);
 }
+
+
+.suggestions {
+    display: flex;
+    justify-content: center;
+}
+
 
 
 .contact {
@@ -122,8 +129,9 @@
 } //div contact
 
 .contact-container {
-    padding-top: 80px;
+    padding-top: 40px;
     margin-bottom: -100px;
+    margin-top: 60px;
 }
 
 .row {
@@ -160,6 +168,20 @@
     }
  
 }//row
+
+.container-detail-speaker{
+    background-color: white;
+    padding-bottom: 100px;
+    margin-top: 60px;
+  
+}
+
+.rounded-circle{
+   
+    margin-top: -60px;
+  
+}
+
 
 .events-liés {
     display: flex;

@@ -56,4 +56,124 @@
         } //foto 
     } 
 
+    .imgact {
+      
+    
+        h4 {
+           
+            width: 50%;
+            
+        } //fin h4 titre cat
+    }
+    .txtact {
+      
+    
+        h1 {
+           
+            font-size: 22px;
+            
+        } // fin h1
+
+
+        p {
+           
+            font-size: 16px;
+            
+        } // fin p
+
+        h4, h5 {
+           
+            font-size: 18px;
+            
+        } // fin h4
+
+        span{
+            margin-top: 40px;
+            font-size: 18px;
+    
+        }
+        .coeur{
+            top: 40px;
+            img {
+                width: 40px;
+                height: auto;
+            }
+        }//fin coeur
+    } //fin text act
+
+    .dubas {
+    
+        .divactivite2 {
+        
+            .row {
+            
+                .card-entier {
+                
+                    .cartes {
+                    
+                    .card-right {
+                    
+                        p {
+                            font-size: 0.7rem;
+                        }//fin p
+
+                        h4 {
+                            font-size: 0.9rem;
+                        }
+
+                        h1 {
+                            font-size: 1.1rem;
+                        }
+
+                        .coeur svg {
+                            width: 25px;
+                            height: auto;
+                        }
+
+                        .inscription {
+                            font-size: 0.7rem;
+
+                        }
+
+                    }//card-right
+
+                    }//cartes
+
+                }//card-entier
+
+            }//row
+
+        }//fin divactivite2
+
+    }//fin dubas   
+  
+  
+   
+    .dubas-detail{
+        height: 150vh;
+      
+    }
+
+    .events-speaker {
+        width: 290px;
+    }
+
+  .container-detail-speaker{
+   
+    margin-top: 0px;
+  
+}
+
+.container-detail-speaker {
+    .event {
+        padding-top: 50px;
+    }
+}
+
+.contact-container {
+   
+    margin-top: 0px;
+}
+
+
 };

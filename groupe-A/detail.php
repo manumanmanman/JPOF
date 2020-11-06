@@ -46,6 +46,8 @@
 <div class="container-fluid dubas dubas-detail">
         <div class="container divactivite2 divactivite2-detail">
         <div class="row">
+
+        <div class="col-12 suggestions"><h5>Suggestions:</h4></div>
             
             <div class="col-lg-6 card-entier pedagogique ">
                 

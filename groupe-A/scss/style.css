@@ -83,7 +83,7 @@
 
 .google-maps {
   padding: 0;
-  height: 80vh;
+  height: 65vh;
 }
 
 .google-maps iframe {
@@ -103,6 +103,15 @@
 
 #speaker-txt-detail {
   color: #2ea1e4;
+}
+
+.suggestions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact {
@@ -131,8 +140,9 @@
 }
 
 .contact-container {
-  padding-top: 80px;
+  padding-top: 40px;
   margin-bottom: -100px;
+  margin-top: 60px;
 }
 
 .row {
@@ -179,6 +189,16 @@
   padding: 10px;
   font-size: 20px;
   font-weight: 400;
+}
+
+.container-detail-speaker {
+  background-color: white;
+  padding-bottom: 100px;
+  margin-top: 60px;
+}
+
+.rounded-circle {
+  margin-top: -60px;
 }
 
 .events-liés {
@@ -1114,6 +1134,60 @@ body {
     width: 35vw;
     height: 35vw;
     margin: 30px;
+  }
+  .imgact h4 {
+    width: 50%;
+  }
+  .txtact h1 {
+    font-size: 22px;
+  }
+  .txtact p {
+    font-size: 16px;
+  }
+  .txtact h4, .txtact h5 {
+    font-size: 18px;
+  }
+  .txtact span {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+  .txtact .coeur {
+    top: 40px;
+  }
+  .txtact .coeur img {
+    width: 40px;
+    height: auto;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-right p {
+    font-size: 0.7rem;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-right h4 {
+    font-size: 0.9rem;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-right h1 {
+    font-size: 1.1rem;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-right .coeur svg {
+    width: 25px;
+    height: auto;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-right .inscription {
+    font-size: 0.7rem;
+  }
+  .dubas-detail {
+    height: 150vh;
+  }
+  .events-speaker {
+    width: 290px;
+  }
+  .container-detail-speaker {
+    margin-top: 0px;
+  }
+  .container-detail-speaker .event {
+    padding-top: 50px;
+  }
+  .contact-container {
+    margin-top: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
