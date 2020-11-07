@@ -31,7 +31,7 @@ foreach ($favorites as $favorite) { ?>
 
 
 <div class="favorisurprofil">
-<h5><?php echo ($favorite["activity_name"]); ?></h5>
+<h5><a href="details-even.php?activityid=<?php  echo $favorite["activity_id"]; ?>"><?php echo utf8_encode($favorite["activity_name"]); ?></a></h5>
 <div class="favoris-profil"><a class="remove btn btn-danger" href="#" data-activity="<?php echo ($favorite["activity_id"]); ?>"><span class="texte">Retirer des favoris</span></a></div>
 </div>
 
@@ -50,7 +50,7 @@ foreach ($registrations as $registration) { ?>
 
 
 <div class="inscritsurprofil">
-<h5><a href="detail-activite.php?activityid=<?php  echo $registration["activity_id"]; ?>"><?php echo ($registration["activity_name"]); ?></a></h5>
+<h5><a href="details-even.php?activityid=<?php  echo $registration["activity_id"]; ?>"><?php echo ($registration["activity_name"]); ?></a></h5>
 <div class="contenantboutoninscription"><a class="desinscriptionactvite  btn btn-danger" href="#" data-activity="<?php echo ($registration["activity_id"]); ?>"><span class="texte">Se désinscrire</span></a></div>
 </div>
 

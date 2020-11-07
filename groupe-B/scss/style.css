@@ -177,8 +177,7 @@ a:hover {
 }
 
 .category-name-color {
-  text-align: right;
-  padding-top: 2rem;
+  padding-top: 10px;
 }
 
 .card-entier.technique .category-name-color {
@@ -260,12 +259,12 @@ a:hover {
 
 h3 {
   color: #a781ff;
-  font-size: 15px;
+  font-size: 20px;
   margin-bottom: 1rem;
   font-family: 'Montserrat', sans-serif;
 }
 
-h4 {
+h4, h5 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
@@ -276,6 +275,10 @@ h4 a {
 
 h4 a:hover {
   text-decoration: none;
+}
+
+h5 {
+  margin-top: 15px;
 }
 
 /*********************************************************    DETAILS EVEN    *******************************************/
