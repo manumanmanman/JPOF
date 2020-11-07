@@ -43,8 +43,10 @@ $eventid = $_SESSION["eventid"];?>
 
 
 <div class="container">
-<h1>Event ID: <?php echo   $_SESSION["eventid"]; ?> - Name: <?php echo   $_SESSION["eventname"]; ?> - <?php echo   $_SESSION["eventdate"]; ?></h1>
-<p><?php echo   $_SESSION["eventdescription"]; ?></p> <!-- on affiche les infos de l'event actif. ces variables de sessions proviennent du header -->
+<!-- Event ID: <?php echo   $_SESSION["eventid"]; ?>   / <?php echo   $_SESSION["eventdate"]; ?> -->
+
+<h1 class="h1_nom_even">Nom de l'évènement : <?php echo   $_SESSION["eventname"]; ?></h1>
+<!--  <p><?php echo   $_SESSION["eventdescription"]; ?></p> / on affiche les infos de l'event actif. ces variables de sessions proviennent du header -->
         <div class="row">
 
   <!-- commencer ma boucle -->
@@ -97,7 +99,7 @@ foreach ($activities as $activity) {    // Début de la boucle
                     <div class="carte card-body">
                         <h3>Le <?php echo $datevent; ?> <br>
                         de <?php echo $heuredebut; ?> à <?php echo $heurefin; ?></h3>
-                        <h4><a href="details-even.php?activityid=<?php  echo $activity["activity_id"]; ?>"><?php echo ($activity["activity_name"]); ?></a>  <?php //echo $activity["activity_id"]; ?></h4>
+                        <h4><a href="details-even.php?activityid=<?php  echo $activity["activity_id"]; ?>"><?php echo utf8_encode($activity["activity_name"]); ?></a>  <?php //echo $activity["activity_id"]; ?></h4>
                         
                         <p class="category-name-color"><?php echo ($activity["category_name"]); ?></p>
 

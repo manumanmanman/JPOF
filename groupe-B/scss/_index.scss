@@ -24,7 +24,7 @@
 
 .heff_titre{
     color:white;
-   
+    font-family: 'Montserrat', sans-serif;
 }
 
 #btn_info_home{
@@ -35,25 +35,40 @@
 
 }
 
+.plus-info{
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+
 
 
 .nav-link-even{
     color:black;
-    
     font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
 .h1_home{
-    
     margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 .menu_even{
-    
     margin-bottom: 30px;
 }
 
+.h1_nom_even{
+  margin-bottom: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
 
 
 /*********************************************************    CARTES ACTI    *******************************************/
@@ -62,7 +77,11 @@
     margin-bottom: 15px;
     min-height: 275px;
   }
-  
+  .category-name-color{
+    text-align: right;
+    padding-top: 2rem;
+  }
+
   .card-entier.technique .category-name-color {
     
     color: #956187;
@@ -93,6 +112,7 @@
     padding-left: 0;
     min-height: 250px;
     position: relative;
+    margin-bottom: 1rem;
   }
   
   .card-entier .cartes .card-img-top img {
@@ -108,60 +128,10 @@
        object-fit: cover;
   }
   
-  .card-entier .cartes .card-left h2 {
-    position: absolute;
-    top: 0;
-    left: 0px;
-    min-width: 50%;
-    text-align: center;
-    font-size: 15px;
-    height: 30px;
-    padding-top: 5px;
-    padding-left: 7px;
-    padding-right: 7px;
-  }
-  
-  .card-entier .cartes .card-right {
-    padding: 10px;
-    position: relative;
-    background-color: #f7f7f7;
-  }
-  
-  .card-entier .cartes .card-right h1 {
-    font-size: 22px;
-    padding-right: 25px;
-  }
-  
-  .card-entier .cartes .card-right h4 {
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 25px;
-  }
-  
   .card-entier .cartes .card-right .coeur {
     position: absolute;
     right: 10px;
     top: 10px;
-  }
-  
-  .card-entier .cartes .card-right .coeur img {
-    width: 20px;
-    height: auto;
-  }
-  
-  .card-entier .cartes .card-right p {
-    font-size: 15px;
-  }
-  
-  .card-entier .cartes .card-right span {
-    margin-top: 40px;
-    font-size: 14px;
-  }
-  
-  .card-entier .cartes .card-right h5 {
-    font-size: 14px;
-    padding-top: 10px;
-    font-weight: 400;
   }
   
   .card-entier .cartes .card-right .inscription {
@@ -194,6 +164,25 @@ img{
 }
 }
 
+h3{
+  color:#a781ff;
+  font-size: 15px;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+h4{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+h4{
+  a{
+    color:black;
+  }
+  a:hover{
+    
+    text-decoration: none;
+  }
+}
 
 /*********************************************************    DETAILS EVEN    *******************************************/
 

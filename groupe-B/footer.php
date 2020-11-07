@@ -27,8 +27,8 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Veuillez vous identifier</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+          <!-- <span aria-hidden="true">&times;</span> -->
         </button>
       </div>
       
@@ -38,22 +38,22 @@
             <input type="password" name="mdp" placeholder="mot de passe">
             <input type="submit" value="login" class="btn btn-success"> -->
             <div class="form-group">
-              <label for="login">Login</label>
-              <input class="form-control"  type="text" name="login" placeholder="votre login">
+              <label for="login">Identifiant</label>
+              <input class="form-control"  type="text" name="login" placeholder="Votre login">
             </div>
             <div class="form-group">
               <label for="mdp">Mot de passe</label>
-              <input class="form-control"  type="password" name="mdp" placeholder="mot de passe">
+              <input class="form-control"  type="password" name="mdp" placeholder="Votre mot de passe">
             </div>
-              <input type="submit" value="login" class="btn btn-success">
+              <input type="submit" value="Connexion" class="btn btn-success">
         </form>
       </div>
 
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Pas encore de compte ? Veuillez en créer un.</h5>
-        <p>afin de pouvoir bénéficir de toutes les fonctionalités</p>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+        <h5 class="modal-title" id="exampleModalLabel">Pas encore de compte ? </h5> 
+        <h6 id="modal-title-h6">Veuillez en créer un afin de pouvoir bénéficier de toutes nos fonctionalités.</h6>
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+          <!-- <span aria-hidden="true">&times;</span> -->
         </button>
       </div>
 
