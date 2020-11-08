@@ -32,16 +32,38 @@ $sql = "SELECT  * FROM favorites
         RIGHT JOIN  activities ON favorites.activity_id = activities.activity_id
         WHERE favorites.user_token = '$userid'";
 $favorites = $conn->query($sql);
+
+$sql = "SELECT * FROM activities ";
+$activities = $conn->query($sql);
+
+
 foreach ($favorites as $favorite) {
 
 
-echo utf8_encode($favorite["activity_name"]).'<div class="coeur"><a class="remove" href="#" data-activity="'.$favorite["activity_id"].'">Retirer des favoris</a></div><br>';
+echo utf8_encode(' <div class="col-12 col-md-4 full-card '.<?php echo $activity["category_slug"]?> ">
+        <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="<?php echo ($favorite["activity_img"])?>" alt="Card image cap">
 
-    } //($favorites as $favorite) {
+    <div class="carre <?php echo $favorite["category_slug"]?>">
+   <p class="icones"> <i class="far fa-bookmark"></i>  <?php echo  ($favorite["category_name"])?></i></p> <br>
+   <p class="icones"><i class="far fa-calendar-alt"></i>  <?php echo utf8_encode ($favorite["activity_date"])?> </p></i> <br>
+   <p class="icones"> <i class="fas fa-map-pin"></i> <?php echo ($favorite["building_name"])?></i></p> <br>
+   <p class="icones"> <i class="fas fa-microphone-alt"></i> <?php echo ($favorite["speaker_name"])?> </p></i>
+
+    </div>  <!-- FIN DU CARE -->
+
+  <div class="card-body">
+    <h5 class="card-title"> <a href="detail-activite.php?activityid=<?php echo $favorite["activity_id"];?>"> 
+    <?php echo  ($favorite["activity_name"]);?></a></h5>
+    <p class="card-text"><?php echo  ($favorite["activity_description"])?></p>'.'<div class="coeur"><a class="remove" href="#" data-activity="'.$favorite["activity_id"].'">Retirer des favoris</a></div><br>';
+
+   
+} //($favorites as $favorite) {
 
 
 ?>
 
+    
 
 
 <h4>Activités auxquelles vous êtes inscrit</h4>

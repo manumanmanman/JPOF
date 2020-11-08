@@ -53,6 +53,19 @@
 <?php 
 
 session_start();
+$sql = " SELECT * FROM events WHERE event_on = '1'";
+$events = $conn->query($sql);
+foreach ($events as $event) {
+
+  // on stock dans une variable de session les différentes infos de l'evenement actif
+  $_SESSION["eventid"] = utf8_encode($event["event_id"]);
+  $_SESSION["eventname"] = utf8_encode($event["event_name"]);
+  $_SESSION["eventdate"] = utf8_encode($event["event_date"]);
+  $_SESSION["eventdescription"] = utf8_encode($event["event_description"]);
+
+
+}
+
 if(isset($_SESSION["user"])) {
 
 
@@ -64,7 +77,7 @@ if(isset($_SESSION["user"])) {
 
   <li class="nav-item <?php if($page == "contact"){echo "active";} ?>">
   <?php 
-  echo '<a href="register.php" data-toggle="modal" data-target="#exampleModal"> Connexion</a>'; } 
+  echo '<a href="register.php" data-toggle="modal" data-target="#examplemodal"> Connexion</a>'; } 
 
 
 ?>

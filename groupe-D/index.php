@@ -2,10 +2,11 @@
 <?php 
 $page = 'accueil';
 require("header.php");
+$eventid = $_SESSION["eventid"];
 ?>
 
 <div id="bienvenue">
-<h1>Bienvenue</h1>
+<h1>Event ID: <?php echo   $_SESSION["eventid"]; ?> - Name: <?php echo   $_SESSION["eventname"]; ?> - <?php echo   $_SESSION["eventdate"]; ?></h1>
 </div>
 
 
@@ -59,7 +60,8 @@ $sql = "SELECT * FROM activities
         LEFT JOIN rooms ON activities.room_id = rooms.room_id
         LEFT JOIN buildings ON activities.building_id = buildings.building_id
         LEFT JOIN categories ON activities.category_id = categories.category_id
-        LEFT JOIN speakers ON activities.activity_speaker = speakers.speaker_id";
+        LEFT JOIN speakers ON activities.activity_speaker = speakers.speaker_id
+        WHERE activities.event_id = '$eventid'; ";
 
 
 
