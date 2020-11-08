@@ -1,8 +1,11 @@
 <?php 
 $page = 'conferenciers';
 require "header.php" ;
-
 ?>
+
+<div id="bienvenue">
+<h1>Conférenciers</h1>
+</div>
 
 <div class="container">
 <div class="row">

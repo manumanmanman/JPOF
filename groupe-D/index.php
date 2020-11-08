@@ -78,17 +78,17 @@ foreach($activities as $activity) { // DEBUT DE LE BOUCLE
         <img class="card-img-top" src="<?php echo ($activity["activity_img"])?>" alt="Card image cap">
 
     <div class="carre <?php echo $activity["category_slug"]?>">
-   <p class="icones"> <i class="far fa-bookmark"></i>  <?php echo utf8_encode ($activity["category_name"])?></i></p> <br>
-   <p class="icones"><i class="far fa-calendar-alt"></i>  <?php echo utf8_encode ($activity["activity_date"])?> </p></i> <br>
-   <p class="icones"> <i class="fas fa-map-pin"></i> <?php echo utf8_encode ($activity["building_name"])?></i></p> <br>
-   <p class="icones"> <i class="fas fa-microphone-alt"></i> <?php echo utf8_encode ($activity["speaker_name"])?> </p></i>
+   <p class="icones"> <i class="far fa-bookmark"></i>  <?php echo  ($activity["category_name"])?></i></p> <br>
+   <p class="icones"><i class="far fa-calendar-alt"></i>  <?php echo  ($activity["activity_date"])?> </p></i> <br>
+   <p class="icones"> <i class="fas fa-map-pin"></i> <?php echo  ($activity["building_name"])?></i></p> <br>
+   <p class="icones"> <i class="fas fa-microphone-alt"></i> <?php echo ($activity["speaker_name"])?> </p></i>
 
     </div>  <!-- FIN DU CARE -->
 
   <div class="card-body">
     <h5 class="card-title"> <a href="detail-activite.php?activityid=<?php echo $activity["activity_id"];?>"> 
-    <?php echo utf8_encode ($activity["activity_name"]);?></a></h5>
-    <p class="card-text"><?php echo utf8_encode ($activity["activity_description"])?></p>
+    <?php echo ($activity["activity_name"]);?></a></h5>
+    <p class="card-text"><?php echo ($activity["activity_description"])?></p>
     
     
  
