@@ -85,6 +85,7 @@ $('.full-card').fadeIn();
 } else {
 
     $(".full-card:not(."+category+")").fadeOut();
+    $('.'+category).fadeIn(1000);
 }
 
 

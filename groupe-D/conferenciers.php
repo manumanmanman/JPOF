@@ -10,7 +10,7 @@ require "header.php" ;
 <?php 
 
 // boucle 
-$sql = " SELECT * FROM speakers";
+$sql = " SELECT * FROM speakers ";
 $speakers = $conn->query($sql);
 foreach ($speakers as $speaker) {
 
