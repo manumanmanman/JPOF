@@ -78,7 +78,7 @@ if(isset($_SESSION["user"])) {
   <li class="nav-item <?php if($page == "contact"){echo "active";} ?>">
   <?php 
 
-  echo '<li class="nav-item" ><a class="nav-link" href="register.php" data-toggle="modal" data-target="#exampleModal">CONNEXION</a></li>'; } 
+  echo '<li class="nav-item" ><a class="nav-link" href="register.php" data-toggle="modal" data-target="#examplemodal">CONNEXION</a></li>'; } 
 
 
 ?>

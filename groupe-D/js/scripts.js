@@ -85,12 +85,7 @@ $('.full-card').fadeIn();
 } else {
 
     $(".full-card:not(."+category+")").fadeOut();
-<<<<<<< HEAD
-    $('.'+category).fadeIn(1000);
-}
-=======
     $('.'+category).fadeIn(1000);}
->>>>>>> sarah
 
 
 
