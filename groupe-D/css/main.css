@@ -219,12 +219,12 @@ body {
 
 .redheart {
   color: red;
-  padding-left: 230px;
+  float: right;
 }
 
 .grayheart {
   color: lightgray;
-  padding-left: 230px;
+  float: right;
 }
 
 #screensize {

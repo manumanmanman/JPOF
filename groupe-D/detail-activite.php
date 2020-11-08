@@ -127,9 +127,72 @@ echo '</div>';
 
 ?>
 
-    
+<h5>Places disponibles pour cette activité: <?php echo utf8_encode($activity["activity_size"]); ?></h5> 
+
+
+<?php
+
+
+    // si connecté 
+    if(isset($_SESSION["user"])){
+
+// aller chercher dans la table registrations le nombre d'inscrits pour un event donné (celui dans lequel on se trouve dans la boucle)
+$sql3 = "SELECT * FROM registrations WHERE activity_id = '$activityid' ";
+                    $results = $conn->query($sql3); 
+                    $nombreinscriptions=mysqli_num_rows($results); 
+                    $placesrestantes = $activity["activity_size"] - $nombreinscriptions;
+
+                    if ($placesrestantes == 1) {
+                        $places = 'place';
+                    } else {
+                        $places = 'places';
+                    }
+                  
+                                        
+
+?>
+
+
+<?php 
+
+if ($nombreinscriptions < $activity["activity_size"]) {
+    // echo '<h5>Places disponibles: <span class="disponible">'.$placesrestantes.'</span> sur '.$activity["activity_size"].'</h5>';
+    echo '<h5>Il reste encore <span class="disponible">'.$placesrestantes.'</span> '.$places.'.</h5>';
+
+
+                // on va aussi aller voir si l'utilisateur connecté est déjà inscrit à l'activité
+                $sql4 = "SELECT * FROM registrations WHERE activity_id = '$activityid' AND user_token = '$userid '";
+                $results = $conn->query($sql4); 
+                $rowcount=mysqli_num_rows($results); 
+                echo '<div class="contenantboutoninscription">';
+                if ($rowcount > 0) {
+                   
+                 // si oui, on lui propose de se désinscrire
+                 echo '<a href="#" class= "btn btn-danger desinscriptionactvite" data-activity="'.$activity["activity_id"].'">Je me désinscris</a>';
+                } else {
+               // si non, on lui propose de s'y inscrire
+                echo '<a href="#" class= "btn btn-success inscriptionactvite" data-activity="'.$activity["activity_id"].'">Je m\'inscris</a>';
+                }
+                echo "</div>"; //#contenantboutoninscription
+
+                
+
+} else {
+
+    echo "COMPLET";
+}
+
+} // si connecté
+
+else {
+echo '<a href="#" class= "btn btn-success inscriptionactvite"   data-toggle="modal" data-target="#exampleModal">Je m\'inscris</a>';
+
+}
+
+?>
+
    
-<a href="#" class= "btn <?php echo $activity["category_slug"]?> ">S'inscrire</a>
+<!-- <a href="#" class= "btn <?php echo $activity["category_slug"]?> ">S'inscrire</a> -->
     
     
     
