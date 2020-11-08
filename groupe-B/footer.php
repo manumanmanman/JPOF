@@ -11,7 +11,7 @@
         <a class="nav-link nav-link-footer" href="about.php">A propos</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link nav-link-footer" href="profil.php">Profil</a>
+        <a class="nav-link nav-link-footer" href="mon-profil.php">Profil</a>
     </li>
     <li class="nav-item">
         <a class="nav-link nav-link-footer" href="contact.php">Contact</a>

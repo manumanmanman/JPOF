@@ -14,33 +14,33 @@ $eventid = $_SESSION["eventid"];?>
 
     <div class="col-12">
         <h1 class="h1_home">Evenements à la journée Ferrer</h1>
-
-        <div class="menu_even">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link nav-link-even" href="#">Tous</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-even" href="#">Arts appliqués</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-even" href="#">Economique</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-even" href="#">Paramédical</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-even" href="#">Pédagogique</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-even" href="#">Technique</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-even" href="#">Social</a>
-                </li>
-            </ul>
-        </div> <!-- menu_even -->
-
+       
+            <div class="menu_even">
+                <ul class="nav filtre">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-even" href="" data-category="all">Tous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-even" href="" data-category="artsappliques">Arts appliqués</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-even" href="" data-category="economiquesocial">Economique</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-even" href="">Paramédical</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-even" href="" data-category="pedagogique">Pédagogique</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-even" href="" data-category="technique">Technique</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-even" href="">Social</a>
+                    </li>
+                </ul>
+            </div> <!-- menu_even -->
+      
 
 <div class="container">
 <!-- Event ID: <?php echo   $_SESSION["eventid"]; ?>   / <?php echo   $_SESSION["eventdate"]; ?> -->

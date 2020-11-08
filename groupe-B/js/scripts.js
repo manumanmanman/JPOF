@@ -171,5 +171,39 @@ $("#cancel").click(function(e){
 
 
 
+//filtre cartes par categories
+
+$(".filtre li a").click(function(e) {
+  e.preventDefault();
+  var category = $(this).attr("data-category");
+  console.log(category);
+  
+  if (category == 'all') {
+  
+  $('.card').fadeIn();
+  
+  
+  } else {
+  
+      $(".card:not(."+category+")").fadeOut();
+  }
+  
+  
+  }); //click
+
+
+
+
+
+
 
 });//ready
+
+
+
+
+
+
+
+
+

@@ -47,7 +47,7 @@ foreach ($events as $event) {
         <a class="nav-link" href="conferenciers.php">Conférenciers</a>
       </li> 
       <li class="nav-item">
-        <a class="nav-link <?php if($page == "profil"){echo "active";} ?>" href="profil.php">Profil</a>
+        <a class="nav-link <?php if($page == "profil"){echo "active";} ?>" href="mon-profil.php">Profil</a>
       </li>
       <li class="nav-item">
         <a class="nav-link <?php if($page == "apropos"){echo "active";} ?>" href="about.php">A propos</a>
