@@ -8,25 +8,26 @@
     <title></title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light">
+<a class="navbar-brand" id="logo" href="index.php">JPOF</a>
+  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item mx-3">
-        <a class="nav-link" href="#">Accueil</a>
+        <a class="nav-link" href="index.php">Accueil</a>
       </li>
       <li class="nav-item mx-3">
-        <a class="nav-link" href="#">Conférenciers</a>
+        <a class="nav-link" href="conferencier.php">Conférenciers</a>
       </li>
       <li class="nav-item mx-3">
-        <a class="nav-link" href="#">À propos</a>
+        <a class="nav-link" href="a-propos.php">À propos</a>
       </li>
       <li class="nav-item ml-3 mr-5">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="contact.php">Contact</a>
       </li>
     </ul>
-    <a class="nav-link ml-5" href="#">Inscription - Connexion</a>
+    <a class="nav-link ml-5" data-toggle="modal" data-target="#exampleModal" href="#">Inscription - Connexion</a>
   </div>
 </nav>

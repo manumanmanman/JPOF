@@ -1,70 +1,379 @@
-.card-entier .cartes .card-left {
-  position: relative;
+@charset "UTF-8";
+.imgact {
+  background-color: bisque;
+  height: 80vh;
+  padding-left: 0;
   padding-right: 0;
+  position: relative;
 }
 
-.card-entier .cartes .card-left img {
+.imgact img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.imgact h4 {
+  position: absolute;
+  background-color: #DB1B0E;
+  color: white;
+  text-align: center;
+  padding: 10px 30px;
+  width: 30%;
+}
+
+.txtact {
+  background-color: #f7f7f7;
+  height: 80vh;
+  position: relative;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.txtact .coeur {
+  position: absolute;
+  right: 35px;
+  top: 30px;
+}
+
+.txtact .coeur img {
+  width: 50px;
   height: auto;
 }
 
-.card-entier .cartes .card-left h2 {
+.txtact p {
+  font-size: 20px;
+}
+
+.txtact span {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.txtact h5 {
+  font-size: 20px;
+  padding-top: 10px;
+  font-weight: 400;
+}
+
+.txtact .inscription {
+  font-size: 20px;
+  position: absolute;
+  right: 35px;
+  bottom: 30px;
+  background-color: #f7f7f7;
+  color: black;
+  border-radius: 0%;
+}
+
+.txtact .inscription:hover {
+  background-color: #28a745 !important;
+  color: white;
+  border: 1px solid #28a745;
+}
+
+.google-maps {
+  padding: 0;
+  height: 65vh;
+}
+
+.google-maps iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.dubas-detail {
+  height: 80vh;
+}
+
+.divactivite2-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#speaker-txt-detail {
+  color: #2ea1e4;
+}
+
+.suggestions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact {
+  background-color: #f7f7f7;
+  height: 65vh;
+  position: relative;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact h4 {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contact-container {
+  padding-top: 40px;
+  margin-bottom: -100px;
+  margin-top: 60px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row .rounded-circle {
+  position: relative;
+  width: 20vw;
+  height: 20vw;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.row .rounded-circle img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.row .info-speaker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 40vh;
+}
+
+.row .info-speaker h4 {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.container-detail-speaker {
+  background-color: white;
+  padding-bottom: 100px;
+  margin-top: 60px;
+}
+
+.rounded-circle {
+  margin-top: -60px;
+}
+
+.events-liés {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.events-liés .col-md-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.liens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.events-speaker {
+  width: 700px;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-image: url(../img/final-background.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.activite {
+  margin: auto;
+  font-family: 'Segoe', sans-serif;
+  color: #3d3d3d;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 2rem;
+}
+
+.bi-nav-body {
+  background-color: rgba(255, 255, 255, 0.397);
+}
+
+.bi-nav-body .divactivite1 {
+  margin-bottom: 70px;
+  padding-bottom: 200px;
+}
+
+.bi-nav-body .divactivite1 .row {
+  margin-top: 60px;
+}
+
+.bi-nav-body .divactivite1 .row .card-entier.pedagogique .cartes .card-left h2 {
+  background-color: #1393CC;
+  color: white;
+}
+
+.bi-nav-body .divactivite1 .row .card-entier.technique .cartes .card-left h2 {
+  background-color: #956187;
+}
+
+.bi-nav-body .divactivite1 .row .card-entier.paramedical .cartes .card-left h2 {
+  background-color: #DB1B0E;
+}
+
+.bi-nav-body .divactivite1 .row .card-entier.artsappliques .cartes .card-left h2 {
+  background-color: #74B626;
+}
+
+.bi-nav-body .divactivite1 .row .card-entier.economiquesocial .cartes .card-left h2 {
+  background-color: #F59500;
+}
+
+.bi-nav-body .divactivite1 .row .card-entier .cartes {
+  min-height: 275px;
+  margin-right: 0px;
+}
+
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-left {
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+  min-height: 250px;
+}
+
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-left img {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-left h2 {
   position: absolute;
   top: 0;
-  left: 15px;
-  background-color: #3cb8ff;
+  left: 0px;
+  background-color: #956187;
   color: white;
-  font-size: 15px;
+  font-size: 1.0rem;
   height: 30px;
   padding-top: 5px;
   padding-left: 7px;
   padding-right: 7px;
+  text-align: center;
+  min-width: 170px;
 }
 
-.card-entier .cartes .card-right {
-  padding: 10px;
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right {
   position: relative;
   background-color: #f7f7f7;
-  border-right: 3px solid white;
+  padding: 10px;
 }
 
-.card-entier .cartes .card-right h1 {
-  font-size: 22px;
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right h1 {
+  font-size: 1.35rem;
+  width: 80%;
 }
 
-.card-entier .cartes .card-right h4 {
-  font-size: 17px;
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right h1 .lien-ev {
+  color: black !important;
+}
+
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right h1 .lien-ev:hover {
+  text-decoration: underline;
+}
+
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right h4 {
+  font-size: 1.05rem;
   font-weight: 400;
 }
 
-.card-entier .cartes .card-right .coeur {
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right .coeur {
   position: absolute;
   right: 10px;
   top: 15px;
 }
 
-.card-entier .cartes .card-right .coeur img {
-  width: 35px;
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right .coeur svg {
+  width: 30px;
   height: auto;
 }
 
-.card-entier .cartes .card-right p {
-  font-size: 15px;
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right p {
+  font-size: 0.93rem;
 }
 
-.card-entier .cartes .card-right span {
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right span {
   margin-top: 40px;
-  font-size: 14px;
+  font-size: 0.88rem;
 }
 
-.card-entier .cartes .card-right h5 {
-  font-size: 14px;
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right h5 {
+  font-size: 0.88rem;
   padding-top: 10px;
   font-weight: 400;
 }
 
-.card-entier .cartes .card-right .inscription {
-  font-size: 14px;
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right .inscription {
+  font-size: 0.88rem;
   position: absolute;
   right: 15px;
   bottom: 15px;
@@ -73,9 +382,927 @@
   border-radius: 0%;
 }
 
-.card-entier .cartes .card-right .inscription:hover {
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right .inscription:hover {
   background-color: #28a745 !important;
   color: white;
   border: 1px solid #28a745;
+}
+
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right .deinscription {
+  font-size: 0.88rem;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  background-color: #f7f7f7;
+  color: black;
+  border-radius: 0%;
+  border: 1px solid #cf3f3f;
+}
+
+.bi-nav-body .divactivite1 .row .card-entier .cartes .card-right .deinscription:hover {
+  background-color: #cf3f3f !important;
+  color: white;
+  border: 1px solid #cf3f3f;
+}
+
+.bi-nav-body .divactivite1 .row .toutevenement {
+  margin: auto;
+  margin-top: 50px;
+}
+
+.bi-nav-body .divactivite1 .row .toutevenement a {
+  text-align: center;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 0%;
+}
+
+.bi-nav-body .divactivite1 .row .toutevenement a:hover {
+  background-color: #28a745 !important;
+  color: white;
+  border: 1px solid #28a745;
+}
+
+.dubas {
+  -webkit-clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
+  background-color: white;
+  margin-top: -170px;
+}
+
+.dubas .divactivite2 {
+  padding-bottom: 100px;
+}
+
+.dubas .divactivite2 .row {
+  margin-top: 60px;
+}
+
+.dubas .divactivite2 .row .activite {
+  margin-top: 150px;
+}
+
+.dubas .divactivite2 .row .card-entier.pedagogique .cartes .card-left h2 {
+  background-color: #1393CC;
+  color: white;
+}
+
+.dubas .divactivite2 .row .card-entier.technique .cartes .card-left h2 {
+  background-color: #956187;
+}
+
+.dubas .divactivite2 .row .card-entier.paramedical .cartes .card-left h2 {
+  background-color: #DB1B0E;
+}
+
+.dubas .divactivite2 .row .card-entier.artsappliques .cartes .card-left h2 {
+  background-color: #74B626;
+}
+
+.dubas .divactivite2 .row .card-entier.economiquesocial .cartes .card-left h2 {
+  background-color: #F59500;
+}
+
+.dubas .divactivite2 .row .card-entier .cartes {
+  min-height: 275px;
+  margin-right: 0px;
+}
+
+.dubas .divactivite2 .row .card-entier .cartes .card-left {
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+  min-height: 250px;
+}
+
+.dubas .divactivite2 .row .card-entier .cartes .card-left img {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.dubas .divactivite2 .row .card-entier .cartes .card-left h2 {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background-color: #956187;
+  color: white;
+  font-size: 1rem;
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  text-align: center;
+  min-width: 170px;
+}
+
+.dubas .divactivite2 .row .card-entier .cartes .card-right {
+  position: relative;
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+
+.dubas .divactivite2 .row .card-entier .cartes .card-right h1 {
+  font-size: 1.35rem;
+}
+
+.dubas .divactivite2 .row .card-entier .cartes .card-right h4 {
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.dubas .divactivite2 .row .card-entier .cartes .card-right .coeur {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.dubas .divactivite2 .row .card-entier .cartes .card-right .coeur svg {
+  width: 30px;
+  height: auto;
+}
+
+.dubas .divactivite2 .row .card-entier .cartes .card-right p {
+  font-size: 0.93rem;
+}
+
+.dubas .divactivite2 .row .card-entier .cartes .card-right span {
+  margin-top: 40px;
+  font-size: 0.88rem;
+}
+
+.dubas .divactivite2 .row .card-entier .cartes .card-right h5 {
+  font-size: 0.88rem;
+  padding-top: 10px;
+  font-weight: 400;
+}
+
+.dubas .divactivite2 .row .card-entier .cartes .card-right .inscription {
+  font-size: 0.88rem;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  background-color: #f7f7f7;
+  color: black;
+  border-radius: 0%;
+}
+
+.dubas .divactivite2 .row .card-entier .cartes .card-right .inscription:hover {
+  background-color: #28a745 !important;
+  color: white;
+  border: 1px solid #28a745;
+}
+
+.dubas .divactivite2 .toutevenement {
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.dubas .divactivite2 .toutevenement a {
+  text-align: center;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 0%;
+}
+
+.dubas .divactivite2 .toutevenement a:hover {
+  background-color: #28a745 !important;
+  color: white;
+  border: 1px solid #28a745;
+}
+
+.footer {
+  background-color: #505050;
+  margin-top: -50px;
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+}
+
+.footer .container {
+  padding-top: 90px;
+  color: white;
+  font-size: 0.9rem;
+  padding-bottom: 20px;
+}
+
+.footer .container .row .col-lg-3 a {
+  color: white !important;
+  text-decoration: none;
+}
+
+.footer .container .row .col-lg-3 a:hover {
+  color: #2692bd !important;
+}
+
+.footer .container .row .col-lg-3 h2 {
+  font-size: 1.2rem;
+}
+
+.footer .container .row .col-lg-3 img {
+  width: 60%;
+  height: auto;
+}
+
+.nav-link.ml-5 {
+  margin-left: 1rem !important;
+}
+
+#logo {
+  display: none;
+}
+
+.allconf {
+  background-color: white;
+}
+
+.allconf .container {
+  padding-bottom: 200px;
+}
+
+.allconf .container .rowconf {
+  margin-top: 60px;
+  min-height: 500px;
+}
+
+.allconf .container .rowconf .titreconferencier {
+  margin: auto;
+  font-family: 'Segoe', sans-serif;
+  color: #3d3d3d;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.allconf .container .rowconf .conferencier {
+  font-family: sans-serif;
+  color: black;
+  margin-top: 25px;
+}
+
+.allconf .container .rowconf .conferencier .conftout {
+  padding-right: 10px;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-left {
+  padding-right: 0;
+  padding-left: 0;
+  min-height: 250px;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-left img {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-left:hover {
+  opacity: 0.8;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-right {
+  padding: 20px;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-right a {
+  color: black;
+  text-decoration: none;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-right a h1 {
+  font-size: 1.55rem;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-right a:hover {
+  color: #777777;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-right a {
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-right a img {
+  width: 10%;
+  height: auto;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-right a:hover {
+  opacity: 0.5;
+}
+
+.allconf .container .rowconf .conferencier .conftout .conf-right p {
+  padding-top: 5px;
+  font-size: 0.93rem;
+}
+
+.allconf .container .rowconf .lienall {
+  margin: auto;
+  text-align: center;
+}
+
+.allconf .container .rowconf .lienall .acti {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 18px;
+  background-color: white;
+  font-family: 'Segoe', sans-serif;
+  color: #575757;
+  border-radius: 0%;
+}
+
+.allconf .container .rowconf .lienall .acti:hover {
+  background-color: #28a745 !important;
+  color: white;
+  border: 1px solid #28a745;
+}
+
+.allconf .container .rowconf .lienall .acti img {
+  width: 15%;
+  height: auto;
+}
+
+.a-propos {
+  background-color: white;
+}
+
+.a-propos .container {
+  padding-bottom: 200px;
+}
+
+.a-propos .container .row {
+  margin-top: 60px;
+  min-height: 500px;
+}
+
+.a-propos .container .row .titreexplication {
+  margin: auto;
+  font-family: 'Segoe', sans-serif;
+  color: #3d3d3d;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.a-propos .container .row .explication {
+  font-family: sans-serif;
+  color: black;
+}
+
+.a-propos .container .row .lienliste {
+  margin: auto;
+}
+
+.a-propos .container .row .lienliste .intervenant {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 18px;
+  background-color: white;
+  font-family: 'Segoe', sans-serif;
+  color: #575757;
+  border-radius: 0%;
+}
+
+.a-propos .container .row .lienliste .intervenant:hover {
+  background-color: #28a745 !important;
+  color: white;
+  border: 1px solid #28a745;
+}
+
+.a-propos .container .row .lienliste .intervenant img {
+  width: 15%;
+  height: auto;
+}
+
+.filtre {
+  text-align: center;
+}
+
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 20%;
+}
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: white;
+  border: 1px solid rgba(100, 100, 100, 0.192);
+  color: black;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #535353 transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div, .select-selected {
+  color: black;
+  padding: 8px 16px;
+  border: 1px solid #646464;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: white;
+  border: 1px solid rgba(68, 68, 68, 0.13);
+  color: black;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.082);
+}
+
+.custom-select {
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.select-selected {
+  color: black;
+}
+
+.filtre-tout {
+  width: 100%;
+  margin: auto;
+  background-color: rgba(219, 219, 219, 0);
+  padding: 25px 0px;
+  border-radius: 10px;
+  margin-top: -50px;
+}
+
+.filtre-tout .collapse, .filtre-tout .collapsing {
+  width: 90%;
+  margin: auto;
+}
+
+.filtre-tout .collapse .card-body .tout, .filtre-tout .collapsing .card-body .tout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  place-content: center;
+}
+
+.filtre-tout .collapse .card-body .tout span, .filtre-tout .collapsing .card-body .tout span {
+  margin-top: 8px;
+  width: 10%;
+}
+
+.filtre-tout .collapse .card-body .tout .jour, .filtre-tout .collapsing .card-body .tout .jour {
+  padding-top: 9px;
+  margin-left: 2px;
+}
+
+.filtre-tout .collapse .card-body .tout .jour input, .filtre-tout .collapsing .card-body .tout .jour input {
+  width: 100%;
+}
+
+.tout-form {
+  text-align: center;
+}
+
+.tout-form h5 {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.tout-form hr {
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-connection .insert {
+  height: 34.8px;
+}
+
+.form-connection input {
+  width: 31%;
+}
+
+.form-connection input:first-child {
+  margin-right: 3px;
+}
+
+.form-connection .seconnecter {
+  font-size: 0.88rem;
+  margin-bottom: 4.5px;
+  background-color: #f7f7f7;
+  color: black;
+  border-radius: 0%;
+}
+
+.form-connection .seconnecter:hover {
+  background-color: #28a745 !important;
+  color: white;
+  border: 1px solid #28a745;
+}
+
+.form-inscription .insert {
+  height: 34.8px;
+}
+
+.form-inscription input {
+  width: 46%;
+}
+
+.form-inscription input:first-child {
+  margin-right: 3px;
+}
+
+.form-inscription .fin-input {
+  width: 94%;
+  margin-top: 15px;
+}
+
+.form-inscription .creer {
+  font-size: 0.88rem;
+  margin-bottom: 4.5px;
+  background-color: #f7f7f7;
+  color: black;
+  border-radius: 0%;
+  width: 50%;
+  margin-top: 15px;
+}
+
+.form-inscription .creer:hover {
+  background-color: #28a745 !important;
+  color: white;
+  border: 1px solid #28a745;
+}
+
+#screensize {
+  width: 200px;
+  height: 27px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+
+#screensize:after {
+  content: "XL (> 1200px)";
+}
+
+@media (max-width: 1245px) {
+  .navbar .navbar-collapse {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .bi-nav-body .divactivite1 #corps {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  #screensize {
+    background-color: #00d300;
+  }
+  #screensize:after {
+    content: "L (< 1200px) ";
+  }
+  .custom-select {
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: 0.8rem;
+  }
+  .filtre-tout {
+    width: 100%;
+    margin: auto;
+    background-color: rgba(219, 219, 219, 0);
+    padding: 25px 0px;
+    border-radius: 10px;
+    margin-top: -50px;
+  }
+  .filtre-tout .collapse, .filtre-tout .collapsing {
+    width: 90%;
+    margin: auto;
+  }
+  .filtre-tout .collapse .card-body .tout, .filtre-tout .collapsing .card-body .tout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    place-content: center;
+  }
+  .filtre-tout .collapse .card-body .tout span, .filtre-tout .collapsing .card-body .tout span {
+    margin-top: 8px;
+    width: 10%;
+    font-size: 0.8rem;
+  }
+  .filtre-tout .collapse .card-body .tout .jour, .filtre-tout .collapsing .card-body .tout .jour {
+    padding-top: 9px;
+  }
+  .filtre-tout .collapse .card-body .tout .jour input, .filtre-tout .collapsing .card-body .tout .jour input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #screensize {
+    background-color: orange;
+  }
+  #screensize:after {
+    content: "M (< 992px) ";
+  }
+  .divactivite2 {
+    -webkit-clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+    background-color: white;
+    margin-top: -220px;
+  }
+  .navbar-collapse.justify-content-center.collapse.show, .navbar-collapse.justify-content-center.collapse, .justify-content-center.collapsing {
+    text-align: center;
+  }
+  .navbar.navbar-expand-lg.navbar-light {
+    background-color: #e6e6e6;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+  .nav-item.ml-3.mr-5 {
+    margin-right: 1rem !important;
+  }
+  .nav-link.ml-5 {
+    margin-left: 0rem !important;
+  }
+  #logo {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #screensize {
+    background-color: green;
+  }
+  #screensize:after {
+    content: "S (< 768px) ";
+  }
+  .divactivite2 {
+    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+    background-color: white;
+    margin-top: -170px;
+  }
+  .custom-select {
+    position: relative;
+    font-family: Arial;
+    width: 100%;
+  }
+  .filtre-tout {
+    width: 100%;
+    margin: auto;
+    background-color: rgba(219, 219, 219, 0);
+    padding: 25px 0px;
+    border-radius: 10px;
+    margin-top: -50px;
+  }
+  .filtre-tout .collapse, .filtre-tout .collapsing {
+    width: 90%;
+    margin: auto;
+  }
+  .filtre-tout .collapse .card-body .tout, .filtre-tout .collapsing .card-body .tout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    place-content: center;
+  }
+  .filtre-tout .collapse .card-body .tout span, .filtre-tout .collapsing .card-body .tout span {
+    margin-top: 8px;
+    width: 100%;
+    text-transform: uppercase;
+  }
+  .filtre-tout .collapse .card-body .tout .jour, .filtre-tout .collapsing .card-body .tout .jour {
+    padding-top: 9px;
+    margin-left: 0px;
+  }
+  .filtre-tout .collapse .card-body .tout .jour input, .filtre-tout .collapsing .card-body .tout .jour input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #screensize {
+    background-color: cyan;
+  }
+  #screensize:after {
+    content: "XS (< 576px) ";
+  }
+  .divactivite2 {
+    -webkit-clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
+    background-color: white;
+    margin-top: -220px;
+  }
+  .form-connection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-connection input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .form-connection input:first-child {
+    margin-right: 3px;
+  }
+  .form-connection .seconnecter {
+    font-size: 0.88rem;
+    position: initial;
+    right: 15px;
+    bottom: 15px;
+    background-color: #f7f7f7;
+    color: black;
+    border-radius: 0%;
+  }
+  .form-connection .seconnecter:hover {
+    background-color: #28a745 !important;
+    color: white;
+    border: 1px solid #28a745;
+  }
+  .dubas-detail {
+    height: 150vh;
+  }
+  .events-speaker {
+    width: 290px;
+  }
+  .container-detail-speaker {
+    margin-top: 0px;
+  }
+  .container-detail-speaker .event {
+    padding-top: 50px;
+  }
+  .contact-container {
+    margin-top: 0px;
+  }
+  .row .rounded-circle {
+    width: 35vw;
+    height: 35vw;
+    margin: 30px;
+  }
+  .imgact h4 {
+    width: 50%;
+  }
+  .txtact h1 {
+    font-size: 22px;
+  }
+  .txtact p {
+    font-size: 16px;
+  }
+  .txtact h4, .txtact h5 {
+    font-size: 18px;
+  }
+  .txtact span {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+  .txtact .coeur {
+    top: 40px;
+  }
+  .txtact .coeur img {
+    width: 40px;
+    height: auto;
+  }
+  .bi-nav-body .divactivite1 .row .cartes .card-left h2 {
+    font-size: 1.8vh !important;
+  }
+  .bi-nav-body .divactivite1 .row .cartes .card-right {
+    position: relative;
+    background-color: #f7f7f7;
+    padding: 10px;
+  }
+  .bi-nav-body .divactivite1 .row .cartes .card-right h1 {
+    font-size: 2.5vh !important;
+  }
+  .bi-nav-body .divactivite1 .row .cartes .card-right h4 {
+    font-size: 1.9vh !important;
+    font-weight: 400;
+  }
+  .bi-nav-body .divactivite1 .row .cartes .card-right .coeur svg {
+    width: 25px !important;
+    height: auto;
+  }
+  .bi-nav-body .divactivite1 .row .cartes .card-right p {
+    font-size: 1.9vh !important;
+  }
+  .bi-nav-body .divactivite1 .row .cartes .card-right span {
+    font-size: 1.8vh !important;
+  }
+  .bi-nav-body .divactivite1 .row .cartes .card-right h5 {
+    font-size: 1.8vh !important;
+  }
+  .bi-nav-body .divactivite1 .row .cartes .card-right .inscription {
+    font-size: 1.5vh !important;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-left {
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    min-height: 250px;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-left img {
+    width: 100%;
+    height: 275px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-left h2 {
+    font-size: 1.8vh !important;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-right h1 {
+    font-size: 2.5vh !important;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-right h4 {
+    font-size: 1.9vh !important;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-right .coeur svg {
+    width: 25px;
+    height: auto;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-right p {
+    font-size: 1.9vh !important;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-right span {
+    font-size: 1.8vh !important;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-right h5 {
+    font-size: 1.8vh !important;
+  }
+  .dubas .divactivite2 .row .card-entier .cartes .card-right .inscription {
+    font-size: 1.5vh !important;
+  }
+  .conf-right a h1 {
+    font-size: 3.2vh !important;
+  }
+  .conf-right p {
+    font-size: 1.7vh !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
