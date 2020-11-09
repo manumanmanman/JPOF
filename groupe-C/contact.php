@@ -1,26 +1,97 @@
-<?php require "header.php" ?>
+<?php
+$page = 'Contact';
+require "header.php";
+?>
 
-<div class="container contact">
-    <h1>Une question ?</h1>
-    <p> N'hésitez pas à prendre contact avec nous par téléphone au 0487 24 20 65 ou via notre formulaire ci-dessous.</p>
-    <form>
-        <div class="row">
-        <div class="form-group col-6">
-          <label for="exampleFormControlInput1">Adresse e-mail</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1">
+<div class="container mb-5 pb-5">
+    <div class="row bg-white rounded-top p-3 ">
+        <div class="col-12">
+            <h1 class="mb-5 text-dark" >Contact</h1>
+            <h4 class="my-5 text-dark" >
+                Afin de nous rejoindre, merci de bien vouloir remplir le fourmulaire ci-dessous, et nous vous répondrons dans les plus bref délais.
+            </h4>
         </div>
-        <div class="form-group col-6">
-            <label for="exampleFormControlInput2">Nom</label>
-            <input type="email" class="form-control" id="exampleFormControlInput2">
-          </div>
-        <div class="form-group col-12">
-          <label for="exampleFormControlTextarea1">Message</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-success">Envoyer</button>
     </div>
-      </form>
+
+    <div class="row justify-content-center p-3 d-flex border  border-white rounded-bottom">
+    <div class="col-12">
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+                <div class="col-md-12 mb-3">
+                    <label for="validationTooltip01">Nom</label>
+                    <input type="text" class="form-control" id="validationTooltip01"  required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                    <div class="invalid-tooltip">
+                        Vous avez oublié de remplir votre Nom
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label for="validationTooltip02">Prénom</label>
+                    <input type="text" class="form-control" id="validationTooltip02"   required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                    <div class="invalid-tooltip">
+                        Vous avez oublié de remplir votre Prénom
+                    </div>
+                    
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label for="validationTooltip02">message</label>
+                    <textarea class="form-control" id="validationTooltip02"   name="textarea" rows="4" cols="50" required></textarea>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                    <div class="invalid-tooltip ">
+                        Vous avez oublié de remplir votre message
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+            <button class="btn btn-lg btn-secondary btn-block mt-4 mb-1" type="submit">Envoyer</button>
+        </form>
+        
     </div>
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <?php require "footer.php" ?>
-
