@@ -43,7 +43,7 @@
               </div>
               
             </div>
-            </form> 
+            
             <!--Footer-->
             <div class="modal-footer">
              
@@ -51,7 +51,7 @@
                 <button class="btn btn-info">Log in </button>
               </div>
             </div>
-
+</form> 
           </div>
           <!--/.Panel 7-->
 
