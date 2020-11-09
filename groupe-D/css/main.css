@@ -386,4 +386,27 @@ button {
 .btn.pedagogique {
   background-color: #1393CC;
 }
+
+.profil {
+  margin-top: 30px;
+}
+
+.profil h4 {
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+.conferencier {
+  margin-top: 30px;
+}
+
+.conferencier .pfp {
+  width: 200px;
+  height: 200px;
+  margin-left: 300px;
+}
+
+.conferencier .div {
+  margin-top: 30px;
+}
 /*# sourceMappingURL=main.css.map */

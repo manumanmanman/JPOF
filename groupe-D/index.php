@@ -6,17 +6,17 @@ $eventid = $_SESSION["eventid"];
 ?>
 
 <div id="bienvenue">
-<h1>Event ID: <?php echo   $_SESSION["eventid"]; ?> - Name: <?php echo   $_SESSION["eventname"]; ?> - <?php echo   $_SESSION["eventdate"]; ?></h1>
+<h1>Activités de <?php echo utf8_decode( $_SESSION["eventname"]); ?> <?php echo   $_SESSION["eventdate"]; ?></h1>
 </div>
 
 
 
 <nav class="navbar navbar-expand-lg justify-content-center nav-cat">
   
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#filtre" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="collapse navbar-collapse" id="filtre">
     <ul class="navbar-nav mx-auto filtres">
     <li class="nav-item active">
         <a class="nav-link black" href="#" data-category="all"> Toutes les activités</a>

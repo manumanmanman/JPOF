@@ -43,7 +43,7 @@
               </div>
               
             </div>
-            </form> 
+           
             <!--Footer-->
             <div class="modal-footer">
              
@@ -51,7 +51,7 @@
                 <button class="btn btn-info">Log in </button>
               </div>
             </div>
-
+            </form> 
           </div>
           <!--/.Panel 7-->
 
@@ -107,10 +107,6 @@
 </div>
 <!--Modal: Login / Register Form-->
 
-<div class="text-center">
-  <a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm">Launch
-    Modal LogIn/Register</a>
-</div>
 
  
  <script src="js/jquery-3.5.1.min.js"></script> 
