@@ -1,4 +1,9 @@
 
+@media screen and (max-width: 576px) { 
+}
+.text-white{
+    font-size: 1px;
+}
 @media screen and (min-width: 992px) { 
     #carouselExampleIndicators{
         height:400px; overflow:hidden
@@ -12,7 +17,7 @@
 }
 
   .bg {
-    animation:slide 20s ease-in-out infinite alternate;
+    
     background-image: linear-gradient(-60deg, rgb(89, 98, 107) 50%, white 50%);
     bottom:0;
     left:-50%;
@@ -25,14 +30,14 @@
 
   }
   
-  .bg2 {
-    animation-direction:alternate-reverse;
-    animation-duration:25s;
-  }
+//   .bg2 {
+//     animation-direction:alternate-reverse;
+//     animation-duration:25s;
+//   }
   
-  .bg3 {
-    animation-duration:30s;
-  }
+//   .bg3 {
+//     animation-duration:30s;
+//   }
 
 
   @keyframes slide {
@@ -102,6 +107,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        @media screen and (max-width: 576px) { 
+            .text-white{
+            font-size: 3em;
+        }
+        }
         // top: -70px;
         // z-index: -500;
     }
@@ -113,6 +123,7 @@
         text-transform: uppercase;
         text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
+    
     .banner-page img{ 
         width: 100%;
         height: auto;
@@ -165,8 +176,9 @@
     
     
     // Front page ---------------------------------------------------
+   
     #front-page{
-        height: 700px;
+        height: 600px;
         
         .carousel img{
             filter: brightness(80%);
@@ -419,10 +431,15 @@
 //Conférenciers---------------------------------------------------
 
 #conferenciers{
-
+    // .img-conf{
+    //     height: 200px;
+    //     display: flex;
+    //     justify-content: center;
+    // }
+    
     min-height: 500px;
     .conferencier .row .left img{
-        width: 90%;
+       width: 200px;
         height: auto;
         border-radius: 10px ;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -666,3 +683,13 @@
         min-height: 370px;
     }
 }
+
+.about-text{
+    box-shadow: 0 5px 8px rgba(0,0,0,0.12), 0 5px 10px rgba(0,0,0,0.24);
+}
+
+//contact
+.contact{
+    display: flex;
+}
+

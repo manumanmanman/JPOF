@@ -14,7 +14,7 @@ require "header.php";
 <div class="col-12 px-4">
     <div class="col-12 mb-5 pt-3 border-top">
        <div class="chevron">
-        <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <button class="btn btn-secondary filtre" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             Filtrer  <i class="fa fa-chevron-down" aria-hidden="true"></i>
         
         </button>

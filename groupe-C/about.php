@@ -6,10 +6,10 @@ require "header.php";
 
 <div class="container">
     <div class="row justify-content-center d-flex mb-5 pb-5">
-        <div class="col-lg-6 col-12 mh rounded-left border  border-white pt-2">
+        <div class="col-lg-6 col-12 mh ">
             <div class="col-12">
 
-                <div id="carouselExampleSlidesOnly" class="carousel slide mt-4" data-ride="carousel">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="img/pexels-george-becker-374918.jpg" alt="First slide">
@@ -24,7 +24,7 @@ require "header.php";
                 </div>
             </div>
         </div>
-            <div class="col-lg-6 col-12 mh bg-white rounded-right">
+            <div class="col-lg-6 col-12 mh bg-white about-text ">
             <div class="col-12 my-4">
                 <h1>
                 À porpos

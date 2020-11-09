@@ -190,6 +190,17 @@ var parent =  $(this).parent();
   }, false);
 })();
 
+$(".filtre").click(function(){
+console.log("filtré");
+  $(this).children().toggleClass("fa-chevron-up fa-chevron-down");
+
+});
+
+
+
+
+
+
 });//ready
 
 

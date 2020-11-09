@@ -3,17 +3,17 @@ $page = 'Contact';
 require "header.php";
 ?>
 
-<div class="container mb-5 pb-5">
-    <div class="row bg-white rounded-top p-3 ">
+<div class="container contact  mb-5 pb-5">
+
+    <div class="row title-contact p-3 ">
         <div class="col-12">
             <h1 class="mb-5 text-dark" >Contact</h1>
-            <h4 class="my-5 text-dark" >
+            <h6 class="my-5 text-dark" >
                 Afin de nous rejoindre, merci de bien vouloir remplir le fourmulaire ci-dessous, et nous vous répondrons dans les plus bref délais.
-            </h4>
+            </h6>
         </div>
     </div>
-
-    <div class="row justify-content-center p-3 d-flex border  border-white rounded-bottom">
+    <div class="row justify-content-center p-3 d-flex ">
     <div class="col-12">
         <form class="needs-validation" novalidate>
             <div class="form-row">
@@ -53,12 +53,13 @@ require "header.php";
             
             
             
-            <button class="btn btn-lg btn-secondary btn-block mt-4 mb-1" type="submit">Envoyer</button>
+            <button class="btn btn-lg btn-secondary btn-block mt-4 mb-1 submit" type="submit">Envoyer</button>
         </form>
         
     </div>
         
     </div>
+   
 </div>
 
 

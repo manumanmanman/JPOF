@@ -45,21 +45,21 @@ foreach ($events as $event) {
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
    
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0  nav-tabs  ">
       <li class="nav-item active">
-        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link pl-1" href="index.php" >Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="activity.php">Activitées</a>
+        <a class="nav-link pl-1" href="activity.php">Activitées</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="conferenciers.php">Conférenciers</a>
+        <a class="nav-link pl-1" href="conferenciers.php">Conférenciers</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="about.php">À propos</a>
+        <a class="nav-link pl-1" href="about.php">À propos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contact.php">Contact</a>
+        <a class="nav-link pl-1" href="contact.php">Contact</a>
       </li>
       <!-- <li class="nav-item">
         <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>

@@ -40,7 +40,7 @@ foreach ($speakers as $speaker) {
 
 <div   class="col-12 col-md-6 conferencier ">
     <div class="row hv ">
-    <div class="col-6 left d-flex justify-content-center">
+    <div class="col-6 left d-flex justify-content-center mb-5">
     <a href="details-conferencier.php?conferencierid=<?php echo $speaker['speaker_id'] ?>"><img src="<?php echo $speaker['speaker_pfp'] ?>" alt="<?php echo $speaker['speaker_name'] ?>"></a> 
     </div> <!-- left -->
     <div class="col-6 right pt-4">

@@ -25,7 +25,7 @@ echo 'Vous allez recevoir un mail ';
 
 $to = $email;
 $subject = 'Veuillez valider votre adresse email';
-$message = 'Bonjour'.$nom.' '.$prenom.',<br> <a href="http://localhost:8888/jpof-gc/confirmation-email.php?email='.$email.'&token='.$token.'">Veuillez valider votre email</a>';
+$message = 'Bonjour'.$nom.' '.$prenom.',<br> <a href="http://localhost/jpof-gc/confirmation-email.php?email='.$email.'&token='.$token.'">Veuillez valider votre email</a>';
 $headers = "From no-reply@heff.ovh"."\r\n";
 $headers.= "MIME-Version: 1.0\r\n";
 $headers.="Content-Type: text/html; charset=ISO-8859-1\r\n";
