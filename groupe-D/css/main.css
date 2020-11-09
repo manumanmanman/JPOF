@@ -27,17 +27,22 @@ body {
 }
 
 #bienvenue {
-  height: 200px;
+  height: 250px;
   width: 100%;
-  background-image: url("../img/banniere-home.jpg");
+  background-image: url("../img/photo.jpg");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #bienvenue h1 {
   text-align: center;
   vertical-align: middle;
-  line-height: 200px;
+  line-height: 250px;
   color: white;
+}
+
+.card-body a {
+  color: black;
 }
 
 .carre {
@@ -280,8 +285,32 @@ body {
   }
 }
 
+.conferencier .left {
+  margin-top: 50px;
+}
+
 .conferencier .left img {
-  width: 100%;
+  width: 250px;
+  height: auto;
+}
+
+.conferencier .right a {
+  color: #1f1f1f;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.campus {
+  padding-top: 20px;
+}
+
+.rcampus {
+  padding-top: 50px;
+}
+
+.about {
+  padding-top: 60px;
+  text-align: justify;
 }
 
 #contact {
