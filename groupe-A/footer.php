@@ -54,36 +54,47 @@
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Veuillez vous identfier.</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <div class="modal-body tout-form">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+      <form action="admin/includes/sign.inc.php" class="form-connection" method="post">
+      <h5>Connexion</h5>
+      <div class="form-group d-flex flex-column">
+        <label for="user_email">Adresse mail</label>
+        <input class="insert" type="text" name="user_email">
+        <!-- <small id="emailHelp" class="form-text text-muted">Identifiant incorrect ou inexistant</small> -->
       </div>
-      <div class="modal-body tout-form">
-
-      <form action="inc/login.inc.php" class="form-connection" method="post">
-      <h5>Se connecter</h5>
-        <input class="insert" type="text" name="login" placeholder="votre login">
-        <input class="insert" type="password" name="mdp" placeholder="mot de passe">
-        <input type="submit" value="se connecter" class="btn btn-success seconnecter">
-      </form>
-<hr>
-
-      <h5>S'inscrire</h5>
-      <form action="inc/inscription.inc.php" class="form-inscription" method="post">
-        <input class="insert" type="mail" name="mail-inscri" placeholder="adresse mail">
-        <input class="insert" type="text" name="login-inscri" placeholder="votre login">
-        <input class="insert fin-input" type="password" name="mdp-inscri" placeholder="mot de passe">
-        <input type="submit" value="s'inscrire" class="btn btn-success creer">
-      </form>
-
-
+      <div class="form-group d-flex flex-column">
+        <label for="user_pwd">Mot de passe</label>
+        <input class="insert" type="password" name="user_pwd">
+        <!-- <small id="emailHelp" class="form-text text-muted">Mot de passe incorrect.</small> -->
       </div>
-      <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
+      <a class="toggle-in-up" href="#">pas de compte ? inscrivez-vous !</a>
+      <button type="submit" value="signin" name="signin-submit" class="btn mt-3 btn-success seconnecter">Se connecter</button>
+      </form>
+      <form action="admin/inclues/sign.inc.php" class="form-inscription" method="post">
+      <h5>Inscription</h5>
+      <div class="form-group d-flex flex-column">
+        <label for="login">Adresse mail</label>
+        <input class="insert" type="mail" name="mail-inscri">
+        <!-- <small id="emailHelp" class="form-text text-muted">Identifiant existe déjà</small> -->
+      </div>
+      <div class="form-group d-flex flex-column">
+        <label for="login">Mot de passe</label>
+        <input class="insert fin-input" type="password" name="mdp-inscri">
+        <!-- <small id="emailHelp" class="form-text text-muted">Mot de passe incorrect</small> -->
+      </div>
+      <div class="form-group d-flex flex-column">
+        <label for="login">Confirmation mot de passe</label>
+        <input class="insert fin-input" type="password" name="mdp-inscri-bis">
+        <!-- <small id="emailHelp" class="form-text text-muted">Let mots de passe ne correspondent pas</small> -->
+      </div>
+        <a class="toggle-up-in" href="#">déjà inscrit ? connectez-vous !</a>
+        <button type="submit" value="signup" name="signup-submit" class="btn mt-3 btn-success creer">S'inscrire</button>
+      </form>
+    
+      </div>
     </div>
   </div>
 </div>

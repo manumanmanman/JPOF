@@ -906,10 +906,6 @@ body {
   width: 100%;
 }
 
-.tout-form {
-  text-align: center;
-}
-
 .tout-form h5 {
   text-align: left;
   margin-bottom: 15px;
@@ -923,17 +919,13 @@ body {
   height: 34.8px;
 }
 
-.form-connection input {
-  width: 31%;
-}
-
 .form-connection input:first-child {
   margin-right: 3px;
 }
 
 .form-connection .seconnecter {
+  display: block;
   font-size: 0.88rem;
-  margin-bottom: 4.5px;
   background-color: #f7f7f7;
   color: black;
   border-radius: 0%;
@@ -949,27 +941,21 @@ body {
   height: 34.8px;
 }
 
-.form-inscription input {
-  width: 46%;
-}
-
 .form-inscription input:first-child {
   margin-right: 3px;
 }
 
 .form-inscription .fin-input {
   width: 94%;
-  margin-top: 15px;
 }
 
 .form-inscription .creer {
+  display: block;
   font-size: 0.88rem;
-  margin-bottom: 4.5px;
   background-color: #f7f7f7;
   color: black;
   border-radius: 0%;
   width: 50%;
-  margin-top: 15px;
 }
 
 .form-inscription .creer:hover {
@@ -1304,5 +1290,9 @@ body {
   .conf-right p {
     font-size: 1.7vh !important;
   }
+}
+
+.card-left {
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */

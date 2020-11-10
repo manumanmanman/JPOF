@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,6 +29,13 @@
         <a class="nav-link" href="contact.php">Contact</a>
       </li>
     </ul>
-    <a class="nav-link ml-5" data-toggle="modal" data-target="#exampleModal" href="#">Inscription - Connexion</a>
+    <?php 
+    if(isset($_SESSION["token"])){
+      echo "<a class='nav-link ml-5' href='admin/includes/signout.inc.php'>Déconnexion</a>";
+    }else{
+      echo "<a class='nav-link ml-5' data-toggle='modal' data-target='#exampleModal' href='#'>Inscription - Connexion</a>";
+    }
+      ?>
+    
   </div>
 </nav>

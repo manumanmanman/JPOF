@@ -76,3 +76,16 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+$(document).ready(function(){
+  $(".form-inscription").hide();
+  $(".toggle-in-up").click(function(){
+    $(".form-connection").fadeOut(500,function(){
+      $(".form-inscription").fadeIn();
+    });
+  })
+  $(".toggle-up-in").click(function(){
+    $(".form-inscription").fadeOut(500,function(){
+      $(".form-connection").fadeIn();
+    });
+  })
+})
