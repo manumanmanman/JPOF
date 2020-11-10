@@ -106,7 +106,7 @@ foreach ($registrations as $registration) { ?>
 
 
 
-<div class="inscritsurprofil full-card col-md-4  <?php echo $activity["category_slug"]?>">
+<div class="inscritsurprofil full-card col-md-6 col-lg-4  <?php echo $activity["category_slug"]?>">
 <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="<?php echo ($registration["activity_img"])?>" alt="Card image cap">
 

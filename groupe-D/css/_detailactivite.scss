@@ -8,10 +8,15 @@
 
 .card-img-detail {
 
-    width: 70%;
+    width: 400px;
     height: auto;
 
     
+}
+
+.map {
+    margin-top: 50px;
+    height: 300px;
 }
 
 .card-title-detail {
@@ -24,9 +29,9 @@
     margin-bottom: 80px;
 }
 
-.right {
+.detail {
     
-    
+    height: 200px;
     i{
     margin-top:15px;
     margin-right: 10px;

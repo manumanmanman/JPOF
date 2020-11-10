@@ -50,27 +50,24 @@ foreach ($activities as $activity) {    // Début de la boucle
 </div>
 
 
-<div class="container-fluid">
+<div class="container">
  
 
 <div class="row detail-activity">
  
-<div class="col-12 col-md-6 left"> 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.4903577753253!2d4.340286715726704!3d50.840603279531074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c470f84554f5%3A0x94c79c309d9e1e21!2sRue%20de%20la%20Fontaine%204%2C%201000%20Bruxelles!5e0!3m2!1sfr!2sbe!4v1603801690513!5m2!1sfr!2sbe" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
+<div class="col-12 col-md-12 col-lg-6 left"> 
+<img class="card-img-detail" src="<?php echo ($activity["activity_img"])?>" alt="Card image cap">
 </div>
 <!-- FIN LEFT -->
 
 
-<div class="col-12 col-md-6 right"> 
-        <img class="card-img-detail" src="<?php echo ($activity["activity_img"])?>" alt="Card image cap">
+<div class="col-12 col-md-12 col-lg-6 right"> 
+        
 
     <div class="row carre detail <?php echo $activity["category_slug"]?>">
-    <div class="col-md-6 ">
+    <div class="col-12">
     <i class="far fa-bookmark"> </i> <?php echo  ($activity["category_name"])?><br>
-    <i class="far fa-calendar-alt">   </i> <?php echo  ($activity["activity_date"]).' de ' . $heuredebut .' à '. $heurefin ?>
-    </div>
-    <div class="col-md-6 ">
+    <i class="far fa-calendar-alt">   </i> <?php echo  ($activity["activity_date"]).' de ' . $heuredebut .' à '. $heurefin ?> <br>
     <i class="fas fa-map-marker-alt"></i>  <?php echo  ($activity["building_name"])?><br>
     <i class="fas fa-microphone"></i>  <?php echo  ($activity["speaker_name"])?>
     </div>
@@ -185,7 +182,7 @@ if ($nombreinscriptions < $activity["activity_size"]) {
 } // si connecté
 
 else {
-echo '<a href="#" class= "btn btn-success inscriptionactvite"   data-toggle="modal" data-target="#examplemodal">Je m\'inscris</a>';
+echo '<br> <a href="#" class= "btn btn-success inscriptionactvite"   data-toggle="modal" data-target="#examplemodal">Je m\'inscris</a>';
 
 }
 
@@ -195,19 +192,24 @@ echo '<a href="#" class= "btn btn-success inscriptionactvite"   data-toggle="mod
 <!-- <a href="#" class= "btn <?php echo $activity["category_slug"]?> ">S'inscrire</a> -->
     
     
-    
-    
-    
+   
+
     
 </div>
 <!-- FIN RIGHT -->
-    
+     <div class="col-12 map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.4903577753253!2d4.340286715726704!3d50.840603279531074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c470f84554f5%3A0x94c79c309d9e1e21!2sRue%20de%20la%20Fontaine%204%2C%201000%20Bruxelles!5e0!3m2!1sfr!2sbe!4v1603801690513!5m2!1sfr!2sbe" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    </div>
     
     
     
     
   </div> 
   <!-- FIN ROW -->
+
+
+
 
 
    

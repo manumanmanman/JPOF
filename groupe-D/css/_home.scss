@@ -100,7 +100,7 @@ a{
       
 
         .mauve {
-            color:$purple;
+            color:$purple!important;
 
             &::after {
                 content: '';
@@ -117,7 +117,7 @@ a{
             }
         }
         .orange {
-            color:$orange;
+            color:$orange!important;
 
             &::after {
                 content: '';
@@ -134,7 +134,7 @@ a{
             }
         }
         .bleu {
-            color:$blue;
+            color:$blue!important;
 
             &::after {
                 content: '';
@@ -151,7 +151,7 @@ a{
             }
         }
         .black {
-            color:black;
+            color:black!important;
 
             &::after {
                 content: '';
@@ -168,7 +168,7 @@ a{
             }
         }
         .rouge {
-            color:$red;
+            color:$red!important;
 
             &::after {
                 content: '';
@@ -185,7 +185,7 @@ a{
             }
         }
         .vert {
-            color:$green;
+            color:$green!important;
 
             &::after {
                 content: '';
@@ -238,3 +238,14 @@ a{
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     border: none;
 }
+
+.act {
+.activity {
+
+    margin-left: 35px;
+}
+}
+.redheart,.grayheart {
+    font-size: 20px;
+}
+

@@ -10,8 +10,7 @@ $eventid = $_SESSION["eventid"];
 </div>
 
 
-
-<nav class="navbar navbar-expand-lg justify-content-center nav-cat">
+<nav class="navbar navbar-expand-lg navbar-light justify-content-center nav-cat">
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#filtre" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -45,8 +44,8 @@ $eventid = $_SESSION["eventid"];
 
 
 
-<div class="container">
- <div class="row">
+<div class="container act">
+ <div class="row activity">
 
 <!-- COMMENCER MA BOUCLE  -->
 <?php 

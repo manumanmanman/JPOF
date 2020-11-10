@@ -3,7 +3,7 @@ nav img {
   height: 25px;
   width: auto;
   position: absolute;
-  left: 0;
+  left: 55px;
   margin-top: 5px;
 }
 
@@ -122,7 +122,7 @@ body {
 }
 
 .nav-cat li .mauve {
-  color: #721459;
+  color: #721459 !important;
 }
 
 .nav-cat li .mauve::after {
@@ -140,7 +140,7 @@ body {
 }
 
 .nav-cat li .orange {
-  color: #F59500;
+  color: #F59500 !important;
 }
 
 .nav-cat li .orange::after {
@@ -158,7 +158,7 @@ body {
 }
 
 .nav-cat li .bleu {
-  color: #1393CC;
+  color: #1393CC !important;
 }
 
 .nav-cat li .bleu::after {
@@ -176,7 +176,7 @@ body {
 }
 
 .nav-cat li .black {
-  color: black;
+  color: black !important;
 }
 
 .nav-cat li .black::after {
@@ -194,7 +194,7 @@ body {
 }
 
 .nav-cat li .rouge {
-  color: #DB1B0E;
+  color: #DB1B0E !important;
 }
 
 .nav-cat li .rouge::after {
@@ -212,7 +212,7 @@ body {
 }
 
 .nav-cat li .vert {
-  color: #74B626;
+  color: #74B626 !important;
 }
 
 .nav-cat li .vert::after {
@@ -255,6 +255,14 @@ body {
   -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   border: none;
+}
+
+.act .activity {
+  margin-left: 35px;
+}
+
+.redheart, .grayheart {
+  font-size: 20px;
 }
 
 #screensize {
@@ -316,6 +324,7 @@ body {
 
 .about p {
   padding-top: 130px;
+  padding-right: 50px;
 }
 
 #illu {
@@ -471,8 +480,13 @@ footer .container {
 }
 
 .card-img-detail {
-  width: 70%;
+  width: 400px;
   height: auto;
+}
+
+.map {
+  margin-top: 50px;
+  height: 300px;
 }
 
 .card-title-detail {
@@ -484,13 +498,17 @@ footer .container {
   margin-bottom: 80px;
 }
 
-.right i {
+.detail {
+  height: 200px;
+}
+
+.detail i {
   margin-top: 15px;
   margin-right: 10px;
   font-size: 18px;
 }
 
-.right .far, .right .fas {
+.detail .far, .detail .fas {
   font-size: 25px;
 }
 
@@ -562,6 +580,20 @@ footer .container {
 }
 
 @media (max-width: 1199.98px) {
+  .about {
+    padding-top: 100px;
+    text-align: center;
+  }
+  .about p {
+    padding-top: 130px;
+    padding-right: 0;
+  }
+  .act .activity {
+    margin-left: 0px;
+  }
+  .detail {
+    height: 160px;
+  }
   .rightm {
     position: absolute;
     right: 0;
@@ -569,6 +601,10 @@ footer .container {
   .righta {
     position: absolute;
     right: 100px;
+  }
+  .card-img-detail {
+    width: 350px;
+    height: auto;
   }
   #screensize {
     background-color: rgba(255, 0, 255, 0.13);
@@ -590,6 +626,28 @@ footer .container {
 }
 
 @media (max-width: 991.98px) {
+  .about {
+    padding-top: 100px;
+    text-align: center;
+  }
+  .about p {
+    padding-top: 130px;
+    padding-right: 0;
+  }
+  .act .activity {
+    margin-left: 0px;
+  }
+  .full-card {
+    padding-left: 30px;
+  }
+  .card-img-detail {
+    width: 350px;
+    height: auto;
+    margin-left: 70px;
+  }
+  .detail {
+    height: 130px;
+  }
   nav img {
     height: 25px;
     width: auto;
@@ -638,6 +696,28 @@ footer .container {
 }
 
 @media (max-width: 767.98px) {
+  .about {
+    padding-top: 100px;
+    text-align: center;
+  }
+  .about p {
+    padding-top: 130px;
+    padding-right: 0;
+  }
+  .act .activity {
+    margin-left: 0px;
+  }
+  .card-img-detail {
+    width: 350px;
+    height: auto;
+    margin-left: 0;
+  }
+  .detail {
+    height: 130px;
+  }
+  .full-card {
+    padding-left: 110px;
+  }
   nav img {
     height: 25px;
     width: auto;
@@ -657,9 +737,6 @@ footer .container {
   #screensize:after {
     content: "SM < 768px";
   }
-  .full-card {
-    margin-left: 100px;
-  }
   .about {
     padding-top: 70px;
     text-align: center;
@@ -671,6 +748,33 @@ footer .container {
 }
 
 @media (max-width: 575.98px) {
+  .about {
+    padding-top: 100px;
+    text-align: center;
+  }
+  .about p {
+    padding-top: 130px;
+    padding-right: 0;
+  }
+  .act .activity {
+    margin-left: 0px;
+  }
+  .card-img-detail {
+    width: 300px;
+    height: auto;
+    margin-left: 0;
+  }
+  h6 {
+    font-size: 13px;
+  }
+  .full-card {
+    padding-left: 80px;
+  }
+  #nom {
+    width: 220px;
+    margin-right: 8px;
+    padding: 10px;
+  }
   nav img {
     height: 25px;
     width: auto;
@@ -691,4 +795,7 @@ footer .container {
     content: "XS < 576px";
   }
 }
+
+
 /*# sourceMappingURL=main.css.map */
+

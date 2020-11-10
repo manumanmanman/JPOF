@@ -1,5 +1,33 @@
 @media (max-width: 1199.98px) { 
 
+
+
+    .about {
+        padding-top: 100px;
+        text-align: center;
+        
+    
+    
+        p {
+    
+            padding-top: 130px;
+            padding-right: 0
+        }
+        
+    }
+
+
+    .act {
+    .activity {
+
+        margin-left: 0px;
+    }}
+    
+    .detail {
+    
+        height: 160px; }
+
+
     .rightm {position: absolute;
         right: 0;
     }
@@ -8,6 +36,12 @@
         right: 100px;
     }
     
+
+    .card-img-detail {
+
+        width: 350px;
+        height: auto;
+    }    
 
    #screensize {
        
@@ -27,7 +61,7 @@
         i{
         margin-top:15px;
         margin-right: 10px;
-        font-size:14px;
+        font-size: 14px;
         }
     
         .far, .fas {

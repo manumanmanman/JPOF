@@ -186,3 +186,5 @@ $('.contenantboutoninscription').on('click', '.inscriptionactvite',function(even
 
 
 }); //ready
+
+
