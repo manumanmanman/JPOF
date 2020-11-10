@@ -8,18 +8,18 @@ require('inc/connexion.inc.php');
 $email = $_GET['email'];
 $token = $_GET['token'];
 
-$sql = "SELECT * FROM visiteurs WHERE  email = '$email'";
+$sql = "SELECT * FROM users WHERE  user_email = '$email'";
 $result = $conn->query($sql);
 
 
 while ($row = $result->fetch_assoc()){
 
-    if($token == $row["token"]){
+    if($token == $row["user_token"]){
 
-        echo '<a href="connexion-visiteur.php">Votre email à été validé! Vous pouvez maintenant vous connecter </a>';
+        echo '<a href="index.php">Votre email à été validé! Vous pouvez maintenant vous connecter </a>';
 
-        $sql = "UPDATE visiteurs SET  validated = '1' WHERE email = '$email'";
-        $visiteurs = $conn->query($sql);
+        $sql2 = "UPDATE users SET  user_validated = '1' WHERE user_email = '$email'";
+        $users2 = $conn->query($sql2);
 
     }else{
         echo "pas ok";

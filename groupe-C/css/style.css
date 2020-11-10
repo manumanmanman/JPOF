@@ -513,13 +513,6 @@ h5.go-right {
           text-decoration-style: dashed;
 }
 
-@media screen and (max-width: 576px) {
-  #conferencier .img-conf {
-    width: 100%;
-    height: auto;
-  }
-}
-
 @media screen and (min-width: 576px) {
   #profile .card {
     width: 20rem;

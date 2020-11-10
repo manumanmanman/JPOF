@@ -431,11 +431,7 @@
 //Conférenciers---------------------------------------------------
 
 #conferenciers{
-    // .img-conf{
-    //     height: 200px;
-    //     display: flex;
-    //     justify-content: center;
-    // }
+    
     
     min-height: 500px;
     .conferencier .row .left img{
@@ -491,18 +487,9 @@
 }//End of conferenciers
 
 //Details Conferencier ----------------------------------------------
-#conferencier{
 
-    @media screen and (max-width: "576px"){
 
-        .img-conf{
-            width: 100%;
-            height: auto;
-        }
-
-    }
-
-}//End of conferenciers détails
+//End of conferenciers détails
 
 //Profile-------------------------------------------------------------
 #profile{
