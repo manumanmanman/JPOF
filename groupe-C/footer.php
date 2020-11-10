@@ -89,7 +89,7 @@
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="https://kit.fontawesome.com/39f0c3e5ce.js" crossorigin="anonymous"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8SD8wn9r2ZHnc4ET1aVaIFLCT50f14lU&callback=initMap&libraries=&v=weekly" defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=initMap&libraries=&v=weekly" defer></script>
 	
 
     </body>
