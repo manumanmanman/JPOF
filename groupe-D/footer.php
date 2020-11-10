@@ -154,7 +154,10 @@
 </div>
 
 
-
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8SD8wn9r2ZHnc4ET1aVaIFLCT50f14lU&callback=initMap&libraries=&v=weekly"
+        defer >
+    </script> 
 
  <script src="js/jquery-3.5.1.min.js"></script> 
  <script src="js/bootstrap.min.js"></script>  
