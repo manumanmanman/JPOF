@@ -10,15 +10,13 @@ require "header.php";
 
 
 <div class="container px-0">
-    <div class="row">
+    <div class="row ml-3 mr-3">
 <div class="col-12 px-4">
-    <div class="col-12 mb-5 pt-3 border-top">
-       <div class="chevron">
+    <div class="col-12 mb-5 ml-0 pl-0 pt-3 border-top">
         <button class="btn btn-secondary filtre" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             Filtrer  <i class="fa fa-chevron-down" aria-hidden="true"></i>
         
         </button>
-        </div>
         <div class="collapse hidden" id="collapseExample">
         <form>
             <div class="form-row">

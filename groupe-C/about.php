@@ -5,9 +5,9 @@ require "header.php";
 
 
 <div class="container">
-    <div class="row justify-content-center d-flex mb-5 pb-5">
-        <div class="col-lg-6 col-12 mh ">
-            <div class="col-12">
+    <div class="row justify-content-center ml-3 mr-3 d-flex mb-5 pb-5">
+        <div class="col-lg-6 col-12 mh pr-4 ">
+            <div class="col-12  p-0">
 
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">

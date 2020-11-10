@@ -1,3 +1,37 @@
+function initMap() {
+    const heffPM = { lat: 50.840618, lng: 4.342705 };
+    const heffAN = { lat: 50.844217, lng: 4.343909 };
+    const heffBG = { lat: 50.886461, lng: 4.333386 };
+    const heffTN = { lat: 50.840553, lng: 4.345729 };
+    const heffLM = { lat: 50.842849, lng: 4.345430 };
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: heffLM,
+    });
+    const markerPM = new google.maps.Marker({
+      position: heffPM,
+      map: map,
+    });
+    
+    const markerAN = new google.maps.Marker({
+      position: heffAN,
+      map: map,
+    });
+    const markerBG = new google.maps.Marker({
+      position: heffBG,
+      map: map,
+    });
+    const markerTN = new google.maps.Marker({
+      position: heffTN,
+      map: map,
+    });
+    const markerLM = new google.maps.Marker({
+      position: heffLM,
+      map: map,
+    });
+
+  }
+
 $( document ).ready(function() {
   console.log( "ready!" );
 

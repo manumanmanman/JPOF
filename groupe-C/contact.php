@@ -6,13 +6,14 @@ require "header.php";
 <div class="container contact  mb-5 pb-5">
 
     <div class="row title-contact p-3 ">
-        <div class="col-12">
-            <h1 class="mb-5 text-dark" >Contact</h1>
+        <div class="col-12 d-flex flex-column">
+            <h1 class="text-dark" >Contact</h1>
             <h6 class="my-5 text-dark" >
-                Afin de nous rejoindre, merci de bien vouloir remplir le fourmulaire ci-dessous, et nous vous répondrons dans les plus bref délais.
+                Afin de nous rejoindre, merci de bien vouloir remplir ce fourmulaire, et nous vous répondrons dans les plus bref délais.
             </h6>
         </div>
     </div>
+    
     <div class="row justify-content-center p-3 d-flex ">
     <div class="col-12">
         <form class="needs-validation" novalidate>
@@ -59,8 +60,17 @@ require "header.php";
     </div>
         
     </div>
-   
+    
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 mt-1 mb-5">
+        <div id="map"></div>
+        </div>
+    </div>
+</div>
+
+
 
 
 

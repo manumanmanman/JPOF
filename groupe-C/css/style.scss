@@ -1,9 +1,4 @@
 
-@media screen and (max-width: 576px) { 
-}
-.text-white{
-    font-size: 1px;
-}
 @media screen and (min-width: 992px) { 
     #carouselExampleIndicators{
         height:400px; overflow:hidden
@@ -179,7 +174,9 @@
    
     #front-page{
         height: 600px;
-        
+        .slide{
+            height: 355px;
+        }
         .carousel img{
             filter: brightness(80%);
         }
@@ -252,6 +249,17 @@
     #activity{
         @media screen and (min-width: "576px"){
             .card{
+            width: 30rem;
+        }
+    }
+    @media screen and (min-width: 768px){
+        .card{
+            width: 18rem;
+        }
+    }
+
+    @media screen and (min-width: 1200px){
+        .card{
             width: 20rem;
         }
     }
@@ -425,13 +433,21 @@
     }
 }
 
+.details-activite{
+
+    box-shadow: 0 5px 8px rgba(0,0,0,0.12), 0 5px 10px rgba(0,0,0,0.24);
+
+}
+img[src="img/pngfind.com-linkedin-png-533449.png"]{
+    width: 100px;
+}
 // }// end of Détails activity
 
 
 //Conférenciers---------------------------------------------------
 
 #conferenciers{
-    
+  
     
     min-height: 500px;
     .conferencier .row .left img{
@@ -487,7 +503,11 @@
 }//End of conferenciers
 
 //Details Conferencier ----------------------------------------------
+.text-conferencier {
 
+    box-shadow: 0 5px 8px rgba(0,0,0,0.12), 0 5px 10px rgba(0,0,0,0.24);
+
+}
 
 //End of conferenciers détails
 
@@ -679,4 +699,19 @@
 .contact{
     display: flex;
 }
+@media screen and (max-width: "992px"){
+    .contact{
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
 
+#map {
+    height: 50vh;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }

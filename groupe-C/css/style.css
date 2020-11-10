@@ -1,7 +1,3 @@
-.text-white {
-  font-size: 1px;
-}
-
 @media screen and (min-width: 992px) {
   #carouselExampleIndicators {
     height: 400px;
@@ -184,6 +180,10 @@ h5.go-right {
   height: 600px;
 }
 
+#front-page .slide {
+  height: 355px;
+}
+
 #front-page .carousel img {
   -webkit-filter: brightness(80%);
           filter: brightness(80%);
@@ -269,6 +269,18 @@ h5.go-right {
 }
 
 @media screen and (min-width: 576px) {
+  #activity .card {
+    width: 30rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #activity .card {
+    width: 18rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   #activity .card {
     width: 20rem;
   }
@@ -446,6 +458,15 @@ h5.go-right {
   background-color: purple;
 }
 
+.details-activite {
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.12), 0 5px 10px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.12), 0 5px 10px rgba(0, 0, 0, 0.24);
+}
+
+img[src="img/pngfind.com-linkedin-png-533449.png"] {
+  width: 100px;
+}
+
 #conferenciers {
   min-height: 500px;
 }
@@ -511,6 +532,11 @@ h5.go-right {
 #conferenciers .hover-link span.dashed::before {
   -webkit-text-decoration-style: dashed;
           text-decoration-style: dashed;
+}
+
+.text-conferencier {
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.12), 0 5px 10px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.12), 0 5px 10px rgba(0, 0, 0, 0.24);
 }
 
 @media screen and (min-width: 576px) {
@@ -690,5 +716,31 @@ h5.go-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 992px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100% !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+}
+
+#map {
+  height: 50vh;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }
 /*# sourceMappingURL=style.css.map */

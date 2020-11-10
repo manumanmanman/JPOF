@@ -46,7 +46,7 @@ foreach ($speakers as $speaker) {
     <div class="col-6 right pt-4">
     <h2><a class="text-dark hover-link" href="details-conferencier.php?conferencierid=<?php echo $speaker['speaker_id'] ?>"><span data-content="<?php echo utf8_encode($speaker['speaker_surname'])." ".$speaker['speaker_name'] ?>"><?php echo utf8_encode($speaker['speaker_surname'])." ".$speaker['speaker_name'] ?></span></a></h2>
 
-    <p><a class="text-secondary" href="https://www.linkedin.com/in/<?php echo $speaker['speaker_linkedin'] ?>" target="_blank" title="Profil Linkedin de <?php echo utf8_encode($speaker['speaker_surname'])." ".$speaker['speaker_name'] ?>"><img src="http://elastik.eu/img/linkedin-logo.png"></a></p>
+    <p><a class="text-secondary" href="img/pngfind.com-linkedin-png-533449.png<?php echo $speaker['speaker_linkedin'] ?>" target="_blank" title="Profil Linkedin de <?php echo utf8_encode($speaker['speaker_surname'])." ".$speaker['speaker_name'] ?>"><img src="img/pngfind.com-linkedin-png-533449.png"></a></p>
     </div><!-- right -->
 
     </div> <!-- row -->
