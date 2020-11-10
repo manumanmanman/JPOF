@@ -72,10 +72,14 @@ a:hover{
 
 
 /*********************************************************    CARTES ACTI    *******************************************/
+
+.card{box-shadow: 1px 1px 12px #555;}
+
 .card-entier {
     border: 1px gray;
     margin-bottom: 15px;
     min-height: 275px;
+    
   }
   .category-name-color{
     

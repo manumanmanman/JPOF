@@ -11,6 +11,7 @@ $eventid = $_SESSION["eventid"];
 <div class="row">
     <div class="col-12">
         <h1 class="h1_home">Conférenciers</h1>
+        <input id="myInput" type="text" placeholder="Trouvez votre conférencier">
         <div class="menu_even">
             <ul class="nav">
                 <li class="nav-item">
@@ -59,7 +60,7 @@ foreach ($speakers as $speaker) {
    
 ?>
         <div class="col-md-4">
-            <div class="card">
+            <div class="card" id="myDIV">
                 <img src="<?php echo $speaker['speaker_pfp'] ?>" alt="<?php echo $speaker['speaker_name'] ?>">
             <div class="card-body">
                 <h3><?php echo utf8_encode($speaker['speaker_surname'])." ".$speaker['speaker_name'] ?></h3>
@@ -75,3 +76,19 @@ foreach ($speakers as $speaker) {
 </div>  <!-- container -->
 
 <?php require "footer.php" ; ?>
+
+
+
+
+
+<!-- rechercher un conférencier via barre de recherche -->
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myDIV *").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>

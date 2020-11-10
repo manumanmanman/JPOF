@@ -18,7 +18,7 @@ foreach ($activities as $activity) {    // Début de la boucle
 
     $datevent = strtotime( $activity['activity_date'] );
     // $datevent = utf8_encode(strftime("%A %d %B %G ", $datevent ));
-    $datevent = utf8_encode(strftime("%A %d %B %G ", $datevent ));
+    $datevent = (strftime("%A %d %B %G ", $datevent ));
 
     $heuredebut = strtotime( $activity['activity_start'] );
     $heuredebut = strftime("%Hh%M", $heuredebut);
@@ -41,7 +41,7 @@ foreach ($activities as $activity) {    // Début de la boucle
 <div class="container">
     <div class="row">
     <div id="id_<?php echo $activityid ; ?>" class="col-12 card-entier <?php echo $activity["category_slug"]; ?>">
-        <h1 class="h1_home"><?php echo ($activity["activity_name"]); ?> <?php //echo $activity["activity_id"]; ?></h1>
+        <h1 class="h1_home"><?php echo utf8_encode($activity["activity_name"]); ?> <?php //echo $activity["activity_id"]; ?></h1>
             <div class="card">
                 <div class="card-left col-12">
                     <div class="img-square-wrapper">
@@ -103,7 +103,8 @@ foreach ($activities as $activity) {    // Début de la boucle
                             } else {
 
                                 echo "COMPLET";
-							}
+                            }
+                            
                             ?>
                                
                             </ul>

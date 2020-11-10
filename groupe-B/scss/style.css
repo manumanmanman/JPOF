@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @media (min-width: 0px) {
   #resolution {
-    background-color: mediumseagreen;
+    background-color: #b37b3c;
   }
   #resolution::after {
     content: "Small devices (landscape phones, 576px and up)";
@@ -170,6 +170,11 @@ a:hover {
 }
 
 /*********************************************************    CARTES ACTI    *******************************************/
+.card {
+  -webkit-box-shadow: 1px 1px 12px #555;
+          box-shadow: 1px 1px 12px #555;
+}
+
 .card-entier {
   border: 1px gray;
   margin-bottom: 15px;
@@ -321,6 +326,19 @@ h5 {
 .contenantboutoninscription {
   margin-top: 2rem;
   text-align: start;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 60vh;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+img[src="img/visit.png"] {
+  width: 40px !important;
+  height: auto !important;
 }
 
 .bg-white {
