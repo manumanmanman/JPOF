@@ -325,6 +325,19 @@ h5 {
   text-align: start;
 }
 
+/* Set the size of the div element that contains the map */
+#map {
+  height: 60vh;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+img[src="img/visit.png"] {
+  width: 40px !important;
+  height: auto !important;
+}
+
 .bg-white {
   display: block;
   color: white;
