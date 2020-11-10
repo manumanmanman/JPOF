@@ -75,7 +75,7 @@ foreach($activities as $activity) { // DEBUT DE LE BOUCLE
 
 ?>
  
-        <div class="col-12 col-md-4 full-card <?php echo $activity["category_slug"]?> ">
+        <div class="col-12 col-md-6 col-lg-4 full-card <?php echo $activity["category_slug"]?> ">
         <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="<?php echo ($activity["activity_img"])?>" alt="Card image cap">
 
@@ -130,7 +130,7 @@ echo '</div>';
 
     } else { // s'il n'est pas logué, on lui affiche lien pour se connecter
 
-    echo ' <a href="#" data-toggle="modal" data-target="#exampleModal" class="favori"><i class="fas fa-heart grayheart" title="Vous devez être connecté"></i></a>';
+    echo ' <a href="#" data-toggle="modal" data-target="#examplemodal" class="favori"><i class="fas fa-heart grayheart" title="Vous devez être connecté"></i></a>';
 
     } // affiche lien pour se connecter
 

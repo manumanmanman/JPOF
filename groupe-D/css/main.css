@@ -274,89 +274,6 @@ body {
   content: "XL > 1200px";
 }
 
-@media (max-width: 1199.98px) {
-  .rightm {
-    position: absolute;
-    right: 0;
-  }
-  .righta {
-    position: absolute;
-    right: 100px;
-  }
-  #screensize {
-    background-color: rgba(255, 0, 255, 0.13);
-  }
-  #screensize:after {
-    content: "LG < 1200px";
-  }
-}
-
-@media (max-width: 991.98px) {
-  nav img {
-    height: 25px;
-    width: auto;
-    margin-top: -40px;
-  }
-  .rightm {
-    position: relative;
-    right: 0;
-  }
-  .righta {
-    position: relative;
-    right: 0;
-  }
-  #screensize {
-    background-color: rgba(0, 128, 0, 0.185);
-  }
-  #screensize:after {
-    content: "MD < 992px";
-  }
-}
-
-@media (max-width: 767.98px) {
-  nav img {
-    height: 25px;
-    width: auto;
-    margin-top: -40px;
-  }
-  .rightm {
-    position: relative;
-    right: 0;
-  }
-  .righta {
-    position: relative;
-    right: 0;
-  }
-  #screensize {
-    background-color: rgba(255, 166, 0, 0.171);
-  }
-  #screensize:after {
-    content: "SM < 768px";
-  }
-}
-
-@media (max-width: 575.98px) {
-  nav img {
-    height: 25px;
-    width: auto;
-    margin-top: -40px;
-  }
-  .rightm {
-    position: relative;
-    right: 0;
-  }
-  .righta {
-    position: relative;
-    right: 0;
-  }
-  #screensize {
-    background-color: red;
-  }
-  #screensize:after {
-    content: "XS < 576px";
-  }
-}
-
 .conf {
   padding-top: 100px;
 }
@@ -380,6 +297,16 @@ body {
 .rcampus {
   padding-top: 50px;
   text-align: center;
+}
+
+.rcampus .bat {
+  margin-bottom: 50px;
+}
+
+.rcampus .bat img {
+  margin-bottom: 15px;
+  width: 150px;
+  height: 150px;
 }
 
 .about {
@@ -632,5 +559,136 @@ footer .container {
   color: #3d3d3d;
   font-size: 40px;
   padding-top: 50px;
+}
+
+@media (max-width: 1199.98px) {
+  .rightm {
+    position: absolute;
+    right: 0;
+  }
+  .righta {
+    position: absolute;
+    right: 100px;
+  }
+  #screensize {
+    background-color: rgba(255, 0, 255, 0.13);
+  }
+  #screensize:after {
+    content: "LG < 1200px";
+  }
+  .right i {
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .right .far, .right .fas {
+    font-size: 14px;
+  }
+  .right .redheart, .right .grayheart {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  nav img {
+    height: 25px;
+    width: auto;
+    margin-top: -40px;
+  }
+  .rightm {
+    position: relative;
+    right: 0;
+  }
+  .righta {
+    position: relative;
+    right: 0;
+  }
+  #screensize {
+    background-color: rgba(0, 128, 0, 0.185);
+  }
+  #screensize:after {
+    content: "MD < 992px";
+  }
+  .carre {
+    padding: 5px;
+  }
+  .right i {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .right .far, .right .fas {
+    font-size: 14px;
+  }
+  .right .redheart, .right .grayheart {
+    font-size: 20px;
+  }
+  #illu {
+    height: 350px;
+    width: auto;
+    border-radius: 4px;
+  }
+  .about {
+    padding-top: 70px;
+    text-align: center;
+  }
+  .about p {
+    padding-top: 60px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  nav img {
+    height: 25px;
+    width: auto;
+    margin-top: -40px;
+  }
+  .rightm {
+    position: relative;
+    right: 0;
+  }
+  .righta {
+    position: relative;
+    right: 0;
+  }
+  #screensize {
+    background-color: rgba(255, 166, 0, 0.171);
+  }
+  #screensize:after {
+    content: "SM < 768px";
+  }
+  .full-card {
+    margin-left: 100px;
+  }
+  .about {
+    padding-top: 70px;
+    text-align: center;
+  }
+  .about p {
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  nav img {
+    height: 25px;
+    width: auto;
+    margin-top: -40px;
+  }
+  .rightm {
+    position: relative;
+    right: 0;
+  }
+  .righta {
+    position: relative;
+    right: 0;
+  }
+  #screensize {
+    background-color: red;
+  }
+  #screensize:after {
+    content: "XS < 576px";
+  }
 }
 /*# sourceMappingURL=main.css.map */
