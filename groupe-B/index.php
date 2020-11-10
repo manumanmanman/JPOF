@@ -195,16 +195,6 @@ foreach ($activities as $activity) {    // Début de la boucle
                             ?>
 
 
-
-
-
-
-
-
-
-
-
-                        
                         </div> <!-- card-body -->
 					</div> <!-- card -->
                     </div> <!-- card row -->
@@ -216,7 +206,7 @@ foreach ($activities as $activity) {    // Début de la boucle
  <?php } // foreach   fin de la boucle ?>
      
 
-        </div>   
+        
 </div>  <!-- row -->
 </div> <!-- / container  -->
 </div><!-- / container fluid -->
