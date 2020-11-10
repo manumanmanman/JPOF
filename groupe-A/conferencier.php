@@ -23,7 +23,7 @@
                             </div><!--  left fin -->
     
                             <div class='col-6 conf-right'>
-                                <a href='detail-speaker.php'><h1>".$row["speaker_name"].", ".$row["speaker_surname"]."</h1></a>
+                                <a href='detail-speaker.php?id=".$row["speaker_id"]."'><h1>".$row["speaker_name"].", ".$row["speaker_surname"]."</h1></a>
                                 <a href='linkedin/prof=Jeanboffrot'><img target='_blank' src='img/linkedin.png' alt='profil linkedin de ".$row["speaker_name"].", ".$row["speaker_surname"]."'></a><br>
 
                             </div><!--  right fin -->
