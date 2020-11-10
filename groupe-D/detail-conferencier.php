@@ -12,12 +12,12 @@ $sql = " SELECT * FROM speakers
 $speakers = $conn->query($sql);
 foreach ($speakers as $speaker) {
 
+
 ?>
 
 <div id="bienvenue">
 <h1><?php echo utf8_encode($speaker['speaker_surname'])." ".$speaker['speaker_name'] ?></h1>
-</div>
-
+</div> 
 
 <div class="container conferencier">
     <div class="row">
