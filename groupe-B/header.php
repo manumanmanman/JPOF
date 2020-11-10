@@ -19,7 +19,7 @@ foreach ($events as $event) {
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="scss/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="scss/style.css" rel="stylesheet" type="text/css">
   <title><?php echo $_SESSION["eventname"]; ?></title>
 </head>	

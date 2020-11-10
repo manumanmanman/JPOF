@@ -1,9 +1,0 @@
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-
-    #resolution{
-        background-color: rgb(245, 45, 138);}
-
-    #resolution::after{
-        content:"Large devices (desktops, 992px and up)";}
-    }
