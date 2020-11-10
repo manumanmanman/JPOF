@@ -50,6 +50,7 @@
      
      
  
+    
 
 <?php 
 
@@ -69,8 +70,8 @@ foreach ($events as $event) {
 
 if(isset($_SESSION["user"])) {
 
-  echo '<li class="nav-item" ><a class="nav-link" href="mon-profil.php"><b> '.$_SESSION["user"].'</b></a></li>';
-  echo '<li class="nav-item" ><a class="nav-link" href="inc/logout.inc.php"><b>LOG OUT</b></a></li>';
+  echo '<li class="nav-item" ><a class="nav-link righta" href="mon-profil.php"><b> '.$_SESSION["user"].'</b></a></li>';
+  echo '<li class="nav-item" ><a class="nav-link rightm" href="inc/logout.inc.php"><b>LOG OUT</b></a></li> ';
 
 
 } else { ?>
@@ -78,7 +79,7 @@ if(isset($_SESSION["user"])) {
   <li class="nav-item <?php if($page == "contact"){echo "active";} ?>">
   <?php 
 
-  echo '<li class="nav-item" ><a class="nav-link" href="register.php" data-toggle="modal" data-target="#examplemodal"><b>CONNEXION</b></a></li>'; } 
+  echo '<li class="nav-item rightm" ><a class="nav-link" href="register.php" data-toggle="modal" data-target="#examplemodal"><b>CONNEXION</b></a></li>'; } 
 
 
 ?>

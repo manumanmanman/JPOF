@@ -46,7 +46,7 @@ foreach ($activities as $activity) {    // Début de la boucle
 
 
 <div id="bienvenue">
-<h1><?php echo utf8_encode ($activity["activity_name"]);?></h1>
+<h1><?php echo ($activity["activity_name"]);?></h1>
 </div>
 
 
@@ -68,19 +68,19 @@ foreach ($activities as $activity) {    // Début de la boucle
     <div class="row carre detail <?php echo $activity["category_slug"]?>">
     <div class="col-md-6 ">
     <i class="far fa-bookmark"> </i> <?php echo  ($activity["category_name"])?><br>
-    <i class="far fa-calendar-alt">   </i> <?php echo utf8_encode ($activity["activity_date"]).' de ' . $heuredebut .' à '. $heurefin ?>
+    <i class="far fa-calendar-alt">   </i> <?php echo  ($activity["activity_date"]).' de ' . $heuredebut .' à '. $heurefin ?>
     </div>
     <div class="col-md-6 ">
-    <i class="fas fa-map-marker-alt"></i>  <?php echo utf8_encode ($activity["building_name"])?><br>
-    <i class="fas fa-microphone"></i>  <?php echo utf8_encode ($activity["speaker_name"])?>
+    <i class="fas fa-map-marker-alt"></i>  <?php echo  ($activity["building_name"])?><br>
+    <i class="fas fa-microphone"></i>  <?php echo  ($activity["speaker_name"])?>
     </div>
 
     </div>  <!-- FIN DU CARE -->
 
   
     <h5 class="card-title-detail"> 
-    <?php echo utf8_encode ($activity["activity_name"]);?></h5>
-    <p class="card-text"><?php echo utf8_encode ($activity["activity_description"])?></p>
+    <?php echo  ($activity["activity_name"]);?></h5>
+    <p class="card-text"><?php echo  ($activity["activity_description"])?></p>
     
     
  
@@ -127,7 +127,7 @@ echo '</div>';
 
 ?>
 
-<h6>Places disponibles : <?php echo utf8_encode($activity["activity_size"]); ?></h6> 
+<h6>Nombre de places pour cette activité : <?php echo ($activity["activity_size"]); ?></h6> 
 
 
 <?php
@@ -179,7 +179,7 @@ if ($nombreinscriptions < $activity["activity_size"]) {
 
 } else {
 
-    echo "COMPLET";
+    echo  "<b>COMPLET</b>";
 }
 
 } // si connecté

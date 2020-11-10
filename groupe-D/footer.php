@@ -44,9 +44,7 @@
 
 
 
-
-
-
+<div class="mod">
 <!-- dans le footer on charge le modal qui contient le formulaire de login et enregistrement qui sera disponible sur toutes les pages -->
    <!-- Modal -->
 <!--Modal: Login / Register Form-->
@@ -62,11 +60,11 @@
         <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
           <li class="nav-item">
             <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
-              Login</a>
+              CONNEXION</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
-              Register</a>
+              S'inscrire</a>
           </li>
         </ul>
 
@@ -80,25 +78,25 @@
             <form action="inc/login.inc.php" method="post">
               <div class="md-form form-sm mb-5">
                 
-                <label for="login">Username</label>
+                <label for="login"></label>
                 <input class="form-control"  type="text" name="login" placeholder="Votre username">
               </div>
 
               <div class="md-form form-sm mb-4">
                 
-                <label for="mdp">Mot de passe</label>
+                <label for="mdp"></label>
                 <input class="form-control"  type="password" name="mdp" placeholder="Entrez mot de passe">
               </div>
               
             </div>
             
             <!--Footer-->
-            <div class="modal-footer">
+            
              
             <div class="text-center mt-2">
-                <button class="btn btn-info">Log in </button>
+                <button class="btn btn-info">connexion</button>
               </div>
-            </div>
+            
 </form> 
           </div>
           <!--/.Panel 7-->
@@ -111,25 +109,25 @@
             <form action="inc/register.inc.php" method="post">
               <div class="md-form form-sm mb-4">
                 
-              <label for="nom">Nom</label>
+              <label for="nom"></label>
       <input class="form-control" type="text" name="nom"  placeholder="Votre nom">
               </div>
 
               <div class="md-form form-sm mb-4">
                 
-              <label for="prenom">Prénom</label>
+              <label for="prenom"></label>
       <input class="form-control" type="text" name="prenom"  placeholder="Votre prénom">
               </div>
 
               <div class="md-form form-sm mb-4">
                 
-              <label for="email">Email</label>
+              <label for="email"></label>
       <input class="form-control" type="text" name="email"  placeholder="Votre e-mail">
               </div>
 
               <div class="md-form form-sm mb-4">
                 
-          <label for="mdp">Mot de passe</label>
+          <label for="mdp"></label>
       <input class="form-control" type="text" name="mdp"  placeholder="Votre mot de passe">
               </div>
 
@@ -138,12 +136,12 @@
             </div>
             </form> 
             <!--Footer-->
-            <div class="modal-footer">
+           
             <div class="text-center form-sm mt-2">
-                <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+                <button class="btn btn-info">s'inscire<i class="fas fa-sign-in ml-1"></i></button>
               </div>
              
-            </div>
+           
           </div>
           <!--/.Panel 8-->
         </div>
@@ -153,7 +151,7 @@
     <!--/.Content-->
   </div>
 </div>
-
+</div>
 
  <script src="js/jquery-3.5.1.min.js"></script> 
  <script src="js/bootstrap.min.js"></script>  

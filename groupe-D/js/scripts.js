@@ -97,7 +97,7 @@ $('.contenantboutoninscription').on('click', '.inscriptionactvite',function(even
     event.preventDefault();
     // $('.add').click(function() {
     var activityid = $(this).attr('data-activity');
-    var disponible = $(this).parent().siblings("h5").children().text();
+    var disponible = $(this).parent().siblings("h6").children().text();
     // console.log("add: "+activityid) ;
     console.log(disponible) ;
     var parent =  $(this).parent();
@@ -127,7 +127,7 @@ $('.contenantboutoninscription').on('click', '.inscriptionactvite',function(even
                 $(parent).children().html("Je me désinscris");   
   
                 disponible = disponible -1;
-                $(parent).siblings("h5").children().text(disponible);
+                $(parent).siblings("h6").children().text(disponible);
   
               } // success
             }); // $.ajax function
@@ -142,7 +142,7 @@ $('.contenantboutoninscription').on('click', '.inscriptionactvite',function(even
     event.preventDefault();
     // $('.add').click(function() {
     var activityid = $(this).attr('data-activity');
-    var disponible = $(this).parent().siblings("h5").children().text();
+    var disponible = $(this).parent().siblings("h6").children().text();
     // console.log("add: "+activityid) ;
     console.log(disponible) ;
     var parent =  $(this).parent();
@@ -172,7 +172,7 @@ $('.contenantboutoninscription').on('click', '.inscriptionactvite',function(even
                 $(parent).children().html("Je m\'inscris");   
   
                 disponible = disponible -(-1);
-                $(parent).siblings("h5").children().text(disponible);
+                $(parent).siblings("h6").children().text(disponible);
                 // uniquement pour sur la page mon profil!
               $(parent).parent(".inscritsurprofil").remove();  
   
