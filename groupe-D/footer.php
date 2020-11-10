@@ -1,6 +1,54 @@
+<footer>
+
+<div class="container">
+<div class="row">
+
+<div class="col-12 col-md-4 footer">
+<h5>coordonnées</h5>
+<p>Rue de la fontaine 4<br>
+   1000 Bruxelles<br><br>
+   Tél : +32 2 279 58 10<br>
+   Fax : +32 2 279 58 29</p>
+</div>
+
+<div class="col-12 col-md-4 footer">
+<h5>contact</h5>
+<p>Du lundi au vendredi<br>
+   Horaire : 10h - 18h <br>
+   ferrer@mail.eu<br>
+   www.he-ferrer.eu</p>
+</div>
+
+<div class="col-12 col-md-4 footer">
+<h5>suivez-nous</h5>
+<!-- Facebook -->
+<p>
+<a href="https://fr-fr.facebook.com/HauteEcoleFranciscoFerrer/" target="_blank">
+  <i class="fab fa-facebook-f fa-lg"> </i>
+</a>
+ <!--Linkedin -->
+ <a href="https://www.linkedin.com/company/haute-ecole-francisco-ferrer" target="_blank">
+  <i class="fab fa-linkedin-in fa-lg"> </i>
+</a>
+<!-- Twitter -->
+<a href="https://twitter.com/hefferrer?lang=fr" target="_blank">
+  <i class="fab fa-twitter fa-lg"> </i>
+</a>
+</p>
+</div>
+
+</div>
+</div>
+
+</footer>
+
+
+
+
+
+
 <!-- dans le footer on charge le modal qui contient le formulaire de login et enregistrement qui sera disponible sur toutes les pages -->
    <!-- Modal -->
-  
 <!--Modal: Login / Register Form-->
 <div class="modal fade" id="examplemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog cascading-modal" role="document">
@@ -105,13 +153,12 @@
     <!--/.Content-->
   </div>
 </div>
-<!--Modal: Login / Register Form-->
 
 
- 
  <script src="js/jquery-3.5.1.min.js"></script> 
  <script src="js/bootstrap.min.js"></script>  
  <script src="js/scripts.js"></script>
  
+
 </body>
 </html>

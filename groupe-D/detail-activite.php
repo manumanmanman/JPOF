@@ -67,7 +67,7 @@ foreach ($activities as $activity) {    // Début de la boucle
 
     <div class="row carre detail <?php echo $activity["category_slug"]?>">
     <div class="col-md-6 ">
-    <i class="far fa-bookmark"> </i> <?php echo utf8_encode ($activity["category_name"])?><br>
+    <i class="far fa-bookmark"> </i> <?php echo  ($activity["category_name"])?><br>
     <i class="far fa-calendar-alt">   </i> <?php echo utf8_encode ($activity["activity_date"]).' de ' . $heuredebut .' à '. $heurefin ?>
     </div>
     <div class="col-md-6 ">
@@ -127,7 +127,7 @@ echo '</div>';
 
 ?>
 
-<h5>Places disponibles pour cette activité: <?php echo utf8_encode($activity["activity_size"]); ?></h5> 
+<h6>Places disponibles : <?php echo utf8_encode($activity["activity_size"]); ?></h6> 
 
 
 <?php
@@ -157,7 +157,7 @@ $sql3 = "SELECT * FROM registrations WHERE activity_id = '$activityid' ";
 
 if ($nombreinscriptions < $activity["activity_size"]) {
     // echo '<h5>Places disponibles: <span class="disponible">'.$placesrestantes.'</span> sur '.$activity["activity_size"].'</h5>';
-    echo '<h5>Il reste encore <span class="disponible">'.$placesrestantes.'</span> '.$places.'.</h5>';
+    echo '<h6>Il reste encore <span class="disponible">'.$placesrestantes.'</span> '.$places.'</h6>';
 
 
                 // on va aussi aller voir si l'utilisateur connecté est déjà inscrit à l'activité

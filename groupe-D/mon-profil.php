@@ -24,9 +24,9 @@ if (!isset($_SESSION["user"])) { // il n'est pas logué, on redirige vers la pag
 
  ?>
  <div class=" profil text-center">
-<h1> <i class="fas fa-user mr-1"> <?php echo $user["user_name"];?><a class="btn btn-secondary ml-5" href="inc/logout.inc.php" role="button">Se déconnecter</a><br><?php echo $user["user_email"];?>
-</i></h1>
-<h4>Activités dans vos favoris</h4>
+<h1> <i class="fas fa-user mr-1"> </i><?php echo $user["user_name"];?></h1> 
+
+<h3>Activités dans vos favoris</h3>
 </div>
 
 
@@ -84,7 +84,7 @@ foreach ($favorites as $favorite) { ?>
 
 <div class=" profil text-center">
 
-<h4>Activités auxquelles vous êtes inscrit</h4>
+<h3>Activités auxquelles vous êtes inscrit</h3>
 </div>
 
 

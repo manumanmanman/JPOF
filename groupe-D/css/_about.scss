@@ -1,14 +1,40 @@
-.campus {
-    padding-top: 20px;
-}
+
 
 .rcampus {
-    padding-top: 50px
+    padding-top: 50px;
+    text-align: center;
+    
 }
 
 .about {
-    padding-top: 60px;
-    text-align: justify;
+    padding-top: 100px;
+    text-align: center;
+    
+
+
+    p {
+
+        padding-top: 130px
+    }
+    
+}
+
+
+
+#illu {
+
+    height: 400px;
+    width: auto;
+    border-radius: 4px;
+}
+
+.campus {
+
+    h3 {
+        text-align: center;
+        padding-bottom: 30px;
+        text-transform: uppercase;
+    }
 }
 
 

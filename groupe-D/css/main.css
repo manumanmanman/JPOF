@@ -51,6 +51,7 @@ body {
   margin: auto;
   margin-top: -75px;
   padding: 10px;
+  border-radius: 4px;
 }
 
 .carre.artsappliques {
@@ -232,6 +233,20 @@ body {
   float: right;
 }
 
+.container {
+  padding-bottom: 100px;
+}
+
+.menu {
+  padding-bottom: 0;
+}
+
+.card {
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
 #screensize {
   width: 25%;
   height: 30px;
@@ -285,74 +300,137 @@ body {
   }
 }
 
-.conferencier .left {
-  margin-top: 50px;
+.conf {
+  padding-top: 100px;
 }
 
-.conferencier .left img {
-  width: 250px;
+.conferencier {
+  text-align: center;
+}
+
+.conferencier img {
+  width: 180px;
   height: auto;
+  border-radius: 4px;
 }
 
-.conferencier .right a {
+.conferencier a {
   color: #1f1f1f;
-  font-size: 20px;
+  font-size: 16px;
   text-decoration: none;
-}
-
-.campus {
-  padding-top: 20px;
 }
 
 .rcampus {
   padding-top: 50px;
+  text-align: center;
 }
 
 .about {
-  padding-top: 60px;
-  text-align: justify;
-}
-
-#contact {
-  margin: auto;
-  height: 100px;
-  width: 300px;
-}
-
-#nom, #prenom {
-  width: 46%;
-  margin: 5px;
-}
-
-#mail, #msg {
-  width: 95%;
-  margin: 5px;
-}
-
-#contact .button {
-  float: right;
-  margin-right: 10px;
-}
-
-button {
-  background: black;
-  color: white;
-  border-style: none;
-  padding: 5px 10px;
-}
-
-#nom, #prenom, #mail, #msg {
-  border: 1px solid;
-}
-
-#contact h2 {
-  text-transform: uppercase;
+  padding-top: 100px;
   text-align: center;
-  margin: 15px 0;
 }
 
-.contacta {
-  margin-top: 50px;
+.about p {
+  padding-top: 130px;
+}
+
+#illu {
+  height: 400px;
+  width: auto;
+  border-radius: 4px;
+}
+
+.campus h3 {
+  text-align: center;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.contact h3 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+
+#nom {
+  width: 220px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+#prenom {
+  width: 220px;
+  padding: 10px;
+}
+
+#email {
+  margin-top: 20px;
+  width: 455px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#mess {
+  padding: 10px;
+}
+
+input, textarea {
+  border-radius: 4px;
+  border: 0.2px solid gray;
+}
+
+form {
+  text-align: center;
+}
+
+.envoyer {
+  background-color: #3d3d3d;
+  color: white;
+  text-align: center;
+  border: none;
+  width: 458px;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+footer h5 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer p {
+  text-align: center;
+  font-size: 17px;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer i {
+  margin: 15px;
+  color: white;
+}
+
+.footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  background-color: #3d3d3d;
+  color: white;
+}
+
+footer .container {
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .detail {
@@ -416,26 +494,40 @@ button {
   background-color: #1393CC;
 }
 
-.profil {
-  margin-top: 30px;
+.profil h3 {
+  text-align: center;
+  padding-bottom: 60px;
 }
 
-.profil h4 {
-  margin-top: 20px;
-  text-decoration: underline;
+.mr-1 {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  color: #3d3d3d;
+  padding-right: 10px;
 }
 
-.conferencier {
-  margin-top: 30px;
+.card-body .btn {
+  color: white;
 }
 
-.conferencier .pfp {
-  width: 200px;
-  height: 200px;
-  margin-left: 300px;
+.detconf {
+  padding-top: 100px;
+  text-align: center;
 }
 
-.conferencier .div {
-  margin-top: 30px;
+.detconf img {
+  width: 400px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.detconf .left {
+  padding-top: 30px;
+}
+
+.fa-linkedin {
+  color: #3d3d3d;
+  font-size: 40px;
+  padding-top: 50px;
 }
 /*# sourceMappingURL=main.css.map */

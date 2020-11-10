@@ -1,27 +1,31 @@
+.conf {
+
+    padding-top: 100px;
+}
+
 .conferencier {
 
-    .left {
+    
 
-        margin-top: 50px;
+       text-align: center;
 
     img {
-            width: 250px;
+            width: 180px;
   
-    height: auto; }
+    height: auto;
+    border-radius: 4px;}
    
 
-    }//left
+    
 
 
-    .right {
+    
       
         a {
         color: rgb(31, 31, 31);
-        font-size: 20px;
-        text-decoration: none;
-    }
-
-    } //right
+        font-size: 16px;
+        text-decoration: none; }
+    
 } // conferencier
 
 

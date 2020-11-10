@@ -6,7 +6,7 @@ $eventid = $_SESSION["eventid"];
 ?>
 
 <div id="bienvenue">
-<h1>Activités de <?php echo utf8_decode( $_SESSION["eventname"]); ?> <?php echo   $_SESSION["eventdate"]; ?></h1>
+<h1>Activités <?php echo utf8_decode( $_SESSION["eventname"]); ?> <?php echo   $_SESSION["eventdate"]; ?></h1>
 </div>
 
 
